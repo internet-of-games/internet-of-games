@@ -11,13 +11,16 @@ Suggested order for newcomers:
 7. [Layer model](layer-model.md): how the pieces fit together.
 8. [What should travel between games](portability-matrix.md): what carries over, and what deliberately doesn't.
 9. [Design principles](design-principles.md): rules learned from earlier failures.
-10. [The business case](business-case.md): why a game would join.
-11. [How interoperability happened elsewhere](interop-history.md): the web, email, phone numbers, banking and cross-play.
-12. [Legal and policy landscape](legal-and-policy.md): rights, ratings, privacy and regulation. This isn't legal advice.
-13. [Open questions](open-questions.md): cross-cutting questions that don't belong to any one problem.
-14. [Glossary](glossary.md) and [References](references.md).
+10. [Threat model](threat-model.md): what we protect, in priority order, and the threats every proposal must address.
+11. [The business case](business-case.md): why a game would join.
+12. [How interoperability happened elsewhere](interop-history.md): the web, email, phone numbers, banking and cross-play.
+13. [Legal and policy landscape](legal-and-policy.md): rights, ratings, privacy and regulation. This isn't legal advice.
+14. [Open questions](open-questions.md): cross-cutting questions that don't belong to any one problem.
+15. [Glossary](glossary.md) and [References](references.md).
 
 After that, pick a problem from [problems/README.md](../problems/README.md).
+
+**Decisions** are recorded in [decisions/](decisions/README.md), and **investigations** in [spikes/](spikes/README.md). If you're working with an AI agent, start it at [AGENTS.md](../AGENTS.md).
 
 ## How we handle facts
 

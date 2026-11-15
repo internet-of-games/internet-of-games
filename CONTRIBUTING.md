@@ -35,6 +35,23 @@ Mentioning products and companies by name to describe the problem is fine. See [
 - **Reference problem IDs** (`P-0013`, `P-0013-Q2`) so threads stay connected.
 - **Be fair to the companies we discuss.** Describe what they've publicly said or done, not what we imagine they think.
 
+## Problem docs, decisions and spikes
+
+- **Problem docs** (`problems/`) explore one sub-problem: options, trade-offs and open questions. Guide: [skills/writing-problem-docs](skills/writing-problem-docs/SKILL.md).
+- **Decision records** (`docs/decisions/`) record what we decided and why. Guide: [skills/writing-adrs](skills/writing-adrs/SKILL.md).
+- **Spikes** (`docs/spikes/`) report time-boxed investigations. Guide: [docs/spikes/README.md](docs/spikes/README.md).
+
+Every proposal names the threats it affects ([threat model](docs/threat-model.md)) and explains how it works for every kind of game ([P-0030](problems/P-0030-built-for-every-game.md)).
+
+## Working with AI agents
+
+AI agents are welcome tools here, and the repository is set up for them.
+
+- **Point your agent at [AGENTS.md](AGENTS.md).** It has the rules, a map of the repository and a guide for each kind of task. Claude Code loads it automatically through [CLAUDE.md](CLAUDE.md), and the [skills](skills/README.md) work in both Claude Code and Cursor.
+- **You're responsible for what your agent submits.** Review it, check its sources, and sign off the commits yourself.
+- **Say in the pull request description that an agent helped.**
+- **Don't commit an agent's plans, task lists or scratch notes.** Put durable results in a problem doc, an ADR or a spike.
+
 ## Developer Certificate of Origin (DCO)
 
 We don't use a contributor license agreement. Instead, every commit must be signed off under the [Developer Certificate of Origin](https://developercertificate.org/), which certifies that you wrote the contribution or otherwise have the right to submit it under this project's licenses:
@@ -57,9 +74,11 @@ The IP policy for future specification text may add a patent commitment. That's 
 ## Pull requests
 
 1. Keep each pull request focused on one problem or topic.
-2. Fill in the pull request template checklist.
-3. A maintainer reviews it. Doc changes need one maintainer approval. Changes to problem *status* follow [GOVERNANCE.md](GOVERNANCE.md).
-4. Be patient and kind. Reviews happen in people's spare time.
+2. Run `make check`, and `make test` if you changed `tools/`, then fix any errors. CI runs the same checks.
+3. Write commit messages and the pull request title following [COMMITS.md](COMMITS.md).
+4. Fill in the pull request template checklist.
+5. A maintainer reviews it. Doc changes need one maintainer's approval. Changes to a problem's *status*, and new decision records, follow [GOVERNANCE.md](GOVERNANCE.md).
+6. Be patient and kind. Reviews happen in people's spare time.
 
 ## Code of Conduct
 

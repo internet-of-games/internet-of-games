@@ -42,6 +42,11 @@ Rewards granted by the receiving game ([P-0019](P-0019-cross-game-entitlements.m
 - Economists and game designers: write short research notes on the questions above.
 - Anyone: collect public post-mortems from games that tried to run shared or open economies.
 
+## Decisions so far
+
+- [ADR-0005](../docs/decisions/ADR-0005-never-require-blockchains-tokens-or-wallets.md): no blockchain, token or wallet may ever be required.
+- [ADR-0008](../docs/decisions/ADR-0008-continuity-as-signed-claims-not-state.md): balance-affecting state isn't transferred directly. When cross-game value arrives, it builds on claims, starting with entitlements.
+
 ## References
 
 - [legal-and-policy.md §5–6](../docs/legal-and-policy.md#5-virtual-currencies-loot-boxes-and-consumer-protection)

@@ -61,6 +61,10 @@ Our current lean is option 1.
 - Make CC0 test avatars: original designs only, with no fan art of existing characters.
 - Test the sample avatars in Godot, Unity, Unreal and three.js, and record what breaks.
 
+## Decisions so far
+
+- [ADR-0004](../docs/decisions/ADR-0004-compose-existing-open-standards.md): we build on existing open standards, so the avatar baseline starts from glTF and VRM rather than a new format.
+
 ## References
 
 - [glTF](https://www.khronos.org/gltf/) · [VRM specification](https://github.com/vrm-c/vrm-specification)

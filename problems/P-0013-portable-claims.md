@@ -6,7 +6,7 @@ phase: 1
 status: open
 difficulty: medium
 champion: unassigned
-related: [P-0006, P-0014, P-0015]
+related: [P-0006, P-0014, P-0015, P-0022, P-0024]
 last_reviewed: 2026-11-15
 ---
 
@@ -65,6 +65,11 @@ This is the core of "meaningful continuity" in the [problem statement](../docs/p
 
 - Map Open Badges 3.0 fields onto typical game achievements.
 - Write example credentials for three made-up games in different genres.
+
+## Decisions so far
+
+- [ADR-0004](../docs/decisions/ADR-0004-compose-existing-open-standards.md): we build on existing credential standards rather than a new format.
+- [ADR-0008](../docs/decisions/ADR-0008-continuity-as-signed-claims-not-state.md): continuity travels as signed claims that receiving games interpret, not as transferred game state.
 
 ## References
 

@@ -29,7 +29,9 @@ There's no spec and no code yet, on purpose. Right now this repository holds the
 | Understand the shape of the standard | [Layer model](docs/layer-model.md) · [What should travel](docs/portability-matrix.md) · [Design principles](docs/design-principles.md) |
 | Pick a problem to work on | [problems/](problems/README.md) |
 | See the plan | [ROADMAP.md](ROADMAP.md) |
+| See what's been decided | [Decision records](docs/decisions/README.md) |
 | Contribute | [CONTRIBUTING.md](CONTRIBUTING.md) |
+| Work here with an AI agent | [AGENTS.md](AGENTS.md) |
 
 The full reading guide is in [docs/README.md](docs/README.md).
 

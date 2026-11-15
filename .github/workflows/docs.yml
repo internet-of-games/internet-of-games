@@ -1,0 +1,31 @@
+name: docs
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Read-only token; no secrets are used. Safe for pull requests from forks.
+permissions:
+  contents: read
+
+concurrency:
+  group: docs-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: make check and make test
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # Pinned to an exact commit so a moved tag can't change what runs.
+      - name: Check out the repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Validate the docs
+        run: make check
+      - name: Test the checker
+        run: make test

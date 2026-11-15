@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+
+# Editors and operating systems
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Local agent settings (shared skills live in skills/)
+.claude/settings.local.json
+
+# Agent session artifacts: plans, task lists and scratch notes stay out of the
+# repository (AGENTS.md, rule 12). Durable results go in problems/, ADRs or spikes.
+/plans/
+/scratch/
+*.local.md

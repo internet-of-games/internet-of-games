@@ -72,6 +72,10 @@ This is what turns many separate games into one connected universe, beyond simpl
 - Survey how games already share deep links to specific places (for example, invite links), from public information.
 - Prototype a manifest and a resolver for web and desktop.
 
+## Decisions so far
+
+- [ADR-0003](../docs/decisions/ADR-0003-universal-scope-built-in-risk-order.md): world addressing is part of the standard's universal scope, delivered in Phase 2.
+
 ## References
 
 - [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986.html) · [Apple universal links](https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app) · [Android App Links](https://developer.android.com/training/app-links)

@@ -1,0 +1,17 @@
+# Maintainers review every change.
+* @acterra12
+
+# Guardrails for people and AI agents. Changes to these always need a
+# maintainer's review (see AGENTS.md, rule 15).
+/AGENTS.md          @acterra12
+/CLAUDE.md          @acterra12
+/skills/            @acterra12
+/tools/             @acterra12
+/.github/           @acterra12
+/.claude/           @acterra12
+/.cursor/           @acterra12
+/GOVERNANCE.md      @acterra12
+/SECURITY.md        @acterra12
+/CODE_OF_CONDUCT.md @acterra12
+/LICENSE            @acterra12
+/LICENSE-DOCS       @acterra12

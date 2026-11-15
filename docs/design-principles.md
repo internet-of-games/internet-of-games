@@ -12,7 +12,7 @@ The player's identity, avatar and credentials are **files the player holds**. Se
 ## 2. Claims, not state
 
 Games share **signed facts**, not stats, inventories or currencies.
-*Learned from:* amiibo, Skylanders, Pokémon HOME; and, as the counterexample, every attempt that started with economies. → [portability-matrix.md](portability-matrix.md)
+*Learned from:* amiibo, Skylanders, Pokémon HOME; and, as the counterexample, every attempt that started with economies. → [portability-matrix.md](portability-matrix.md), [ADR-0008](decisions/ADR-0008-continuity-as-signed-claims-not-state.md)
 
 ## 3. The receiving game decides
 
@@ -42,7 +42,7 @@ Every avatar, name and credential from outside is validated, budgeted and allowe
 ## 8. Compose existing standards; don't invent new ones
 
 Use W3C Verifiable Credentials, DIDs, OpenID, glTF/VRM and Open Badges. Write a *profile*, not a new format, unless there's no other way.
-*Learned from:* the maturity of those standards ([standards-map.md](standards-map.md)) and the cost of the many metaverse projects that started from scratch.
+*Learned from:* the maturity of those standards ([standards-map.md](standards-map.md)) and the cost of the many metaverse projects that started from scratch. → [ADR-0004](decisions/ADR-0004-compose-existing-open-standards.md)
 
 ## 9. Two independent implementations before anything is "standard"
 
@@ -52,7 +52,7 @@ Nothing is called stable until two independent implementations interoperate usin
 ## 10. Works without crypto, doesn't forbid it
 
 No blockchain, token or wallet is ever required. Identifier methods that use one underneath are allowed if they meet the other principles.
-*Learned from:* Ubisoft Quartz, and identity products bundled with wallets.
+*Learned from:* Ubisoft Quartz, and identity products bundled with wallets. → [ADR-0005](decisions/ADR-0005-never-require-blockchains-tokens-or-wallets.md)
 
 ## 11. Integration in a day
 
@@ -67,4 +67,4 @@ When another community already owns a layer, such as glTF extensions at OMI or K
 ## 13. Built for every game
 
 The standard must work for every kind of game: blockbusters and one-person projects, any genre, engine, platform, age rating or business model, online or fully offline, and between games from different companies or from the same one. Anything that only fits one kind of game belongs in an optional layer, not in the core.
-*Learned from:* the goal itself. A baseline that leaves out whole categories of games isn't a baseline. → [P-0030](../problems/P-0030-built-for-every-game.md)
+*Learned from:* the goal itself. A baseline that leaves out whole categories of games isn't a baseline. → [P-0030](../problems/P-0030-built-for-every-game.md), [ADR-0003](decisions/ADR-0003-universal-scope-built-in-risk-order.md)

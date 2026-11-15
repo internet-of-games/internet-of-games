@@ -7,6 +7,7 @@ The destination is a **universal standard that every game builds on** ([the miss
 **Goal:** a shared, well-sourced understanding of the problem, and a community that wants to work on it.
 
 - [x] Problem docs: vision, problem statement, landscape, prior art, standards map, layer model and numbered sub-problems
+- [x] Decision records, a threat model, an agent guide and automated checks for the docs
 - [ ] Settle the working name for the portable player document (see [open questions](docs/open-questions.md#naming))
 - [ ] Contact adjacent communities and record where each piece of our work should live upstream. These include OMI, the VRM Consortium and Khronos avatar work, the Metaverse Standards Forum, the W3C Credentials Community Group, DIF and the OpenID Foundation.
 - [ ] Hold the first open community call and publish the notes in Discussions

@@ -59,6 +59,10 @@ last_reviewed: 2026-11-15
 - Compare how OMI, DIF work items and W3C Community Groups handle IP, and summarize the differences in a short table.
 - If you've run an open standards effort before, share what you'd do differently.
 
+## Decisions so far
+
+- [ADR-0002](../docs/decisions/ADR-0002-license-code-apache-docs-cc-by.md): code is licensed under Apache-2.0 and documents under CC BY 4.0, with contributions under the DCO. The patent policy for specification text (P-0001-Q1) is still open.
+
 ## References
 
 - [W3C Community Contributor License Agreement](https://www.w3.org/community/about/process/cla/)

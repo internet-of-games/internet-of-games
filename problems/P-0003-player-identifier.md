@@ -64,6 +64,11 @@ Today the only identities that span games are platform accounts (PlayStation, Xb
 - Prototype resolving each method in GDScript and in TypeScript.
 - Check which cryptographic algorithms each engine supports out of the box ([P-0025](P-0025-developer-adoption-cost.md)).
 
+## Decisions so far
+
+- [ADR-0004](../docs/decisions/ADR-0004-compose-existing-open-standards.md): we build on existing open standards (here, decentralized identifiers) rather than inventing a new identifier format.
+- [ADR-0005](../docs/decisions/ADR-0005-never-require-blockchains-tokens-or-wallets.md): no blockchain, token or wallet may ever be required; identifier methods that use a ledger are allowed only as options.
+
 ## References
 
 - [W3C DID 1.0](https://www.w3.org/TR/did-1.0/) · [DID 1.1](https://www.w3.org/TR/did-1.1/)

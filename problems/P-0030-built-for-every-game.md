@@ -60,6 +60,10 @@ An online game signs claims on its servers, where its keys are safe. A fully off
 - Developers from different genres, platforms and studio sizes: describe what would stop *your* game from adopting this.
 - Benchmark signature verification on low-end phones and older consoles (public specifications only).
 
+## Decisions so far
+
+- [ADR-0003](../docs/decisions/ADR-0003-universal-scope-built-in-risk-order.md): sets the universal scope that this problem turns into concrete requirements.
+
 ## References
 
 - [Problem statement](../docs/problem-statement.md) · [Design principles](../docs/design-principles.md)

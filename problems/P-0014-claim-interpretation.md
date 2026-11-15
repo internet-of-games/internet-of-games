@@ -65,6 +65,10 @@ Optionally, issuers could publish hints such as difficulty or rarity ("3% of pla
 - Propose rule-format examples for different genres.
 - Collect interesting existing examples where one game recognizes progress from another.
 
+## Decisions so far
+
+- [ADR-0008](../docs/decisions/ADR-0008-continuity-as-signed-claims-not-state.md): continuity travels as signed claims, and each receiving game interprets them under its own rules.
+
 ## References
 
 - [prior-art.md](../docs/prior-art.md) · [portability-matrix.md](../docs/portability-matrix.md)

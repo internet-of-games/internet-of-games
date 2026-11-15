@@ -2,7 +2,7 @@
 
 Each problem doc describes one sub-problem of the [mission](../docs/problem-statement.md#the-mission): why it matters, what already exists, the constraints, what "solved enough" means, candidate directions, and numbered open questions.
 
-**How to reference them:** use the ID, such as `P-0008`, or a question ID, such as `P-0008-Q2`, in issues, pull requests, discussions and commit messages.
+**How to reference them:** use the ID, such as `P-0008`, or a question ID, such as `P-0008-Q2`, in issues, pull requests, discussions and commit messages. Decisions have IDs too, such as `ADR-0004` (see [docs/decisions](../docs/decisions/README.md)). Run `make work` to list unclaimed problems in roadmap order, and `make questions` to list every open question.
 
 ## Phase 0: foundations
 

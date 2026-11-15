@@ -6,7 +6,7 @@ phase: 0
 status: open
 difficulty: high
 champion: unassigned
-related: [P-0019, P-0021, P-0025]
+related: [P-0001, P-0019, P-0020, P-0021, P-0025, P-0028, P-0030]
 last_reviewed: 2026-11-15
 ---
 
@@ -55,6 +55,10 @@ Large publishers profit from keeping players inside their own ecosystems. Take-T
 - If you run a game, share (in aggregate) how many players drop off during character creation or onboarding.
 - Draft an interview guide for developers.
 - Collect public examples of cross-promotions between unrelated games, and what they achieved.
+
+## Decisions so far
+
+- [ADR-0003](../docs/decisions/ADR-0003-universal-scope-built-in-risk-order.md): the project's scope is a universal standard for every game, delivered in layers ordered by risk.
 
 ## References
 
