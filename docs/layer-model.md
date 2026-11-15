@@ -1,18 +1,18 @@
-# Layer model
+# Layer model: the Internet of Games stack
 
-*Last reviewed: 2026-11-15. This is a thinking tool, not a specification.*
+*Last reviewed: 2026-11-15. This is the planned shape of the standard; it isn't a specification yet.*
 
-"Moving a character between games" is really several separate problems stacked on top of each other. Separating them into layers keeps the hard parts, like economies and shared world state, from blocking the parts we can do now.
+The standard is a stack of layers, like the layers of the internet. Each game uses the layers it needs: a small game might use only identity and appearance, while a large one uses all of them. Building the layers in order of risk lets the hard parts, such as economies and shared world state, mature without blocking what we can do now.
 
 ```mermaid
 flowchart TB
-    L6["6 · World and simulation<br/>persistent consequences, traveling AI characters<br/>(research)"]
-    L5["5 · Ownership and economy<br/>entitlements, then (maybe) value transfer<br/>(Phase 2 / research)"]
-    L4["4 · Presence and travel<br/>handoff between games, friends, discovery<br/>(Phase 2–3)"]
+    L6["6 · World and simulation<br/>persistent consequences, traveling AI characters<br/>(research, then Phase 5)"]
+    L5["5 · Ownership and economy<br/>rewards, cross-game ownership, then value transfer<br/>(Phases 2–5)"]
+    L4["4 · Travel and links<br/>world addresses, handoff, friends, discovery<br/>(Phase 2–3)"]
     L3["3 · History<br/>signed claims, interpretation, trust, revocation<br/>(Phase 1)"]
     L2["2 · Appearance<br/>avatar baseline, budgets, rights, cross-style<br/>(Phase 1–2)"]
     L1["1 · Identity<br/>identifier, account linking, privacy, recovery, age<br/>(Phase 1–2)"]
-    L0["0 · Governance and trust<br/>neutral rules, IP policy, conformance, safety<br/>(Phase 0+)"]
+    L0["0 · Governance and trust<br/>neutral rules, IP, conformance, safety, universality<br/>(Phase 0+)"]
     L6 --> L5 --> L4 --> L3 --> L2 --> L1 --> L0
 ```
 
@@ -20,8 +20,8 @@ Each layer depends only on the layers below it. **Phase 1 needs layers 0 to 3.**
 
 ## Layer 0: Governance and trust
 
-Who sets the rules, how the IP works, what "compatible" means, and how safety is handled.
-Problems: [P-0001](../problems/P-0001-neutral-governance-and-ip.md), [P-0002](../problems/P-0002-why-would-a-game-join.md), [P-0024](../problems/P-0024-durability-when-services-die.md), [P-0025](../problems/P-0025-developer-adoption-cost.md), [P-0026](../problems/P-0026-conformance-and-interop-testing.md).
+Who sets the rules, how the IP works, what "compatible" means, how safety is handled, and how the standard stays usable by every kind of game.
+Problems: [P-0001](../problems/P-0001-neutral-governance-and-ip.md), [P-0002](../problems/P-0002-why-would-a-game-join.md), [P-0024](../problems/P-0024-durability-when-services-die.md), [P-0025](../problems/P-0025-developer-adoption-cost.md), [P-0026](../problems/P-0026-conformance-and-interop-testing.md), [P-0030](../problems/P-0030-built-for-every-game.md).
 
 ## Layer 1: Identity
 
@@ -38,14 +38,14 @@ Problems: [P-0008](../problems/P-0008-avatar-baseline.md), [P-0009](../problems/
 Signed facts about what the player did, how other games interpret them, and how trust and revocation work.
 Problems: [P-0013](../problems/P-0013-portable-claims.md), [P-0014](../problems/P-0014-claim-interpretation.md), [P-0015](../problems/P-0015-issuer-trust-revocation.md), [P-0016](../problems/P-0016-portable-reputation.md).
 
-## Layer 4: Presence and travel
+## Layer 4: Travel and links
 
-Moving between games, finding friends, finding games.
-Problems: [P-0017](../problems/P-0017-world-handoff.md), [P-0018](../problems/P-0018-friends-and-presence.md), [P-0027](../problems/P-0027-discovery.md).
+Addresses for worlds and the places inside them, links between worlds, moving between games, finding friends and finding games. This is the layer that turns separate games into one connected universe.
+Problems: [P-0017](../problems/P-0017-world-handoff.md), [P-0018](../problems/P-0018-friends-and-presence.md), [P-0027](../problems/P-0027-discovery.md), [P-0029](../problems/P-0029-world-addressing-and-links.md).
 
 ## Layer 5: Ownership and economy
 
-Rewards that cross games as entitlements; value transfer only after research; platform-holder rules.
+Rewards that cross games as entitlements first. Then purchased and licensed items that travel once rights holders and platforms opt in. Value transfer comes after research. Platform-holder rules apply throughout.
 Problems: [P-0019](../problems/P-0019-cross-game-entitlements.md), [P-0020](../problems/P-0020-connected-economies.md), [P-0021](../problems/P-0021-platform-holder-rules.md).
 
 ## Layer 6: World and simulation

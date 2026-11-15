@@ -6,7 +6,7 @@ phase: 3
 status: open
 difficulty: medium
 champion: unassigned
-related: [P-0017, P-0019]
+related: [P-0017, P-0019, P-0029]
 last_reviewed: 2026-11-15
 ---
 
@@ -26,7 +26,7 @@ The web works because anyone can publish and anyone can link. If discovery runs 
 
 ## A sketch
 
-- **A game manifest** published at a well-known URL on the game's own website. It lists which passport features the game accepts and issues, and any reward offers ([P-0019](P-0019-cross-game-entitlements.md)).
+- **A game manifest** published at a well-known URL on the game's own website, reachable from the game's world addresses ([P-0029](P-0029-world-addressing-and-links.md)). It lists which passport features the game accepts and issues, and any reward offers ([P-0019](P-0019-cross-game-entitlements.md)).
 - **Open directories:** any number of them, run by anyone, all built from the same manifests.
 - **"Where can I use this?"**: a player's passport app can ask directories which games honor a particular credential.
 - **In-game portals** ([P-0017](P-0017-world-handoff.md)).

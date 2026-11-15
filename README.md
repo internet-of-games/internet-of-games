@@ -1,26 +1,32 @@
 # Internet of Games
 
-**One character. Many independent games. No single owner.**
+**The open standard for a connected gaming world. One identity across every game. Worlds that link together. Owned by no one.**
 
-Today every game is its own universe. Starting a new game means creating a new person from scratch, and that person's name, look and history stay locked inside that one game. The industry has already shown that people want one persistent identity across many experiences: Roblox and Fortnite deliver that at enormous scale, but only **inside one company's platform**. Nobody has made it work **between** games built by different companies, on different engines, with different servers.
+Today every game is an island. Your character, your look, the things you've earned and bought, your history and your friends are all locked inside each game, and games have no common way to connect to one another. The industry has already shown what players want: Roblox and Fortnite let people carry one identity across thousands of experiences, at enormous scale. But they do it **inside one company's platform**, and nothing connects those platforms to each other or to the rest of gaming.
 
-**Internet of Games** is an open community working on the building blocks for that. One question guides the work:
+**Internet of Games** is an open community building the **universal standard underneath a connected gaming world**. It's a common foundation that any game can build on, no matter who made it, what engine it uses or which platform it runs on. Web standards did this for websites; we want to do it for games.
 
-> **What is the smallest open standard, and the smallest working prototype, that would let two independently developed games recognize the same player character and preserve meaningful continuity between them?**
+## The mission
+
+> **Build the open, universal standard that connects every game into one persistent universe. A player's identity, appearance, possessions, history and relationships travel with them, worlds link to each other the way websites do, and every game, from the biggest blockbuster to a one-person project, can build on it.**
+
+That's the destination, and we'll get there by proving one layer at a time. The first milestone is small on purpose, because a small proof that works is more convincing than a big plan:
+
+> **First milestone:** two games built by different teams on different engines that recognize the same player, show the same avatar, and honor an achievement earned in the other game, with no shared servers.
 
 ## Status: Phase 0, defining the problem
 
-There's no spec and no code yet, on purpose. This repository currently holds the **problem docs**. They cover exactly what the problem is, why it's still unsolved in late 2026, what already exists, and a numbered list of sub-problems anyone can pick up. Specs and reference code will live here too once Phase 1 begins (see [ROADMAP.md](ROADMAP.md)).
+There's no spec and no code yet, on purpose. Right now this repository holds the **problem docs**: what the problem is, why it's still unsolved in late 2026, what already exists, and a numbered list of sub-problems anyone can pick up. Specifications and reference code will live here too as the phases progress (see [ROADMAP.md](ROADMAP.md)).
 
 ## Start here
 
 | If you want to… | Read |
 |---|---|
 | Get the idea in five minutes | [VISION.md](VISION.md) |
-| Know why big publishers aren't already doing this | [Why doesn't NBA 2K plug into GTA VI?](docs/why-not-yet.md) |
+| Know why the biggest games aren't connected already | [Why doesn't NBA 2K plug into GTA VI?](docs/why-not-yet.md) |
 | See the precise problem, scope and success criteria | [Problem statement](docs/problem-statement.md) |
 | See what exists today | [Landscape, late 2026](docs/landscape-2026.md) · [Prior art](docs/prior-art.md) · [Standards map](docs/standards-map.md) |
-| Understand the proposed shape of a solution | [Layer model](docs/layer-model.md) · [What should travel](docs/portability-matrix.md) · [Design principles](docs/design-principles.md) |
+| Understand the shape of the standard | [Layer model](docs/layer-model.md) · [What should travel](docs/portability-matrix.md) · [Design principles](docs/design-principles.md) |
 | Pick a problem to work on | [problems/](problems/README.md) |
 | See the plan | [ROADMAP.md](ROADMAP.md) |
 | Contribute | [CONTRIBUTING.md](CONTRIBUTING.md) |
@@ -30,48 +36,53 @@ The full reading guide is in [docs/README.md](docs/README.md).
 ## The idea in one picture
 
 ```mermaid
-flowchart LR
-    subgraph Player["Held by the player"]
-        PP["Player passport<br/>(working name)"]
-        AV["Avatar file<br/>glTF / VRM"]
-        CL["Signed claims<br/>e.g. achievements"]
-    end
-    PP --> AV
-    PP --> CL
-    PP -->|"same player, same look"| GA["Game A<br/>any engine, any company"]
-    PP -->|"same player, same look"| GB["Game B<br/>any engine, any company"]
-    GA -->|"signs: cleared the final boss"| CL
-    CL -->|"Game B decides what it means here"| GB
+flowchart TB
+    ME["You<br/>identity · appearance · possessions<br/>history · friends · preferences"]
+    STD["Internet of Games standard<br/>open · universal · owned by no one"]
+    ME <--> STD
+    STD <--> G1["Blockbuster<br/>live-service games"]
+    STD <--> G2["Indie and<br/>mobile games"]
+    STD <--> G3["Sports, RPGs, sims<br/>and social worlds"]
+    STD <--> G4["New AI-driven<br/>worlds"]
+    G1 -. links and travel .-> G3
+    G2 -. links and travel .-> G4
 ```
 
-Each game keeps its own rules, economy and art style. What travels is small: **who you are, what you look like, and verifiable facts about what you've done.** Each receiving game decides what those facts mean in its own world. Nintendo's amiibo already works this way within a single company: one figure works in many games, and each game decides what it does ([details](docs/prior-art.md#nintendo-amiibo)).
+Every game keeps its own rules, economy and art style. The standard defines how the things that make up *you* travel between games, and how worlds link to each other. Each game decides what those things mean in its own world. Nintendo's amiibo already works this way inside one company: one figure works in many games, and each game decides what it does ([details](docs/prior-art.md#nintendo-amiibo)).
 
-## What we're building, and what we're not
+## What the standard covers
 
-**What we're building (open and vendor-neutral):**
+The standard is a stack of layers ([layer model](docs/layer-model.md)), and each game uses the layers it needs:
 
-- a small, portable *player document* that points to things the player controls
-- conventions for a portable avatar, based on the open glTF and VRM formats
-- a vocabulary for signed, portable achievements and history, based on W3C Verifiable Credentials and Open Badges 3.0
-- validators, test files and SDKs, plus two small independent demo games that prove the approach works
+| Layer | What it lets games do | When |
+|---|---|---|
+| **Identity** | Recognize the same player everywhere, privately and safely | First |
+| **Appearance** | Show the player's look, adapted to each game's art style | First |
+| **History** | Honor what the player did in other games | First |
+| **Travel and links** | Let players move between worlds, and let worlds link to each other | Next |
+| **Ownership** | Let things players earn or buy carry across games | Later |
+| **Economy** | Let value move between games | Research |
+| **Shared worlds** | Let actions have consequences across games, and let AI characters travel | Research |
 
-**What we're not building:**
+The order reflects risk, not importance. Identity, appearance and history can work without anyone sharing an economy or a license, so they come first. Ownership and economies come later because they carry the most legal and business risk ([here's why](docs/why-not-yet.md)).
 
-- a game, a launcher, a store, or a platform everyone has to join
-- anything that *requires* crypto, tokens or a wallet
-- a way to move currencies, stats or licensed content between games ([here's why](docs/portability-matrix.md))
-- anything affiliated with the companies named in these docs ([TRADEMARKS.md](TRADEMARKS.md))
+## What it is not
+
+- **Not one company's platform, store or launcher.** It's an open standard that platforms, games and services can all build on.
+- **Not a replacement for each game's rules.** Every game still decides what imported things mean in its world.
+- **Not crypto.** No blockchain, token or wallet is ever required.
+- **Not affiliated** with any company named in these docs ([TRADEMARKS.md](TRADEMARKS.md)).
 
 ## Problem IDs
 
-Every sub-problem has a stable ID (`P-0001` to `P-0028`), and every open question inside a problem doc has its own ID (for example `P-0008-Q2`). Use these IDs in issues, pull requests and discussions so conversations stay linked to the docs. The full index is in [problems/README.md](problems/README.md).
+Every sub-problem has a stable ID (`P-0001` to `P-0030`), and every open question inside a problem doc has its own ID too, for example `P-0008-Q2`. Please use these IDs in issues, pull requests and discussions so conversations stay linked to the docs. The index is in [problems/README.md](problems/README.md).
 
 ## Get involved
 
-- **Discuss.** Use GitHub Discussions on this repository.
-- **Fix or add evidence.** Every factual claim should carry a source. If you find one that's wrong or out of date, open an issue with the *Evidence / correction* template.
-- **Propose a problem.** Use the *New problem* issue template.
-- **Already working in this space?** That includes OMI, Khronos, the VRM Consortium, W3C, DIF, the OpenID Foundation, the Metaverse Standards Forum and game studios. We want to *build on* your work, not compete with it, so please open a discussion.
+- **Discuss:** start a thread in GitHub Discussions on this repository.
+- **Fix or add evidence:** every factual claim should have a source. If you find one that's wrong or out of date, open an issue with the *Evidence / correction* template.
+- **Propose a problem:** open an issue with the *New problem* template.
+- **Already working in this space?** That includes OMI, Khronos, the VRM Consortium, W3C, DIF, the OpenID Foundation, the Metaverse Standards Forum, game studios and platforms. We want to *build on* your work, not compete with it, so please open a discussion.
 
 ## Licenses
 

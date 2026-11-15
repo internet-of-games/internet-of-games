@@ -2,7 +2,7 @@
 
 *Last reviewed: 2026-11-15. This is a snapshot. Numbers, statuses and repository activity will move; corrections are welcome.*
 
-**Summary:** the "metaverse" pitch of 2021 has faded. In its place there are two things. Walled gardens keep getting bigger, and a quiet layer of open standards keeps maturing. Nobody has yet *composed* those open standards into a portable player identity that independent games actually use. That gap is where this project sits.
+**Summary:** the "metaverse" pitch of 2021 has faded. In its place there are two things. Walled gardens keep getting bigger, and a quiet layer of open standards keeps maturing. Nobody has yet *composed* those open standards into a shared foundation that games actually build on. That gap is where this project sits.
 
 ## 1. Walled gardens are winning
 
@@ -89,5 +89,5 @@ More detail is in [legal-and-policy.md](legal-and-policy.md).
 1. **Don't compete with walled gardens on content.** Build the neutral layer they don't have an incentive to build.
 2. **Don't invent new standards where good ones exist.** The work is *composition*: a gaming profile across Verifiable Credentials, DIDs, OpenID and glTF/VRM, plus working code.
 3. **Don't depend on any company's service**, including ours. Ready Player Me showed what happens otherwise.
-4. **Start where interoperability is an advantage.** That means small and mid-size games, web games and open-source engines.
+4. **Start where interoperability is an advantage, then grow toward every game.** Small and mid-size games, web games and open-source engines come first; the standard has to be ready for the biggest games too ([P-0030](../problems/P-0030-built-for-every-game.md)).
 5. **Work upstream.** OMI, Khronos/VRM and the W3C and OpenID communities are active, so contribute to them instead of forking.

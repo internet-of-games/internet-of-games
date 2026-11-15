@@ -24,9 +24,16 @@ Every hypothesis needs evidence from demos, from developer interviews, or from d
 - **H5, compliance.** Reusing a privacy-preserving age signal costs less than running separate age checks in every game.
 - **H6, marketing.** Being "Internet of Games compatible" is a selling point in its own right, at least for indie, social and roleplay games.
 
-## Why small games first
+## Small games first, every game eventually
 
-For a large publisher, its existing player base and its control over identity are assets, and interoperability puts both at risk ([why-not-yet.md](why-not-yet.md)). For a small or mid-size game, the situation is reversed: it has no captive audience, so joining a larger network is upside. The web grew the same way, with small sites linking to each other long before large portals joined in.
+The goal is every game, the biggest included ([the mission](problem-statement.md#the-mission)). The *order* matters, though. For a large publisher, its existing player base and its control over identity are assets, and interoperability puts both at risk ([why-not-yet.md](why-not-yet.md)). For a small or mid-size game it's the reverse: there's no captive audience, so joining a larger network is all upside. The web grew the same way, with small sites linking to each other long before large portals joined in.
+
+What changes a large publisher's calculation:
+
+- **A network big enough to matter:** players who arrive with an identity ready, and a reason to come back.
+- **Lower costs:** shared identity, avatars and age checks instead of building and maintaining their own.
+- **Their own portfolio:** the standard as the easiest way to connect *their own* titles ([P-0030](../problems/P-0030-built-for-every-game.md)).
+- **Regulation and player expectations** that make portability the norm ([legal-and-policy.md](legal-and-policy.md)).
 
 ## Business models *around* an open standard
 

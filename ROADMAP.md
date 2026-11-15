@@ -1,6 +1,6 @@
 # Roadmap
 
-The roadmap is organized by **what we can prove**, not by dates. Each phase ends with something working that anyone can run. The phase numbers match the `phase` field in each [problem doc](problems/README.md).
+The destination is a **universal standard that every game builds on** ([the mission](docs/problem-statement.md#the-mission)). The roadmap is organized by **what we can prove** along the way, not by dates. Each phase ends with something working that anyone can run. The phase numbers match the `phase` field in each [problem doc](problems/README.md).
 
 ## Phase 0: Define the problem *(now)*
 
@@ -17,7 +17,7 @@ The roadmap is organized by **what we can prove**, not by dates. Each phase ends
 
 ## Phase 1: Same character, two games
 
-**Goal:** the smallest end-to-end proof. We'll build two small games, independently, on different engines (for example one in Godot and one on the web with three.js). Together they must:
+**Goal:** the first end-to-end proof that the foundation works. We'll build two small games, independently, on different engines (for example one in Godot and one on the web with three.js). Together they must:
 
 1. accept the same **player document** (schema v0)
 2. recognize the same player, with the player's consent, using an identifier no single company controls
@@ -27,7 +27,7 @@ The roadmap is organized by **what we can prove**, not by dates. Each phase ends
 
 **Deliverables:** player document schema v0, achievement credential profile v0, avatar baseline profile v0, a validator CLI, test vectors (sample passports, avatars and credentials, including deliberately broken ones), two demo games and a written threat model.
 
-**Problems that must reach "solved enough":** [P-0003](problems/P-0003-player-identifier.md), [P-0004](problems/P-0004-account-linking.md), [P-0006](problems/P-0006-privacy-unlinkability.md), [P-0008](problems/P-0008-avatar-baseline.md), [P-0010](problems/P-0010-avatar-budgets-and-file-safety.md), [P-0011](problems/P-0011-rights-licensing-likeness.md), [P-0013](problems/P-0013-portable-claims.md), [P-0014](problems/P-0014-claim-interpretation.md), [P-0015](problems/P-0015-issuer-trust-revocation.md), [P-0024](problems/P-0024-durability-when-services-die.md), [P-0025](problems/P-0025-developer-adoption-cost.md) and [P-0026](problems/P-0026-conformance-and-interop-testing.md).
+**Problems that must reach "solved enough":** [P-0003](problems/P-0003-player-identifier.md), [P-0004](problems/P-0004-account-linking.md), [P-0006](problems/P-0006-privacy-unlinkability.md), [P-0008](problems/P-0008-avatar-baseline.md), [P-0010](problems/P-0010-avatar-budgets-and-file-safety.md), [P-0011](problems/P-0011-rights-licensing-likeness.md), [P-0013](problems/P-0013-portable-claims.md), [P-0014](problems/P-0014-claim-interpretation.md), [P-0015](problems/P-0015-issuer-trust-revocation.md), [P-0024](problems/P-0024-durability-when-services-die.md), [P-0025](problems/P-0025-developer-adoption-cost.md), [P-0026](problems/P-0026-conformance-and-interop-testing.md) and [P-0030](problems/P-0030-built-for-every-game.md), whose written universality requirements keep Phase 1 from ruling out any kind of game.
 
 The exact success criteria are in the [problem statement](docs/problem-statement.md#what-success-looks-like-for-phase-1).
 
@@ -36,6 +36,7 @@ The exact success criteria are in the [problem statement](docs/problem-statement
 **Goal:** prove the system works for a team that didn't design it.
 
 - **World-to-world handoff:** arrive in Game B from Game A with context ([P-0017](problems/P-0017-world-handoff.md))
+- **World addresses and links:** a link in one game opens a specific place in another, just as one web page links to another ([P-0029](problems/P-0029-world-addressing-and-links.md))
 - **Cross-game rewards** granted as entitlements, not currency ([P-0019](problems/P-0019-cross-game-entitlements.md))
 - **Cross-style avatars:** a stylized game shows a recognizable version of a realistic avatar ([P-0009](problems/P-0009-cross-style-translation.md))
 - **Age and eligibility signals** that don't reveal identity ([P-0007](problems/P-0007-age-and-eligibility.md))
@@ -54,14 +55,25 @@ The exact success criteria are in the [problem statement](docs/problem-statement
 - Upstream the mature pieces to the right standards bodies, and move governance to a neutral home once the community is big enough to need one ([P-0001](problems/P-0001-neutral-governance-and-ip.md))
 - Approach mid-size studios and publishers with evidence from Phases 1 and 2 ([P-0002](problems/P-0002-why-would-a-game-join.md))
 
-## Research tracks (no committed phase)
+## Phase 4: The baseline for every game
 
-These are part of the [vision](VISION.md), but they're too hard or too risky to commit to yet, so we're keeping them as open research:
+**Goal:** the standard becomes what every game builds on.
 
+- Version 1.0 of the standard, under neutral governance, with conformance testing and a "compatible" mark ([P-0001](problems/P-0001-neutral-governance-and-ip.md), [P-0026](problems/P-0026-conformance-and-interop-testing.md))
+- Built-in support in major engines, so new games get it by default
+- Adoption by large publishers and platforms, including publishers connecting their *own* portfolios ([P-0030](problems/P-0030-built-for-every-game.md))
+- **Cross-game ownership** beyond rewards: purchased and licensed items that travel when rights holders and platforms opt in ([P-0011](problems/P-0011-rights-licensing-likeness.md), [P-0019](problems/P-0019-cross-game-entitlements.md), [P-0021](problems/P-0021-platform-holder-rules.md))
+
+## Phase 5: The full universe
+
+**Goal:** the rest of the [vision](VISION.md), one persistent universe.
+
+- **Connected economies**, once the legal, financial and anti-fraud picture is clear ([P-0020](problems/P-0020-connected-economies.md))
 - **Persistent consequences across games** ([P-0022](problems/P-0022-persistent-consequences.md))
 - **AI characters that travel between games** ([P-0023](problems/P-0023-traveling-ai-characters.md))
-- **Connected economies.** Not until the legal and regulatory picture is clear ([P-0020](problems/P-0020-connected-economies.md)).
 - **Portable reputation and moderation standing** ([P-0016](problems/P-0016-portable-reputation.md))
+
+This work **starts now as research** because it's the hardest and riskiest part. It moves into concrete phases as the research matures.
 
 ## What would change this roadmap
 

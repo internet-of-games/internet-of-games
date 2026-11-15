@@ -10,7 +10,7 @@ Why do video games exist as completely separate universes?
 
 Imagine creating a character once and then living as that person across many games. You could start in a sprawling open-world city, pursue a professional basketball career, then ride into a frontier western, **all as the same person**. Instead of building a stranger from scratch every time you pick up a new game, you'd have one identity that follows you from experience to experience.
 
-Science fiction has imagined this for decades, most famously with the OASIS in *Ready Player One*. But in that story, one company owns the entire world. We want the open version: an **Internet of Games**, where independently built games join a larger persistent universe the way websites join the web, with no single owner.
+Science fiction has imagined this for decades, most famously with the OASIS in *Ready Player One*. But in that story, one company owns the entire world. We want the open version: an **Internet of Games**, where every game, from the biggest blockbusters to one-person projects, can join a larger persistent universe the way websites join the web, with no single owner.
 
 ## 2. What makes it different
 
@@ -61,18 +61,29 @@ Roblox and similar platforms prove that one platform can contain thousands of ex
 | A platform with thousands of separate games | A universe of connected experiences |
 |---|---|
 | One company owns the identity, the store and the rules | The identity belongs to the player; games join voluntarily |
-| Your character stays inside that platform | Your character travels between independently built games |
+| Your character stays inside that platform | Your character travels to any game that supports the standard |
 | Leaving the platform means losing everything | Leaving one game doesn't erase who you are |
 
-## 7. A realistic first step
+## 7. The baseline for every game
 
-We won't start by building the OASIS, or by persuading the biggest publishers to merge their games ([here's why that isn't happening](docs/why-not-yet.md)). We'll start with the smallest thing that proves the idea:
+This isn't meant to be a niche for small games. If it works, it should become the **baseline that every game builds on**, the way every website builds on web standards:
 
-> **Two small games, built independently, that both recognize the same player, show the same avatar, and honor one achievement earned in the other.**
+- **Every kind of game:** blockbusters and one-person projects; sports, RPGs, shooters, sims and social worlds; online and offline.
+- **Every platform:** console, PC, mobile, web and VR.
+- **Every relationship between games:** games from different companies, and games from the same company. A publisher should find the standard the easiest way to connect its own titles, too.
+- **Everything players care about,** not just their character: their look, their possessions, their history, their friends and their preferences, plus links between the worlds themselves.
 
-A natural next step would be a **connected sports universe**: separate baseball, basketball and football management sims, possibly from different developers, sharing athletes, careers and histories. Focusing on simulation and management rather than big-budget graphics keeps it small enough to build, while still showing what continuity between games feels like.
+A standard only becomes the baseline if it's open, cheap to adopt, safe and owned by no one. Those are the rules we hold ourselves to ([design principles](docs/design-principles.md)).
 
-## 8. The long-term picture
+## 8. How we get there
+
+The destination is huge, so the steps are small. We won't start by building the OASIS, or by asking the biggest publishers to connect their games ([here's why that isn't happening yet](docs/why-not-yet.md)). We'll start with the smallest proof that the foundation works:
+
+> **Two games, built by different teams, that both recognize the same player, show the same avatar, and honor one achievement earned in the other.**
+
+Then we add layers and games, one proof at a time. A natural early showcase is a **connected sports universe**: separate baseball, basketball and football management sims, possibly from different developers, sharing athletes, careers and histories. Its focus on simulation and management rather than big-budget graphics keeps it buildable, while still showing what continuity across games feels like.
+
+## 9. The long-term picture
 
 Instead of buying a separate world every time we play something new, we'd each keep one ongoing digital existence. Developers would specialize: some in sports sims, others in political systems, adventure worlds, businesses or entirely new kinds of play. A common identity and an interoperable ecosystem would connect them all, and AI would make many more of these worlds possible.
 

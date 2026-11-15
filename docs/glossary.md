@@ -54,4 +54,6 @@
 
 **VRM.** A glTF-based format for humanoid avatars, stewarded by the VRM Consortium. It adds a standard rig, expressions, physics for hair and cloth (spring bones), and license metadata.
 
+**World address.** A stable, shareable address for a game world or a place inside it, similar to a web page's URL. See [P-0029](../problems/P-0029-world-addressing-and-links.md).
+
 **Walled garden.** A platform where identity, content and purchases stay inside the platform owner's control.

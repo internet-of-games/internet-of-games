@@ -97,4 +97,11 @@ In every case, **identity, appearance and history stay inside one company's ecos
 
 ## Where this project fits
 
-We can't make GTA and NBA 2K connect, and we won't pretend otherwise. What we **can** do is build open, boring, safe building blocks that make the first step cheap for any game. Working demos can then prove that independent games can share a player without sharing an economy, a license or a server. If the building blocks are good, adoption can grow from the bottom up, the way the web did.
+Our goal is a standard so useful, safe and cheap that **every** game chooses to build on it, the biggest included. We can't force that, and the walls described above are real. So the standard is designed around them:
+
+- It **never asks a game to give up** its economy, its licenses or its rules. Each game decides what imported things mean in its world.
+- It **starts with what players own**: their identity, their look and verifiable facts about what they've done. Ownership and economies come later, on their owners' terms.
+- It **proves its value first where adoption is easiest**, then grows, the way the web grew from a few small sites to everything.
+- It's **ready for the moments that change an industry's mind**: regulation, player pressure, or one hit game adopting it.
+
+Cross-play went from "never" to standard practice within a few years. A shared foundation for identity and continuity can follow the same path.

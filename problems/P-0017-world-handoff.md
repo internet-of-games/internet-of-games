@@ -6,7 +6,7 @@ phase: 2
 status: open
 difficulty: medium
 champion: unassigned
-related: [P-0006, P-0021, P-0027]
+related: [P-0006, P-0021, P-0027, P-0029]
 last_reviewed: 2026-11-15
 ---
 
@@ -32,6 +32,7 @@ A ticket contains:
 - the credentials the player chose to bring
 - the origin game, and an optional *intent*, such as "arrive at the stadium" or "continue the story"
 - an expiry time and a one-time number to prevent replay
+- the destination: a world address, and optionally a place inside that world ([P-0029](P-0029-world-addressing-and-links.md))
 
 It's delivered as a link or deep link. Game B verifies it and greets the player. If Game B isn't installed, the link falls back to a store or web page.
 

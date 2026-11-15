@@ -1,6 +1,6 @@
 # Problem index
 
-Each problem doc describes one sub-problem of the [central question](../docs/problem-statement.md#the-central-question): why it matters, what already exists, the constraints, what "solved enough" means, candidate directions, and numbered open questions.
+Each problem doc describes one sub-problem of the [mission](../docs/problem-statement.md#the-mission): why it matters, what already exists, the constraints, what "solved enough" means, candidate directions, and numbered open questions.
 
 **How to reference them:** use the ID, such as `P-0008`, or a question ID, such as `P-0008-Q2`, in issues, pull requests, discussions and commit messages.
 
@@ -27,6 +27,7 @@ Each problem doc describes one sub-problem of the [central question](../docs/pro
 | [P-0024](P-0024-durability-when-services-die.md) | Durability when services die | cross-cutting | medium | open |
 | [P-0025](P-0025-developer-adoption-cost.md) | Developer adoption cost | cross-cutting | medium | open |
 | [P-0026](P-0026-conformance-and-interop-testing.md) | Conformance and interoperability testing | cross-cutting | medium | open |
+| [P-0030](P-0030-built-for-every-game.md) | Built for every game | cross-cutting | high | open |
 
 ## Phase 2: travel, rewards and a third team
 
@@ -37,6 +38,7 @@ Each problem doc describes one sub-problem of the [central question](../docs/pro
 | [P-0009](P-0009-cross-style-translation.md) | Cross-style appearance translation | appearance | research | open |
 | [P-0012](P-0012-moderating-imported-identity.md) | Moderating imported names and avatars | appearance | high | open |
 | [P-0017](P-0017-world-handoff.md) | World-to-world handoff | presence | medium | open |
+| [P-0029](P-0029-world-addressing-and-links.md) | World addressing and links | presence | high | open |
 | [P-0019](P-0019-cross-game-entitlements.md) | Cross-game rewards as entitlements | ownership | medium | open |
 | [P-0028](P-0028-portable-preferences.md) | Portable player preferences (accessibility, comfort and controls) | identity | low | open |
 
@@ -48,7 +50,7 @@ Each problem doc describes one sub-problem of the [central question](../docs/pro
 | [P-0021](P-0021-platform-holder-rules.md) | Platform-holder rules | ownership | high | open |
 | [P-0027](P-0027-discovery.md) | Discovery: finding participating games | presence | medium | open |
 
-## Research tracks
+## Research tracks (toward Phase 5)
 
 | ID | Problem | Layer | Difficulty | Status |
 |---|---|---|---|---|

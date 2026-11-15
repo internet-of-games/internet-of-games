@@ -63,3 +63,8 @@ If adding the basics takes more than about a day, or needs a server, it won't ha
 
 When another community already owns a layer, such as glTF extensions at OMI or Khronos, or credentials at W3C, DIF or OpenID, contribute there instead of forking.
 *Learned from:* the fragmentation of the 2021–2023 metaverse era.
+
+## 13. Built for every game
+
+The standard must work for every kind of game: blockbusters and one-person projects, any genre, engine, platform, age rating or business model, online or fully offline, and between games from different companies or from the same one. Anything that only fits one kind of game belongs in an optional layer, not in the core.
+*Learned from:* the goal itself. A baseline that leaves out whole categories of games isn't a baseline. → [P-0030](../problems/P-0030-built-for-every-game.md)

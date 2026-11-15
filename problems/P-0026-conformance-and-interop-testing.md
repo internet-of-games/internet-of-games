@@ -6,7 +6,7 @@ phase: 1
 status: open
 difficulty: medium
 champion: unassigned
-related: [P-0001, P-0010, P-0015, P-0025]
+related: [P-0001, P-0010, P-0015, P-0025, P-0030]
 last_reviewed: 2026-11-15
 ---
 
