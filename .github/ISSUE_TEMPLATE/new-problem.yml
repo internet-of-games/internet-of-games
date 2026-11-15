@@ -1,0 +1,56 @@
+name: New problem
+description: Propose a sub-problem that isn't covered by an existing problem doc.
+title: "[New problem] "
+labels: ["new-problem"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a problem! Please check the [problem index](https://github.com/internet-of-games/internet-of-games/blob/main/problems/README.md) first to make sure it isn't already covered.
+  - type: textarea
+    id: one-sentence
+    attributes:
+      label: The problem in one sentence
+      description: State the problem, not a solution.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      description: What breaks for players or developers if this stays unsolved?
+    validations:
+      required: true
+  - type: textarea
+    id: existing
+    attributes:
+      label: What exists today
+      description: Prior art, standards or products, with links to sources.
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Layer
+      options:
+        - governance
+        - identity
+        - appearance
+        - history
+        - presence
+        - ownership
+        - world
+        - cross-cutting
+        - not sure
+    validations:
+      required: true
+  - type: input
+    id: related
+    attributes:
+      label: Related problems
+      description: IDs of related problem docs, for example P-0013, P-0019.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: This issue contains no copyrighted third-party material, confidential (NDA) information, personal data or secrets.
+          required: true

@@ -1,0 +1,38 @@
+name: Evidence / correction
+description: Report a factual error, an outdated claim, or a better source.
+title: "[Evidence] "
+labels: ["evidence"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Where
+      description: File and section, or problem ID. For example, docs/landscape-2026.md section 4, or P-0013.
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: What the doc currently says
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What it should say, and why
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Links to primary sources wherever possible.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: My sources are public. Nothing here is confidential or covered by an NDA.
+          required: true
