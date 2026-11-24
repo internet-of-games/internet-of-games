@@ -25,7 +25,7 @@ last_reviewed: 2026-11-24
 
 - **The Khronos glTF Validator** checks a file's structure ([Khronos glTF](https://www.khronos.org/gltf/)).
 - **Platform-specific performance ranks** (polygons, materials, bones and so on), each tied to one platform's rules.
-- **No shared, cross-engine budget profile.**
+- **No shared, cross-engine budget profile.** Candidate numbers for each tier, based on VRChat's public limits, and candidate v0 file rules are proposed in a [spike](../docs/spikes/2026-11-24-avatar-budgets-and-file-rules.md).
 
 ## Constraints
 
@@ -56,6 +56,7 @@ last_reviewed: 2026-11-24
 - **P-0010-Q3:** Is sandboxed parsing practical in each engine?
 - **P-0010-Q4:** Which features (spring bones, expressions) are allowed in the *Light* tier?
 - **P-0010-Q5:** How should validators treat glTF 2.1 files (multi-file scenes and the 64-bit container) before the baseline supports them: reject them, or accept single-file assets only?
+- **P-0010-Q6:** How many morph targets (blend shapes) should each tier allow, given that VRM's facial expressions use them and no public budget exists?
 
 ## Champion brief
 
