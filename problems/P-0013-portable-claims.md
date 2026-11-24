@@ -7,7 +7,7 @@ status: open
 difficulty: medium
 champion: unassigned
 related: [P-0006, P-0014, P-0015, P-0022, P-0024]
-last_reviewed: 2026-11-15
+last_reviewed: 2026-11-24
 ---
 
 # P-0013: Portable achievement and history claims
@@ -53,6 +53,8 @@ This is the core of "meaningful continuity" in the [problem statement](../docs/p
 1. **A strict profile of Open Badges 3.0.** It reuses an existing standard and tools, but brings JSON-LD complexity.
 2. **SD-JWT credentials** with our own small schema. Simpler for game developers and selective disclosure is built in, but it's less standard for achievements.
 3. **Support both**, with a mapping between them. More work, but the widest compatibility.
+
+A [comparison of the formats](../docs/spikes/2026-11-24-credential-formats.md), with measured sizes, suggests SD-JWT credentials with ES256 for Phase 1, using Open Badges 3.0's achievement vocabulary so a mapping stays easy.
 
 ## Open questions
 

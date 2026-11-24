@@ -23,6 +23,7 @@ last_reviewed: 2026-11-24
 ## What exists today
 
 - **Bitstring Status List 1.0** (W3C Recommendation, May 2025) lets issuers revoke or suspend credentials. Verifiers download a compressed list, which hides *which* credential they're checking ([W3C](https://www.w3.org/TR/vc-bitstring-status-list/)).
+- **SD-JWT credentials use a different status mechanism,** the IETF OAuth working group's [status list draft](https://datatracker.ietf.org/doc/draft-ietf-oauth-status-list/), so choosing that format means supporting it too ([comparison](../docs/spikes/2026-11-24-credential-formats.md)).
 - **Domain-bound identifiers** (`did:web`, `did:webvh`) tie an issuer to a web domain the studio controls ([did:webvh](https://identity.foundation/didwebvh/v1.0/)).
 - **Trust lists** are a common pattern in identity systems: a verifier accepts issuers on a list it chooses.
 - **Revocation checks that don't reveal the holder are still an open question for credentials in browsers.** The W3C Digital Credentials work tracks it as an open privacy issue ([#280](https://github.com/w3c-fedid/digital-credentials/issues/280)).

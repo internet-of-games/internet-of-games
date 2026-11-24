@@ -25,6 +25,7 @@ last_reviewed: 2026-11-24
 - **There are implementations for three of our likely targets**, all active in 2026: [UniVRM](https://github.com/vrm-c/UniVRM) (Unity), [three-vrm](https://github.com/pixiv/three-vrm) (web) and [godot-vrm](https://github.com/V-Sekai/godot-vrm) (Godot).
 - **Khronos and the VRM Consortium** are turning VRM concepts into general glTF avatar extensions. The first set was planned for review in late 2026 ([Khronos slides](https://www.khronos.org/assets/uploads/developers/presentations/glTF_2_1_and_Beyond_-_SIGGRAPH_Jul26.pdf)).
 - **glTF 2.1** is in draft. Every glTF 2.0 file stays valid, and the revision adds scenes composed from several files, bounding volumes, thumbnails stored inside the file, and a binary container with 64-bit sizes ([Khronos](https://www.khronos.org/events/gltf-2.1-town-hall)). Those thumbnails could serve as the 2D fallback; composing an avatar from several files needs a safety decision first ([P-0010](P-0010-avatar-budgets-and-file-safety.md)).
+- **Candidate v0 file rules** (a single binary glTF 2.0 file, everything embedded, an extension allowlist, required license fields and thumbnail) are proposed in a [spike](../docs/spikes/2026-11-24-avatar-budgets-and-file-rules.md).
 - **The Metaverse Standards Forum's** Interoperable Characters/Avatars group lists an avatar translation framework, test assets and a validation tool among its deliverables ([MSF](https://metaverse-standards.org/domain-groups/interoperable-characters-avatars/)).
 
 ## Constraints

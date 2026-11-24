@@ -7,7 +7,7 @@ status: open
 difficulty: medium
 champion: unassigned
 related: [P-0004, P-0005, P-0006, P-0024]
-last_reviewed: 2026-11-15
+last_reviewed: 2026-11-24
 ---
 
 # P-0003: A player identifier that no single company owns
@@ -28,6 +28,8 @@ Today the only identities that span games are platform accounts (PlayStation, Xb
 | `did:web` | The identifier resolves to a document on a web domain | Simple and familiar | Whoever controls the domain controls the identity |
 | [`did:webvh`](https://identity.foundation/didwebvh/v1.0/) | `did:web` plus a verifiable history log | Key rotation, can move hosts, auditable history | Still needs some host |
 | [`did:plc`](https://github.com/did-method-plc/did-method-plc) | Signed operations recorded in a directory | Used for every Bluesky account; supports rotation and migration | One directory today, now moving to an independent organization ([AT Protocol blog](https://atproto.com/blog/plc-directory-org)) |
+
+The methods differ in the signatures a game must verify: `did:webvh` 1.0 requires Ed25519, and `did:plc` uses secp256k1 or P-256 keys. Which of those each engine can verify without extra libraries is in a [spike](../docs/spikes/2026-11-24-signature-support-in-engines.md).
 
 ## Constraints
 
@@ -50,6 +52,8 @@ Today the only identities that span games are platform accounts (PlayStation, Xb
 2. **`did:plc` by default.** It's proven at consumer scale, but depends on one directory, even if that directory is independently run.
 3. **`did:key` for Phase 1 only**, with a documented migration to (1) or (2). This is the fastest way to a working demo.
 4. **Several methods behind one resolver library**, with games accepting any method on an allow-list.
+
+A [comparison of the four methods](../docs/spikes/2026-11-24-identifier-methods.md) suggests `did:key` with P-256 keys for the Phase 1 demo, and testing a combination for production: `did:key` per game for private mode, `did:webvh` for public personas.
 
 ## Open questions
 

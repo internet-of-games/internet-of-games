@@ -35,6 +35,8 @@ then grant local title "Veteran of Game A"
 
 Optionally, issuers could publish hints such as difficulty or rarity ("3% of players"). Receiving games are free to ignore them.
 
+A fuller sketch, comparing fixed-shape rules with a general expression language and including offers and examples, is in a [spike](../docs/spikes/2026-11-24-claim-interpretation-rules.md).
+
 ## Constraints
 
 - **The receiving game always decides.** Nothing is obligatory.

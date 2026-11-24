@@ -26,7 +26,7 @@ Standards that can't be tested drift apart, with every implementation reading th
 
 ## Plan
 
-- **`test-vectors/`**: sample passports, avatars and credentials, valid *and* invalid (malformed, oversized, expired, revoked and forged). All synthetic and released under CC0.
+- **`test-vectors/`**: sample passports, avatars and credentials, valid *and* invalid (malformed, oversized, expired, revoked and forged). All synthetic and released under CC0. The avatar cases, and how to generate and share them safely, are designed in a [spike](../docs/spikes/2026-11-24-avatar-test-corpus.md).
 - **A validator CLI** that checks a passport, an avatar or a credential against the profiles.
 - **Conformance levels**, for example:
   - *Level 1: Recognize.* Read a passport and show the avatar or its fallback.

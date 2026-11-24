@@ -39,8 +39,8 @@ Regulators are paying attention too. The European Commission answered the "Stop 
 
 ## What "solved enough" looks like (Phase 1)
 
-- [ ] A **"kill switch" test** that runs both demo games with every project-operated server offline. Recognition, avatar loading and credential verification still work for existing players.
-- [ ] A documented end-of-life procedure for issuers
+- [ ] A **"kill switch" test** that runs both demo games with every project-operated server offline. Recognition, avatar loading and credential verification still work for existing players (procedure: [the kill-switch test](../docs/kill-switch-test.md)).
+- [ ] A documented end-of-life procedure for issuers (first draft in [the kill-switch test](../docs/kill-switch-test.md#draft-the-issuer-end-of-life-procedure))
 - [ ] A test for verifying credentials from an issuer that has shut down
 
 ## Open questions

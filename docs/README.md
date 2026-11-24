@@ -12,13 +12,15 @@ Suggested order for newcomers:
 8. [Layer model](layer-model.md): how the pieces fit together.
 9. [What should travel between games](portability-matrix.md): what carries over, and what deliberately doesn't.
 10. [Design principles](design-principles.md): rules learned from earlier failures.
-11. [Threat model](threat-model.md): what we protect, in priority order, and the threats every proposal must address.
-12. [The business case](business-case.md): why a game would join.
-13. [How interoperability happened elsewhere](interop-history.md): the web, email, phone numbers, banking and cross-play.
-14. [Legal and policy landscape](legal-and-policy.md): rights, ratings, privacy and regulation. This isn't legal advice.
-15. [Sourcing and originality](sourcing-and-originality.md): how we use other people's work, from facts and quotations to credit and licenses.
-16. [Open questions](open-questions.md): cross-cutting questions that don't belong to any one problem.
-17. [Glossary](glossary.md) and [References](references.md).
+11. [Universality requirements](universality-requirements.md): what every design must allow, so that no kind of game is left out.
+12. [Threat model](threat-model.md): what we protect, in priority order, and the threats every proposal must address.
+13. [The kill-switch test](kill-switch-test.md): how we'll prove the standard keeps working after our own servers are gone.
+14. [The business case](business-case.md): why a game would join.
+15. [How interoperability happened elsewhere](interop-history.md): the web, email, phone numbers, banking and cross-play.
+16. [Legal and policy landscape](legal-and-policy.md): rights, ratings, privacy and regulation. This isn't legal advice.
+17. [Sourcing and originality](sourcing-and-originality.md): how we use other people's work, from facts and quotations to credit and licenses.
+18. [Open questions](open-questions.md): cross-cutting questions that don't belong to any one problem.
+19. [Glossary](glossary.md) and [References](references.md).
 
 After that, pick a problem from [problems/README.md](../problems/README.md).
 
