@@ -39,7 +39,7 @@ last_reviewed: 2026-11-24
 
 - [ ] Budget tiers with numeric limits (file size, triangles, materials, textures and texture size, bones, morph targets, spring bones)
 - [ ] A validator that enforces the tiers, with clear error messages
-- [ ] A **malicious and edge-case test corpus**: oversized files, deeply nested nodes, external URLs, malformed buffers, zip-bomb-style textures
+- [ ] A **malicious and edge-case test corpus**: oversized files, deeply nested nodes, external URLs, malformed buffers, zip-bomb-style textures (cases designed in a [spike](../docs/spikes/2026-11-24-avatar-test-corpus.md))
 - [ ] Both demo games' loaders fuzzed against the corpus
 - [ ] A "safe loading" guide for each target engine
 
