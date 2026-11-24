@@ -25,6 +25,8 @@ Seed phrases and lost wallets taught the world that self-custody is hard. But if
 - **`did:webvh` pre-rotation:** a commitment to the *next* key is published in advance, which limits the damage if the current key is stolen ([did:webvh](https://identity.foundation/didwebvh/v1.0/)).
 - **Social or guardian recovery:** several trusted parties together approve a recovery. Common in wallet designs; usability varies.
 
+The choice of identifier method decides how much recovery is even possible: `did:key` can't rotate keys at all, while `did:webvh` and `did:plc` can ([comparison](../docs/spikes/2026-11-24-identifier-methods.md)).
+
 ## Constraints
 
 - **No single party can seize a player's identity**, including a recovery provider.

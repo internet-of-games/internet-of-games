@@ -53,6 +53,8 @@ The methods differ in the signatures a game must verify: `did:webvh` 1.0 require
 3. **`did:key` for Phase 1 only**, with a documented migration to (1) or (2). This is the fastest way to a working demo.
 4. **Several methods behind one resolver library**, with games accepting any method on an allow-list.
 
+A [comparison of the four methods](../docs/spikes/2026-11-24-identifier-methods.md) suggests `did:key` with P-256 keys for the Phase 1 demo, and testing a combination for production: `did:key` per game for private mode, `did:webvh` for public personas.
+
 ## Open questions
 
 - **P-0003-Q1:** Which method is the default for Phase 1, and which for production?
