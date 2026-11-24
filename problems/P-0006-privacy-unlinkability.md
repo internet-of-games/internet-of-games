@@ -7,7 +7,7 @@ status: open
 difficulty: high
 champion: unassigned
 related: [P-0003, P-0004, P-0007, P-0013, P-0017, P-0018, P-0023, P-0028]
-last_reviewed: 2026-11-15
+last_reviewed: 2026-11-24
 ---
 
 # P-0006: Privacy and unlinkability across games
@@ -58,6 +58,24 @@ Even with separate identifiers, **an identical avatar file or hash** in two game
 1. **Per-game identifiers derived from one master key**, with proofs of common ownership shown only on request.
 2. **SD-JWT credentials** for selective disclosure in Phase 1, tracking newer unlinkable signature schemes for later.
 3. **A minimal disclosure UI pattern** that the SDK provides, so every game shows consent the same way.
+
+## Threats
+
+Threat IDs refer to the [threat model](../docs/threat-model.md). Public-persona mode accepts some linking by design; private mode has to resist it.
+
+| Threat | In private mode | Mitigations to explore |
+|---|---|---|
+| Harassment that follows a player (T1) | A harasser has to link the player through other signals. In public-persona mode the player is recognizable everywhere by choice | Private by default; switching any game to private at any time; portable blocks ([P-0018](P-0018-friends-and-presence.md)); no presence by default |
+| Linking by identifier (T3) | Defeated if each game gets a different identifier | Per-game identifiers that can't be compared (direction 1) |
+| Linking by credential (T3) | The same signed credential shown in two games links them, even if no claim is disclosed. With salted-hash selective disclosure such as SD-JWT, games that compare notes can always tell they saw the same credential ([RFC 9901, section 10.1](https://www.rfc-editor.org/rfc/rfc9901.html#section-10.1)) | Batch issuance: a separate copy of each credential for each game, with fresh keys and salts ([RFC 9901, section 10.1](https://www.rfc-editor.org/rfc/rfc9901.html#section-10.1)). Unlinkable signature schemes later |
+| Linking through the issuer (T3) | An issuer that learns where its credentials are presented can follow the player. SD-JWT can't stop this if a game forwards the presentation to the issuer ([RFC 9901, section 10.1](https://www.rfc-editor.org/rfc/rfc9901.html#section-10.1)) | Offline verification, so issuers aren't contacted when a credential is shown, and status lists downloaded whole ([P-0015](P-0015-issuer-trust-revocation.md)) |
+| Linking by status-list position (T3) | A credential's position in a status list is the same in every game it's shown to | Per-game credential copies, each with its own position |
+| Linking by avatar file (T3) | An identical file or hash in two games links them (P-0006-Q3) | Re-encode avatars for each game, don't show hashes to other players, and allow a different avatar per mode |
+| Linking by name and behavior (T3) | Display names, play times and habits can still link players | Per-game display names, coarse bands instead of exact numbers in claims ([P-0013](P-0013-portable-claims.md)), and clear warnings |
+| What a claim reveals (T3) | Every claim names its issuer: showing "cleared the final boss in Game A" tells Game B the player plays Game A | Show players what each claim reveals before they share it |
+| Analytics creep (T3) | Games build profiles from imported claims (P-0006-Q4) | Keep only what the game uses, and publish an analytics policy for integrators |
+
+We can reduce correlation, not eliminate it; the threat model records that as residual risk for T3.
 
 ## Open questions
 

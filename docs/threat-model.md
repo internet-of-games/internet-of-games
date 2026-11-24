@@ -34,7 +34,7 @@ When protections conflict, the higher priority wins.
 ### T3. Tracking and profiling
 
 - **What:** games, ad networks or data brokers link a player's activity across games.
-- **Examples:** matching identical identifiers, avatar file hashes, display names or play patterns; an issuer learning everywhere its credentials are used.
+- **Examples:** matching identical identifiers, avatar file hashes, display names or play patterns; the same signed credential shown in two games ([P-0006](../problems/P-0006-privacy-unlinkability.md#threats)); an issuer learning everywhere its credentials are used.
 - **Mitigations:** per-game identifiers, selective disclosure, and coarse bands instead of exact stats ([P-0006](../problems/P-0006-privacy-unlinkability.md), [P-0013](../problems/P-0013-portable-claims.md)); revocation checks that don't reveal which credential is being checked ([P-0015](../problems/P-0015-issuer-trust-revocation.md)); preferences that stay private by default ([P-0028](../problems/P-0028-portable-preferences.md)).
 - **Residual risk:** behavior can still link players. We can reduce correlation, not eliminate it.
 

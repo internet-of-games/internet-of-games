@@ -54,6 +54,22 @@ No game will rip out its account system to adopt a standard, and players won't w
 2. **A simple signed challenge** ("prove you control this DID"). Light and easy to implement in an engine, but less standard.
 3. **SIOPv2-style login**, where the passport app acts as the player's own identity provider. Elegant, but SIOPv2 is still a draft.
 
+## Threats
+
+Linking ties a player's portable identity to an account that already holds their purchases and progress, which makes it a target. Threat IDs refer to the [threat model](../docs/threat-model.md). Each mitigation applies to all three candidate directions.
+
+| Threat | How it shows up in linking | Mitigation to build in |
+|---|---|---|
+| Linking the wrong account (T2) | An attacker gets a victim to finish a link the attacker started, attaching the attacker's identifier to the victim's game account, or the victim's identifier to an account the attacker controls | Start every link from a signed-in game session. Bind the challenge to that session, the game and a one-time number. Show which account and which game are being linked, and confirm in the game afterwards |
+| Replayed proof (T2, T4) | A signed challenge or presentation captured once is used again, to link again or to sign in | Put a one-time number, a short expiry and the intended game in every challenge, and refuse reuse |
+| Phishing (T2) | A fake game, or a link that pretends to come from a real one, asks the passport app to sign | The passport app shows the requesting game's verified identity, never a name the request supplies, and refuses requests whose origin doesn't match |
+| Stolen passport keys (T2) | Whoever holds the keys can link new accounts, or sign in wherever a link also allows sign-in | Treat a link as an added identity, not a password replacement, unless the game decides otherwise. Let players unlink from the game's own account settings even after losing their passport. Rotate keys ([P-0005](P-0005-key-recovery.md)) |
+| Tracking across games (T3) | The same identifier in every game lets games and their partners build a cross-game profile | A different identifier for each game by default ([P-0006](P-0006-privacy-unlinkability.md)), and no global list of a player's accounts |
+| A game that over-asks (T3) | A game asks for more than linking needs, such as credentials or a stable identifier | Linking shares only the per-game identifier. Anything more is a separate, explicit consent |
+| Stale links (T4) | After unlinking, a game still honors the old identifier, or an "account linked" credential stays valid | Unlinking deletes the stored link, and "account linked" credentials are revoked through a status list (P-0004-Q2) |
+| Children (T1) | A child links accounts without a guardian | Each game applies its own age rules, with guardian approval where the law requires it ([P-0007](P-0007-age-and-eligibility.md)) |
+| A compromised library (T8) | The linking code in an SDK is changed to leak identifiers or approve links silently | Few dependencies, reviewed releases and signed packages once there's code to ship |
+
 ## Open questions
 
 - **P-0004-Q1:** Should Phase 1 use OpenID4VP or a simpler challenge-response?
