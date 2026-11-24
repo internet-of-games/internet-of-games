@@ -15,8 +15,9 @@ Suggested order for newcomers:
 11. [The business case](business-case.md): why a game would join.
 12. [How interoperability happened elsewhere](interop-history.md): the web, email, phone numbers, banking and cross-play.
 13. [Legal and policy landscape](legal-and-policy.md): rights, ratings, privacy and regulation. This isn't legal advice.
-14. [Open questions](open-questions.md): cross-cutting questions that don't belong to any one problem.
-15. [Glossary](glossary.md) and [References](references.md).
+14. [Sourcing and originality](sourcing-and-originality.md): how we use other people's work, from facts and quotations to credit and licenses.
+15. [Open questions](open-questions.md): cross-cutting questions that don't belong to any one problem.
+16. [Glossary](glossary.md) and [References](references.md).
 
 After that, pick a problem from [problems/README.md](../problems/README.md).
 
@@ -28,4 +29,5 @@ After that, pick a problem from [problems/README.md](../problems/README.md).
 - **Where only secondary reporting exists, the text says so**, using words like "reported" or "according to".
 - **Every doc carries a "Last reviewed" date.** Numbers, star counts and standards statuses go stale. Corrections are always welcome; open an issue using the *Evidence / correction* template.
 - **Repository facts** (stars, last push, archived status) were read from the GitHub API on the review date.
+- **We write in our own words.** We quote briefly, with links, and credit the ideas we build on ([sourcing and originality](sourcing-and-originality.md)).
 - **Nothing here is legal advice.**
