@@ -9,6 +9,7 @@ Standard library only. Run from anywhere inside the repository:
     python3 tools/docs.py questions    every open question, with its ID
     python3 tools/docs.py index        JSON map of problems and decisions
     python3 tools/docs.py external     check external links (needs network)
+    python3 tools/docs.py overlap SRC  find text shared word for word with a saved source page
 """
 from __future__ import annotations
 
@@ -21,6 +22,7 @@ import sys
 import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
+from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -51,6 +53,11 @@ DECISION_SECTIONS = ["## Context", "## Decision", "## Consequences",
                      "## Universality and safety"]
 DOCS_WITHOUT_REVIEW_DATE = {"README.md", "glossary.md"}
 STALE_AFTER_DAYS = 180
+
+MAX_QUOTE_WORDS = 40
+OVERLAP_WORDS = 8
+WORD = re.compile(r"[^\W_]+(?:['’][^\W_]+)*")
+QUOTE_EXEMPT = {"CODE_OF_CONDUCT.md"}
 SKIP_DIRS = {".git", "node_modules", "__pycache__", ".venv"}
 TEXT_SUFFIXES = {".md", ".yml", ".yaml", ".py", ".txt", ".json", ".toml"}
 TEXT_NAMES = {"Makefile", "CODEOWNERS", ".gitignore", "NOTICE"}
@@ -240,6 +247,14 @@ def load_problems(findings: list) -> dict:
 
 def load_decisions(findings: list) -> dict:
     return load_docs(DECISION_DIR, DECISION_FILE, findings)
+
+
+def quoted_spans(line: str) -> list[str]:
+    """Text inside double quotation marks on one line, pairing straight quotes left to right."""
+    spans = re.findall(r"“([^”]*)”", line)
+    parts = line.split('"')
+    spans += [parts[i] for i in range(1, len(parts) - 1, 2)]
+    return spans
 
 
 def questions_in(meta: dict) -> list[tuple[str, int, str, bool]]:
@@ -470,6 +485,19 @@ def check_open_questions(findings: list) -> None:
         findings.append(Finding("error", path, 0, "OQ numbers should run from OQ-1 upward with no gaps or repeats"))
 
 
+def check_quotes(findings: list) -> None:
+    for path in markdown_files():
+        if path.name.startswith("LICENSE") or path.name in QUOTE_EXEMPT:
+            continue
+        for number, line in prose_lines(path.read_text(encoding="utf-8")):
+            for span in quoted_spans(strip_inline_code(line)):
+                words = len(span.split())
+                if words > MAX_QUOTE_WORDS:
+                    findings.append(Finding("error", path, number,
+                                            f"quotation of {words} words; quote at most {MAX_QUOTE_WORDS} and "
+                                            "paraphrase the rest (docs/sourcing-and-originality.md)"))
+
+
 def check_safety(findings: list) -> None:
     for path in walk_files(suffixes=TEXT_SUFFIXES, names=TEXT_NAMES):
         if path.name.startswith("LICENSE"):
@@ -499,6 +527,7 @@ def run_checks(today: dt.date | None = None) -> list:
     check_spikes(findings)
     check_review_dates(findings, today)
     check_open_questions(findings)
+    check_quotes(findings)
     check_safety(findings)
     return findings
 
@@ -628,6 +657,102 @@ def cmd_external(_args) -> int:
     return 1 if broken else 0
 
 
+# ---------------------------------------------------------------- overlap
+
+class PageText(HTMLParser):
+    """Collects the visible text of a saved HTML page."""
+
+    SKIP = {"script", "style", "noscript", "svg", "template"}
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.parts: list[str] = []
+        self.depth = 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in self.SKIP:
+            self.depth += 1
+        self.parts.append(" ")
+
+    def handle_endtag(self, tag):
+        if tag in self.SKIP and self.depth:
+            self.depth -= 1
+        self.parts.append(" ")
+
+    def handle_data(self, data):
+        if not self.depth:
+            self.parts.append(data)
+
+
+def words_of(text: str) -> list[str]:
+    return WORD.findall(text.lower())
+
+
+def source_words(path: Path) -> list[str]:
+    raw = path.read_text(encoding="utf-8", errors="replace")
+    if path.suffix.lower() in (".html", ".htm") or raw.lstrip()[:15].lower().startswith(("<!doctype", "<html")):
+        parser = PageText()
+        parser.feed(raw)
+        raw = " ".join(parser.parts)
+    return words_of(raw)
+
+
+def own_words(text: str) -> list[tuple[int, str]]:
+    """(line, word) for a doc's own prose, leaving out code, link targets, URLs and quotations."""
+    out = []
+    for number, line in prose_lines(text):
+        line = strip_inline_code(line)
+        line = re.sub(r"\]\([^)]*\)", "] ", line)
+        line = re.sub(r"https?://\S+", " ", line)
+        line = re.sub(r"“[^”]*”", " ", line)
+        line = " ".join(line.split('"')[0::2])
+        out.extend((number, word) for word in words_of(line))
+    return out
+
+
+def shared_runs(source: list[str], doc: list[tuple[int, str]], n: int) -> list[tuple[int, int, str]]:
+    """(line, length, text) for each run of at least n words that also appears, in order, in the source."""
+    if n < 1 or len(source) < n or len(doc) < n:
+        return []
+    grams = {tuple(source[i:i + n]) for i in range(len(source) - n + 1)}
+    words = [word for _, word in doc]
+    hit = [False] * len(words)
+    for i in range(len(words) - n + 1):
+        if tuple(words[i:i + n]) in grams:
+            hit[i:i + n] = [True] * n
+    runs, i = [], 0
+    while i < len(words):
+        if not hit[i]:
+            i += 1
+            continue
+        j = i
+        while j < len(words) and hit[j]:
+            j += 1
+        runs.append((doc[i][0], j - i, " ".join(words[i:j])))
+        i = j
+    return runs
+
+
+def cmd_overlap(args) -> int:
+    targets = [Path(p).resolve() for p in args.files] if args.files else markdown_files()
+    found = 0
+    for source_path in args.sources:
+        source = source_words(Path(source_path))
+        if not source:
+            print(f"{source_path}: no text found; save the page as HTML or plain text", file=sys.stderr)
+            continue
+        for path in targets:
+            if path.name.startswith("LICENSE"):
+                continue
+            for line, length, text in shared_runs(source, own_words(path.read_text(encoding="utf-8")), args.words):
+                found += 1
+                snippet = " ".join(text.split()[:14]) + (" …" if length > 14 else "")
+                print(f"{rel(path)}:{line}: {length} words in a row match {source_path}: {snippet}")
+    print(f"\n{found} shared run(s) of {args.words} or more words. Each one needs a look: put a short quotation in "
+          "quotation marks with its source, keep it if it's a name or title, or rewrite it in your own words.")
+    return 1 if found else 0
+
+
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = parser.add_subparsers(dest="command")
@@ -639,9 +764,13 @@ def main(argv=None) -> int:
     questions.add_argument("--all", action="store_true", help="include answered questions")
     sub.add_parser("index", help="print a JSON map of problems and decisions")
     sub.add_parser("external", help="check external links (needs network)")
+    overlap = sub.add_parser("overlap", help="find text shared word for word with a saved source page")
+    overlap.add_argument("sources", nargs="+", help="saved copies of source pages (.html or .txt), kept outside the repository")
+    overlap.add_argument("--in", dest="files", nargs="+", help="docs to compare (default: every Markdown file)")
+    overlap.add_argument("--words", type=int, default=OVERLAP_WORDS, help=f"shortest run to report (default: {OVERLAP_WORDS})")
     args = parser.parse_args(argv)
     commands = {"check": cmd_check, "next": cmd_next, "work": cmd_work, "questions": cmd_questions,
-                "index": cmd_index, "external": cmd_external, None: cmd_check}
+                "index": cmd_index, "external": cmd_external, "overlap": cmd_overlap, None: cmd_check}
     return commands[args.command](args)
 
 
