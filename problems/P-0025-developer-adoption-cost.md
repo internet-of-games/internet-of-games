@@ -7,7 +7,7 @@ status: open
 difficulty: medium
 champion: unassigned
 related: [P-0002, P-0026, P-0030]
-last_reviewed: 2026-11-15
+last_reviewed: 2026-11-24
 ---
 
 # P-0025: Developer adoption cost
@@ -21,7 +21,7 @@ Interoperability only pays off once many games support it, and every one of them
 ## What exists today
 
 - **VRM loaders** exist for Unity ([UniVRM](https://github.com/vrm-c/UniVRM)), the web ([three-vrm](https://github.com/pixiv/three-vrm)) and Godot ([godot-vrm](https://github.com/V-Sekai/godot-vrm)).
-- **Identifier and credential libraries** exist mostly for web and server languages (JavaScript/TypeScript, Rust, Go, Python, Java). Engine-native support in GDScript, Unity C# and Unreal C++ is thin.
+- **Identifier and credential libraries** exist mostly for web and server languages (JavaScript/TypeScript, Rust, Go, Python, Java). Engine-native support in GDScript, Unity C# and Unreal C++ is thin. Which signature algorithms each engine can verify with what it ships is compared in a [spike](../docs/spikes/2026-11-24-signature-support-in-engines.md): only ES256 (ECDSA on P-256) is both compact and built into Godot and browsers today.
 
 ## Targets
 

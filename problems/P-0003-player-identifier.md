@@ -7,7 +7,7 @@ status: open
 difficulty: medium
 champion: unassigned
 related: [P-0004, P-0005, P-0006, P-0024]
-last_reviewed: 2026-11-15
+last_reviewed: 2026-11-24
 ---
 
 # P-0003: A player identifier that no single company owns
@@ -28,6 +28,8 @@ Today the only identities that span games are platform accounts (PlayStation, Xb
 | `did:web` | The identifier resolves to a document on a web domain | Simple and familiar | Whoever controls the domain controls the identity |
 | [`did:webvh`](https://identity.foundation/didwebvh/v1.0/) | `did:web` plus a verifiable history log | Key rotation, can move hosts, auditable history | Still needs some host |
 | [`did:plc`](https://github.com/did-method-plc/did-method-plc) | Signed operations recorded in a directory | Used for every Bluesky account; supports rotation and migration | One directory today, now moving to an independent organization ([AT Protocol blog](https://atproto.com/blog/plc-directory-org)) |
+
+The methods differ in the signatures a game must verify: `did:webvh` 1.0 requires Ed25519, and `did:plc` uses secp256k1 or P-256 keys. Which of those each engine can verify without extra libraries is in a [spike](../docs/spikes/2026-11-24-signature-support-in-engines.md).
 
 ## Constraints
 

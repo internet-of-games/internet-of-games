@@ -14,5 +14,6 @@ A spike is a time-boxed investigation that answers **one question** with researc
 |---|---|---|
 | 2026-11-24 | [How does the Web of Worlds user manifest compare with our player passport?](2026-11-24-web-of-worlds-user-manifest.md) | P-0003, P-0013, P-0017, P-0028, P-0029 |
 | 2026-11-24 | [Which IP policy should govern our specification text?](2026-11-24-specification-ip-policies.md) | P-0001 |
+| 2026-11-24 | [Which signature algorithms can each engine verify without extra libraries?](2026-11-24-signature-support-in-engines.md) | P-0003, P-0013, P-0025 |
 
 More candidates are in the "How to help" sections of the [problem docs](../../problems/README.md).
