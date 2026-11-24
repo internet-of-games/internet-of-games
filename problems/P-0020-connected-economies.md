@@ -7,7 +7,7 @@ status: open
 difficulty: research
 champion: unassigned
 related: [P-0002, P-0019, P-0021]
-last_reviewed: 2026-11-15
+last_reviewed: 2026-11-24
 ---
 
 # P-0020: Connected economies and value transfer
@@ -21,7 +21,8 @@ last_reviewed: 2026-11-15
 | **Publishers' revenue depends on closed economies** | 78% of Take-Two's FY2026 net bookings came from recurrent consumer spending, including virtual currency ([Take-Two](https://www.businesswire.com/news/home/20260521450562/en/Take-Two-Interactive-Software-Inc.-Reports-Results-for-Fourth-Quarter-and-Fiscal-Year-2026)) |
 | **Currency doesn't cross even within one franchise** | NBA 2K's virtual currency doesn't carry over between editions; Take-Two calls virtual currencies "fictions" governed by its terms ([VGC](https://videogameschronicle.com/news/virtual-currencies-are-fictions-take-two-argues-in-microtransaction-theft-lawsuit); [Kotaku](https://kotaku.com/2k-forced-in-court-to-explain-why-nba-2k-players-cant-transfer-digital-currency-you-have-no-ownership-or-other-rights-to-virtual-items-2000736199)) |
 | **Fraud and money laundering** | Valve restricted Counter-Strike key trading in 2019 because of fraud networks ([Engadget](https://www.engadget.com/2019-10-30-csgo-fraud-loot-box-key-trades.html)) |
-| **Consumer protection** | EU principles on in-game virtual currencies (March 2025) and the proposed Digital Fairness Act (November 2026) ([European Commission](https://commission.europa.eu/live-work-travel-eu/consumer-rights-and-complaints/enforcement-consumer-protection/coordinated-actions/social-media-online-games-and-search-engines_en); [Ashurst](https://www.ashurstperkinscoie.com/en/insights/digital-fairness-act-brussels-takes-on-consumer-enforcement/)) |
+| **Consumer protection** | EU principles on in-game virtual currencies (March 2025) and the proposed Digital Fairness Act (November 2026) ([European Commission](https://commission.europa.eu/live-work-travel-eu/consumer-rights-and-complaints/enforcement-consumer-protection/coordinated-actions/social-media-online-games-and-search-engines_en); [proposal](https://commission.europa.eu/document/download/0575d59f-554f-4a9e-b54b-e6b717175809_en?filename=Proposal+for+a+Digital+Fairness+Act.pdf)) |
+| **Financial regulation** | The Digital Fairness Act proposal says currencies locked inside one game, with no cash value and no trading outside it, fall outside EU payment-services and crypto-asset rules ([proposal](https://commission.europa.eu/document/download/0575d59f-554f-4a9e-b54b-e6b717175809_en?filename=Proposal+for+a+Digital+Fairness+Act.pdf), recital 61). Currencies that cross games would give up those properties ([legal-and-policy §5](../docs/legal-and-policy.md#5-virtual-currencies-loot-boxes-and-consumer-protection)) |
 | **Platform terms** | Platform holders set commercial terms for cross-platform revenue ([PC Gamer](https://www.pcgamer.com/sony-charges-for-crossplay-support-to-protect-psn-revenue-documents-show)) |
 | **Tokens don't create demand** | Ubisoft's NFT items ended in 2022 ([PC Gamer](https://www.pcgamer.com/ubisoft-ends-its-nft-experiment-in-ghost-recon-breakpoint-but-promises-theyre-coming-to-other-games)) |
 | **Balance and inflation** | Every game's economy is tuned on its own terms ([why-not-yet §3](../docs/why-not-yet.md#3-the-economies-are-the-business)) |

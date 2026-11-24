@@ -1,10 +1,10 @@
 # Why doesn't NBA 2K plug into GTA VI?
 
-*Last reviewed: 2026-11-15. Names of games and companies appear only to describe the problem; see [TRADEMARKS.md](../TRADEMARKS.md).*
+*Last reviewed: 2026-11-24. Names of games and companies appear only to describe the problem; see [TRADEMARKS.md](../TRADEMARKS.md).*
 
 It's a fair question. NBA 2K and Grand Theft Auto are two of the biggest game series in the world. Imagine walking out of one and into the other as the same person, and paying for a *world* instead of a game.
 
-Here's the surprising part: **both series already belong to the same company.** Take-Two Interactive publishes through three labels: Rockstar Games (Grand Theft Auto, Red Dead Redemption), 2K (NBA 2K, among others) and Zynga ([Take-Two FY2026 results](https://www.businesswire.com/news/home/20260521450562/en/Take-Two-Interactive-Software-Inc.-Reports-Results-for-Fourth-Quarter-and-Fiscal-Year-2026)). Grand Theft Auto VI is scheduled for 19 November 2026 ([Forbes](https://www.forbes.com/sites/brianmazique/2026/05/12/grand-theft-auto-6-release-date-and-everything-confirmed/)).
+Here's the surprising part: **both series already belong to the same company.** Take-Two Interactive publishes through three labels: Rockstar Games (Grand Theft Auto, Red Dead Redemption), 2K (NBA 2K, among others) and Zynga ([Take-Two FY2026 results](https://www.businesswire.com/news/home/20260521450562/en/Take-Two-Interactive-Software-Inc.-Reports-Results-for-Fourth-Quarter-and-Fiscal-Year-2026)). Grand Theft Auto VI launched on 19 November 2026 ([Take-Two](https://www.take2games.com/ir/news/rockstar-games-announces-grand-theft-auto-vi-now-available)).
 
 So this isn't a case of rival companies refusing to cooperate. The walls are structural, and most of them would still stand even if every executive wanted to connect the games.
 

@@ -7,7 +7,7 @@ status: open
 difficulty: medium
 champion: unassigned
 related: [P-0008, P-0012, P-0026]
-last_reviewed: 2026-11-15
+last_reviewed: 2026-11-24
 ---
 
 # P-0010: Avatar budgets and file safety
@@ -18,7 +18,8 @@ last_reviewed: 2026-11-15
 
 - **Security.** 3D file loaders are attack surface. In one widely used glTF library, file paths inside an input file could trigger command injection ([CVE-2022-3008](https://nvd.nist.gov/vuln/detail/CVE-2022-3008)).
 - **Performance.** A single extremely detailed avatar can drag down everyone's frame rate in a shared scene. Social VR platforms rank avatars by performance for exactly this reason ([VRChat performance ranking](https://creators.vrchat.com/avatars/avatar-performance-ranking-system/)).
-- **Behavior.** Khronos is developing glTF interactivity, which lets 3D files carry behavior. Future avatars might *do* things, not just look like things.
+- **Behavior.** Khronos has ratified glTF interactivity (`KHR_interactivity`), which lets 3D files carry behavior graphs ([Khronos extension registry](https://github.com/KhronosGroup/glTF/blob/main/extensions/README.md)). An imported avatar could *do* things, not just look like something.
+- **Size and composition.** The draft glTF 2.1 adds a 64-bit binary container without the old size ceiling, and lets one file pull in others ([Khronos](https://www.khronos.org/events/gltf-2.1-town-hall)). Budgets can't rely on format limits, and validators have to decide what to do with files that reference other files.
 
 ## What exists today
 
@@ -30,7 +31,7 @@ last_reviewed: 2026-11-15
 
 - **Several tiers** for mobile, PC and console (for example *Light*, *Standard* and *Heavy*).
 - **Validation is deterministic:** the same file always gets the same result, everywhere.
-- **No external references:** all resources are embedded, and nothing is fetched while a file loads.
+- **No external references:** all resources are embedded, and nothing is fetched while a file loads. That includes glTF 2.1's references to other glTF files.
 - **No executable behavior in v0.**
 - **Fail safe:** if a file is rejected, the game falls back to a 2D portrait or a default avatar, never a crash.
 
@@ -54,6 +55,7 @@ last_reviewed: 2026-11-15
 - **P-0010-Q2:** Should games automatically generate lower-detail versions on import?
 - **P-0010-Q3:** Is sandboxed parsing practical in each engine?
 - **P-0010-Q4:** Which features (spring bones, expressions) are allowed in the *Light* tier?
+- **P-0010-Q5:** How should validators treat glTF 2.1 files (multi-file scenes and the 64-bit container) before the baseline supports them: reject them, or accept single-file assets only?
 
 ## How to help
 
@@ -64,3 +66,4 @@ last_reviewed: 2026-11-15
 
 - [CVE-2022-3008 (NVD)](https://nvd.nist.gov/vuln/detail/CVE-2022-3008)
 - [VRChat avatar performance ranking](https://creators.vrchat.com/avatars/avatar-performance-ranking-system/)
+- [Khronos glTF 2.1 town hall](https://www.khronos.org/events/gltf-2.1-town-hall) · [glTF extension registry](https://github.com/KhronosGroup/glTF/blob/main/extensions/README.md)

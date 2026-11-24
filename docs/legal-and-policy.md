@@ -1,6 +1,6 @@
 # Legal and policy landscape
 
-*Last reviewed: 2026-11-15.*
+*Last reviewed: 2026-11-24.*
 
 > **Not legal advice.** This page maps the issues a portable player identity runs into, so contributors know which questions to ask. Laws differ by country and change often. Anyone building a product on this work should get qualified legal advice.
 
@@ -24,6 +24,7 @@ Game terms of service usually give players a **license** to use in-game items an
 - Ratings differ widely between games: NBA 2K26 is rated E (Everyone) and Grand Theft Auto VI is rated M (Mature 17+) by the ESRB ([NBA 2K26](https://www.esrb.org/ratings/40735/nba-2k26/); [GTA VI](https://www.esrb.org/ratings/41627/grand-theft-auto-vi/)).
 - In the U.S., the amended COPPA Rule took effect in June 2025, with most compliance due by April 2026 ([Hunton](https://www.hunton.com/privacy-and-cybersecurity-law-blog/ftc-publishes-final-coppa-rule-amendments)).
 - The EU is rolling out privacy-preserving age verification, and has urged member states to offer it by 31 December 2026 ([European Commission](https://digital-strategy.ec.europa.eu/en/news/commission-urges-member-states-rollout-eu-age-verification-app)).
+- Ratings are gaining legal weight. Under the proposed Digital Fairness Act, a game whose age rating (for example from PEGI) says it suits people under 18 counts as directed at minors, which brings in the protections in [§5](#5-virtual-currencies-loot-boxes-and-consumer-protection) ([proposal](https://commission.europa.eu/document/download/0575d59f-554f-4a9e-b54b-e6b717175809_en?filename=Proposal+for+a+Digital+Fairness+Act.pdf), recital 62).
 
 → [P-0007](../problems/P-0007-age-and-eligibility.md)
 
@@ -38,7 +39,12 @@ Game terms of service usually give players a **license** to use in-game items an
 ## 5. Virtual currencies, loot boxes and consumer protection
 
 - In March 2025, EU consumer authorities published key principles for in-game virtual currencies, including showing prices in real money ([European Commission](https://commission.europa.eu/live-work-travel-eu/consumer-rights-and-complaints/enforcement-consumer-protection/coordinated-actions/social-media-online-games-and-search-engines_en)).
-- On 11 November 2026 the European Commission proposed a **Digital Fairness Act** that, according to law-firm analyses, includes rules on paid virtual currencies and loot boxes, with extra protections for minors. It is a proposal, not law ([Ashurst](https://www.ashurstperkinscoie.com/en/insights/digital-fairness-act-brussels-takes-on-consumer-enforcement/); [Winston Taylor](https://www.winstontaylor.com/insights/the-eu-draft-digital-fairness-act-consumer-protection-for-the-digital-age)).
+- The European Commission proposed a **Digital Fairness Act** on 11 November 2026. The regulation would repeal the EU's 2005 Unfair Commercial Practices Directive and take its place ([proposal, COM(2026) 1100](https://commission.europa.eu/document/download/0575d59f-554f-4a9e-b54b-e6b717175809_en?filename=Proposal+for+a+Digital+Fairness+Act.pdf)). For games, it would:
+  - require the real-money value to be shown for anything priced in a paid virtual currency (Article 14)
+  - require disclosure of what paid random rewards, such as loot boxes, can contain and the odds of getting each item, plus a way to switch them off (Article 15)
+  - in products aimed at minors, or known to be used by them, keep paid virtual currencies switched off unless a parent or guardian approves, and offer minors no paid random rewards and no pay-to-win or pay-to-progress purchases (Articles 14 to 16). A minor is anyone under 18.
+- It's a proposal. It would apply 12 months after it enters into force, and the European Parliament and the Council will now negotiate it. One law firm doesn't expect it in force before 2028 ([Paul Weiss](https://www.paulweiss.com/insights/client-memos/european-commission-proposes-the-digital-fairness-act)). Earlier analyses: [Ashurst](https://www.ashurstperkinscoie.com/en/insights/digital-fairness-act-brussels-takes-on-consumer-enforcement/), [Winston Taylor](https://www.winstontaylor.com/insights/the-eu-draft-digital-fairness-act-consumer-protection-for-the-digital-age).
+- The proposal notes that virtual currencies locked inside one game, with no cash value and no way to cash them out or trade them outside it, fall outside the EU's payment-services and crypto-asset rules (recital 61). It doesn't say what applies to currencies that cross games, but those would lose exactly the properties the recital relies on. That's one more reason [P-0020](../problems/P-0020-connected-economies.md) stays research.
 
 → [P-0019](../problems/P-0019-cross-game-entitlements.md), [P-0020](../problems/P-0020-connected-economies.md)
 

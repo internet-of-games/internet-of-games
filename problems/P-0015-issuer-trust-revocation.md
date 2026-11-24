@@ -7,7 +7,7 @@ status: open
 difficulty: high
 champion: unassigned
 related: [P-0013, P-0014, P-0016, P-0024, P-0026]
-last_reviewed: 2026-11-15
+last_reviewed: 2026-11-24
 ---
 
 # P-0015: Trusting issuers, revocation and cheating
@@ -25,6 +25,7 @@ last_reviewed: 2026-11-15
 - **Bitstring Status List 1.0** (W3C Recommendation, May 2025) lets issuers revoke or suspend credentials. Verifiers download a compressed list, which hides *which* credential they're checking ([W3C](https://www.w3.org/TR/vc-bitstring-status-list/)).
 - **Domain-bound identifiers** (`did:web`, `did:webvh`) tie an issuer to a web domain the studio controls ([did:webvh](https://identity.foundation/didwebvh/v1.0/)).
 - **Trust lists** are a common pattern in identity systems: a verifier accepts issuers on a list it chooses.
+- **Revocation checks that don't reveal the holder are still an open question for credentials in browsers.** The W3C Digital Credentials work tracks it as an open privacy issue ([#280](https://github.com/w3c-fedid/digital-credentials/issues/280)).
 
 ## Constraints
 
