@@ -1,6 +1,6 @@
 # Prior art
 
-*Last reviewed: 2026-11-15*
+*Last reviewed: 2026-11-24*
 
 People have tried to carry characters, items and identity between experiences many times. This page records what was tried, what happened, and **what each attempt teaches**. Those lessons feed directly into the [design principles](design-principles.md).
 
@@ -23,6 +23,7 @@ People have tried to carry characters, items and identity between experiences ma
 | [Ubisoft Quartz](#ubisoft-quartz) | NFT cosmetics | One game | NFT drops ended in 2022 | Tokenizing items doesn't create interoperability or demand |
 | [OMI glTF extensions](#open-metaverse-interoperability-group-omi) | World behavior, such as physics and seats | Open standard | Active | Standards move through implementations; identity extensions stalled |
 | [OMA3 portaling](#oma3-inter-world-portaling-system) | Moving between worlds | Draft specification | Quiet since 2025 | Portaling is specified on paper but not deployed |
+| [Web of Worlds](#web-of-worlds) | A user manifest (identity, avatar, preferences, assets) and links between worlds | Proposed open architecture, not specific to games | Whitepaper and draft API, 2026 | Others are designing a general version of our identity and travel layers |
 | [Third Room](#third-room) | Identity and worlds over Matrix | Open source | Dormant since 2023 | The right architecture can still lose its funding |
 | [Mozilla Hubs](#mozilla-hubs) | Web social worlds | Open source | Mozilla left in 2024; the community continues | Community stewardship can outlive a corporate exit |
 | [Bluesky / AT Protocol](#bluesky-and-the-at-protocol) | Portable account identity (DIDs) | A social network | Active | Portable identity can work at consumer scale if it's hidden behind a normal user experience |
@@ -112,6 +113,12 @@ OMI develops glTF extensions through a staged process. An extension needs implem
 OMA3, a web3 consortium, drafted a specification for moving users between virtual worlds and published it for comment in 2024. It has a liaison with the Metaverse Standards Forum ([Metaverse Standards Forum](https://metaverse-standards.org/news/blog/metaverse-standards-forum-enters-liaison-agreement-with-oma3/); [specification repository](https://github.com/oma3dao/iwps-specification)). The repository was last updated in September 2025.
 
 **Lesson:** world-to-world travel has been specified on paper but not widely deployed. See [P-0017](../problems/P-0017-world-handoff.md).
+
+## Web of Worlds
+
+The Web of Worlds, an initiative of the Metaverse Standards Forum, proposes an open architecture in which 3D worlds link to each other the way web pages do. Each world has a URI, worlds connect through portals, assets use existing formats, and a person carries a "User Manifest" with their identity, avatar, preferences and assets from world to world, managed in a digital wallet with DIDs and Verifiable Credentials ([whitepaper](https://webofworlds.github.io/initial_MSF_Whitepaper/gen/MSF-3DWebInterop_WoWWhitepaper.pdf); [MSF announcement](https://metaverse-standards.org/news/blog/announcing-the-web-of-worlds-whitepaper-a-concrete-path-to-the-open-metaverse/)). The initiative has published a draft API and lists early implementations, and a W3C breakout at TPAC in October 2026 mapped it against existing W3C standards ([Web of Worlds](https://webofworlds.github.io/); [W3C event](https://www.w3.org/events/meetings/437890c5-8be3-44d2-b5e8-d8cd2a69d847/)).
+
+**Lesson:** others see the same gap. The Web of Worlds is general-purpose and early, while our work is specific to games: how a receiving game interprets claims, avatar budgets, offline play, age ratings and native engines. We should learn from it, bring game requirements to it and build on it where it fits, instead of designing around it.
 
 ## Third Room
 

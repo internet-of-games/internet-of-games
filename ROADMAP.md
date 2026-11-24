@@ -9,7 +9,7 @@ The destination is a **universal standard that every game builds on** ([the miss
 - [x] Problem docs: vision, problem statement, landscape, prior art, standards map, layer model and numbered sub-problems
 - [x] Decision records, a threat model, an agent guide and automated checks for the docs
 - [ ] Settle the working name for the portable player document (see [open questions](docs/open-questions.md#naming))
-- [ ] Contact adjacent communities and record where each piece of our work should live upstream. These include OMI, the VRM Consortium and Khronos avatar work, the Metaverse Standards Forum, the W3C Credentials Community Group, DIF and the OpenID Foundation.
+- [ ] Contact adjacent communities and record where each piece of our work should live upstream. These include OMI, the VRM Consortium and Khronos avatar work, the Metaverse Standards Forum and its Web of Worlds initiative, the W3C Credentials Community Group, DIF and the OpenID Foundation.
 - [ ] Hold the first open community call and publish the notes in Discussions
 - [ ] Recruit champions for the Phase 1 problems
 - [ ] Decide the IP policy for specification text ([P-0001](problems/P-0001-neutral-governance-and-ip.md))
@@ -78,6 +78,6 @@ This work **starts now as research** because it's the hardest and riskiest part.
 
 ## What would change this roadmap
 
-- **An existing effort is already building a piece** (for example at OMI, Khronos or the Metaverse Standards Forum). We'd join it rather than duplicate it.
+- **An existing effort is already building a piece** (for example at OMI, Khronos or the Metaverse Standards Forum, whose Web of Worlds initiative is the closest so far). We'd join it rather than duplicate it.
 - **A Phase 1 problem turns out to be much harder than expected.** We'd narrow the demo instead of stalling.
 - **A larger studio wants to run a pilot.** We'd prioritize what it needs, as long as the standard stays neutral.

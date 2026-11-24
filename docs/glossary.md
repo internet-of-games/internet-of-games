@@ -50,6 +50,8 @@
 
 **Selective disclosure.** Showing only the claims needed, such as "over 13" rather than a birthdate.
 
+**User manifest.** In the Metaverse Standards Forum's Web of Worlds proposal, a portable record of a person's identity, avatar, preferences and assets that travels with them between worlds ([prior art](prior-art.md#web-of-worlds)). It's close in purpose to our player passport (working name).
+
 **Verifier.** A party that checks a credential's signature and status, usually the receiving game.
 
 **VRM.** A glTF-based format for humanoid avatars, stewarded by the VRM Consortium. It adds a standard rig, expressions, physics for hair and cloth (spring bones), and license metadata.

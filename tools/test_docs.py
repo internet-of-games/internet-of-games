@@ -109,6 +109,37 @@ class SafetyPatternTests(unittest.TestCase):
         self.assertFalse(self.matches("home-directory path", "news/home/2026 and ~/projects"))
 
 
+class QuoteTests(unittest.TestCase):
+    def test_quotes_pair_left_to_right(self):
+        line = 'The "first name" is a working name. "Second" is taken.'
+        self.assertEqual(docs.quoted_spans(line), ["first name", "Second"])
+        self.assertEqual(docs.quoted_spans("They wrote “a curly one” here."), ["a curly one"])
+
+
+class OverlapTests(unittest.TestCase):
+    source = docs.words_of("The quick brown fox jumps over the lazy dog near the old river bank today.")
+
+    def test_finds_copied_runs_but_not_quotes_code_or_link_targets(self):
+        doc = "\n".join([
+            "We saw that the quick brown fox jumps over the lazy dog near the bank.",
+            'They wrote "the quick brown fox jumps over the lazy dog near the old river" once.',
+            "Code: `the quick brown fox jumps over the lazy dog near the old`.",
+            "A [link](https://example.org/the-quick-brown-fox-jumps-over-the-lazy-dog-near-the-old-river).",
+        ])
+        runs = docs.shared_runs(self.source, docs.own_words(doc), 8)
+        self.assertEqual([(line, length) for line, length, _ in runs], [(1, 11)])
+        self.assertTrue(runs[0][2].startswith("the quick brown fox"))
+
+    def test_short_shared_phrases_are_ignored(self):
+        self.assertEqual(docs.shared_runs(self.source, docs.own_words("A brown fox jumps over a log."), 8), [])
+
+    def test_html_sources_keep_visible_text_only(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            page = Path(tmp) / "page.html"
+            page.write_text("<html><script>var hidden = 1;</script><p>Visible words here</p></html>", encoding="utf-8")
+            self.assertEqual(docs.source_words(page), ["visible", "words", "here"])
+
+
 class RepositoryTests(unittest.TestCase):
     def test_repository_passes_checks(self):
         errors = [str(f) for f in docs.run_checks() if f.level == "error"]

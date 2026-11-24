@@ -7,7 +7,7 @@ status: open
 difficulty: high
 champion: unassigned
 related: [P-0001, P-0019, P-0020, P-0021, P-0025, P-0028, P-0030]
-last_reviewed: 2026-11-15
+last_reviewed: 2026-11-24
 ---
 
 # P-0002: Why would a game join?
@@ -24,6 +24,7 @@ Large publishers profit from keeping players inside their own ecosystems. Take-T
 - **Platforms paying creators to attract content.** Roblox creators earned more than $1.5B in 2025, and Fortnite creators passed $1B in total by 2026 ([GamesBeat](https://gamesbeat.com/roblox-stock-rises-20-after-earnings-daily-active-users-up-69-in-q4/); [Tubefilter](https://www.tubefilter.com/2026/06/17/epic-games-unreal-editor-for-fortnite-creator-payouts/)).
 - **Cross-game rewards that already work inside one company.** These include amiibo and LEGO styles in Fortnite ([prior-art.md](../docs/prior-art.md)).
 - **The business-case hypotheses** in [business-case.md](../docs/business-case.md).
+- **Absorption instead of a standard.** Roblox plans to bring existing games onto its platform with AI conversion, and to let games built on Roblox ship as standalone apps that keep using its economy and social graph ([Roblox Q3 2026 letter](https://s27.q4cdn.com/984876518/files/content_files/Q3-2026-Earnings-Shareholder-Letter.pdf)). In November 2026 it opened a free conversion program for selected games ([Roblox](https://create.roblox.com/docs/creator-programs/convert)). For a studio, that's a competing offer: one platform's audience and identity system, in exchange for building on that platform. An open standard has to win on something else, such as independence from any one platform ([landscape-2026.md](../docs/landscape-2026.md#1-walled-gardens-are-winning)).
 
 ## Constraints
 

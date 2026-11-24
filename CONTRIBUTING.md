@@ -18,7 +18,7 @@ Not sure where to start? See the **good first problems** in [problems/README.md]
 
 This is a public repository, and everything in it has to be safe to share. **Please don't submit:**
 
-- **Third-party copyrighted material:** game screenshots, logos, character art, ripped models or textures, music, or text copied from other sources beyond short, attributed quotes.
+- **Third-party copyrighted material:** game screenshots, logos, character art, ripped models or textures, music, or text copied from other sources beyond short, attributed quotes. See [sourcing and originality](docs/sourcing-and-originality.md).
 - **Confidential information:** anything covered by a non-disclosure agreement, including platform-holder documentation, unreleased product details or internal company material.
 - **Personal data:** real players' names, emails, account IDs, or anything that identifies a real person, including in test files. Use made-up data.
 - **Secrets:** API keys, tokens, passwords or private keys, even "test" ones.
@@ -29,6 +29,7 @@ Mentioning products and companies by name to describe the problem is fine. See [
 ## Writing guidelines
 
 - **Cite your sources.** Every factual claim should link to a source. Prefer primary sources (specifications, filings, official announcements, repositories). If you can only find secondary reporting, say "reported" or "according to".
+- **Write in your own words.** Quote briefly (40 words at most) with a link, and credit the ideas you build on. The full rules are in [sourcing and originality](docs/sourcing-and-originality.md).
 - **Use plain language.** Write for a smart reader who isn't an expert in *your* field. Define jargon or link to the [glossary](docs/glossary.md).
 - **Separate facts from opinions.** Proposals go under "candidate directions", not in the description of what exists.
 - **Update "Last reviewed"** when you check a doc's facts.
@@ -49,6 +50,7 @@ AI agents are welcome tools here, and the repository is set up for them.
 
 - **Point your agent at [AGENTS.md](AGENTS.md).** It has the rules, a map of the repository and a guide for each kind of task. Claude Code loads it automatically through [CLAUDE.md](CLAUDE.md), and the [skills](skills/README.md) work in both Claude Code and Cursor.
 - **You're responsible for what your agent submits.** Review it, check its sources, and sign off the commits yourself.
+- **AI research is a lead, not a source.** Check every fact at the original source and write the text yourself ([sourcing and originality](docs/sourcing-and-originality.md#working-with-ai-tools)).
 - **Say in the pull request description that an agent helped.**
 - **Don't commit an agent's plans, task lists or scratch notes.** Put durable results in a problem doc, an ADR or a spike.
 

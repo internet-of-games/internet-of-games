@@ -7,7 +7,7 @@ status: open
 difficulty: medium
 champion: unassigned
 related: [P-0002, P-0011, P-0014, P-0020, P-0021, P-0027]
-last_reviewed: 2026-11-15
+last_reviewed: 2026-11-24
 ---
 
 # P-0019: Cross-game rewards as entitlements
@@ -37,6 +37,7 @@ Game B records that the offer was redeemed, under its own identifier for the pla
 - **No currency and no resale.** The item is Game B's own, granted under Game B's terms.
 - **One redemption per player**, without tracking the player across games.
 - **Clear disclosure** of what the player gets and on what terms. EU consumer rules on in-game purchases point this way ([European Commission](https://commission.europa.eu/live-work-travel-eu/consumer-rights-and-complaints/enforcement-consumer-protection/coordinated-actions/social-media-online-games-and-search-engines_en)).
+- **Paid items face new EU rules.** The proposed Digital Fairness Act would require real-money prices for items bought with paid virtual currencies, and would keep paid loot boxes and pay-to-win purchases away from minors ([legal-and-policy §5](../docs/legal-and-policy.md#5-virtual-currencies-loot-boxes-and-consumer-protection)). Rewards granted free, on the strength of a claim, avoid most of this.
 - **Platform store rules** may treat some rewards as purchases ([P-0021](P-0021-platform-holder-rules.md)).
 
 ## What "solved enough" looks like (Phase 2)

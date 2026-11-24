@@ -1,6 +1,6 @@
 # Landscape, late 2026
 
-*Last reviewed: 2026-11-15. This is a snapshot. Numbers, statuses and repository activity will move; corrections are welcome.*
+*Last reviewed: 2026-11-24. This is a snapshot. Numbers, statuses and repository activity will move; corrections are welcome.*
 
 **Summary:** the "metaverse" pitch of 2021 has faded. In its place there are two things. Walled gardens keep getting bigger, and a quiet layer of open standards keeps maturing. Nobody has yet *composed* those open standards into a shared foundation that games actually build on. That gap is where this project sits.
 
@@ -8,12 +8,14 @@
 
 | Platform | Scale | Where identity lives |
 |---|---|---|
-| **Roblox** | $4.9B revenue and $6.8B bookings in 2025; 144M daily active users in Q4 2025; creators earned more than $1.5B in 2025 ([GamesBeat](https://gamesbeat.com/roblox-stock-rises-20-after-earnings-daily-active-users-up-69-in-q4/); [earnings call](https://www.fool.com/earnings/call-transcripts/2026/02/05/roblox-rblx-q4-2025-earnings-call-transcript/)) | A Roblox account and avatar work only inside Roblox. |
+| **Roblox** | $4.9B revenue and $6.8B bookings in 2025; 144M daily active users in Q4 2025; creators earned more than $1.5B in 2025 ([GamesBeat](https://gamesbeat.com/roblox-stock-rises-20-after-earnings-daily-active-users-up-69-in-q4/); [earnings call](https://www.fool.com/earnings/call-transcripts/2026/02/05/roblox-rblx-q4-2025-earnings-call-transcript/)). 138M daily active users in Q3 2026 ([Roblox Q3 2026 letter](https://s27.q4cdn.com/984876518/files/content_files/Q3-2026-Earnings-Shareholder-Letter.pdf)) | A Roblox account and avatar work only inside Roblox. |
 | **Fortnite / UEFN** | More than $1B paid to creators since 2023, announced 17 June 2026. Creator islands account for 47% of Fortnite playtime ([Tubefilter](https://www.tubefilter.com/2026/06/17/epic-games-unreal-editor-for-fortnite-creator-payouts/); [GamesBeat](https://gamesbeat.com/epic-games-has-paid-out-1-billion-to-creators-since-launching-unreal-editor-for-fortnite-in-2023/)) | An Epic account and Fortnite locker work only inside Epic's ecosystem. |
 
 Epic is the big company that talks most about interoperability. Its CEO has argued that the metaverse has to be built on open protocols and standards ([Game Developer](https://gamedeveloper.com/business/tim-sweeney-says-only-hope-for-new-games-is-to-connect-to-economies-of-other-games-)). Epic has also said Unreal Engine 6 will connect Fortnite with other Unreal games ([PC Gamer](https://www.pcgamer.com/gaming-industry/epic-boss-tim-sweeney-says-unreal-engine-6-will-be-a-metaverse-joining-fortnite-and-other-unreal-games-including-an-upcoming-persistent-universe-in-development-with-disney)). At Unite 2025, Unity said its in-app purchase tools would come to Unreal developers and that Unity-made games could take part in Fortnite's economy ([PocketGamer.biz](https://www.pocketgamer.biz/tim-sweeney-at-unite-2025-unitys-in-app-purchase-apis-coming-to-unreal-engine-devs)). That is interoperability **organized around one ecosystem's economy**, not a neutral standard.
 
 Disney invested $1.5B in Epic in 2024 to build a persistent Disney universe connected to Fortnite ([GameSpot](https://www.gamespot.com/articles/a-disney-persistent-universe-tied-to-fortnite-is-in-the-works/1100-6520900/)). The first visible piece, *Disneyland Game Rush*, runs inside Fortnite ([Monorail News](https://monorailnews.com/disneyland-game-rush-marks-the-first-step-in-disneys-fortnite-persistent-universe/)). As of this review we found no confirmed launch date for the full universe.
+
+Roblox is coming at the same idea from the other side, by bringing other games in. Its third-quarter 2026 shareholder letter describes two initiatives. "The Universal Player" aims to bring existing games from consoles, PCs and phones onto Roblox, converted with AI. "Roblox Everywhere" would let creators publish games built on Roblox as standalone apps in other stores, while still using Roblox's economy, social graph and safety systems; Roblox expects to publish the first of them in the first half of 2027 ([Roblox Q3 2026 letter](https://s27.q4cdn.com/984876518/files/content_files/Q3-2026-Earnings-Shareholder-Letter.pdf)). In November 2026 it opened a free program that converts selected existing games to Roblox with AI-assisted tools. Developers keep ownership of their games, and Roblox warns that some games may not convert successfully ([Roblox](https://create.roblox.com/docs/creator-programs/convert)). In both cases, the player's identity stays with Roblox.
 
 ## 2. Platform accounts are the de facto cross-game identity
 
@@ -27,7 +29,7 @@ Today, "one identity across many games" mostly means a **platform account**: Pla
 
 ## 4. The open standards layer matured, quietly
 
-| Piece | Status (verified 2026-11-15) |
+| Piece | Status (verified 2026-11-24) |
 |---|---|
 | W3C Verifiable Credentials Data Model 2.0 | W3C Recommendation, 15 May 2025 ([W3C](https://www.w3.org/TR/vc-data-model-2.0/)) |
 | W3C Bitstring Status List 1.0 (revocation) | W3C Recommendation, 15 May 2025 ([W3C](https://www.w3.org/TR/vc-bitstring-status-list/)) |
@@ -38,8 +40,13 @@ Today, "one identity across many games" mostly means a **platform account**: Pla
 | Open Badges 3.0 (achievement credentials) | 1EdTech standard built on Verifiable Credentials 2.0; document revised June 2026 ([1EdTech](https://www.imsglobal.org/spec/ob/v3p0)) |
 | VRM 1.0 avatar format | Stable. In October 2024 Khronos and the VRM Consortium agreed to collaborate ([Khronos](https://www.khronos.org/news/press/the-khronos-group-and-vrm-consortium-collaborate-to-advance-international-standardization-of-the-vrm-3d-avatar-file-format)). A Khronos Character and Avatar group formed in October 2025, with its first extensions planned for review in late 2026 ([Khronos SIGGRAPH 2026 slides](https://www.khronos.org/assets/uploads/developers/presentations/glTF_2_1_and_Beyond_-_SIGGRAPH_Jul26.pdf)) |
 | OMI glTF extensions | Active. `KHR_audio_emitter` graduated to Khronos; physics, spawn points and seats are in progress. The identity-related extensions are archived ([OMI](https://github.com/omigroup/gltf-extensions)) |
+| W3C Digital Credentials API | Working Draft, 23 November 2026. The Federated Identity Working Group is preparing a first "Level 1" for Candidate Recommendation, and its chairs say the open privacy issues must be resolved first ([W3C](https://www.w3.org/TR/digital-credentials/); [chairs' report](https://lists.w3.org/Archives/Public/public-fedid-wg/2026Nov/0001.html)) |
+| glTF 2.1 | Draft. A backward-compatible revision that adds scenes composed from several files, bounding volumes and a 64-bit binary container. Khronos presented it at a public town hall on 17 November 2026 ([Khronos](https://www.khronos.org/events/gltf-2.1-town-hall)) |
+| glTF interactivity (`KHR_interactivity`) | Ratified, so glTF files can now carry behavior graphs ([Khronos extension registry](https://github.com/KhronosGroup/glTF/blob/main/extensions/README.md)) |
 
 The full picture is in [standards-map.md](standards-map.md). The pattern is clear: **each layer has a mature or maturing standard, but no one has assembled them into a gaming profile.**
+
+**The closest effort to ours is the Metaverse Standards Forum's Web of Worlds.** Its whitepaper, dated March 2026 and announced in June, proposes linked 3D worlds that each have a URI, assets in existing formats, and a portable "User Manifest" that carries a person's identity, avatar, preferences and assets between worlds. The manifest builds on DIDs, Verifiable Credentials and a digital wallet ([whitepaper](https://webofworlds.github.io/initial_MSF_Whitepaper/gen/MSF-3DWebInterop_WoWWhitepaper.pdf); [MSF announcement](https://metaverse-standards.org/news/blog/announcing-the-web-of-worlds-whitepaper-a-concrete-path-to-the-open-metaverse/)). At a W3C and MSF breakout at TPAC on 30 October 2026, participants mapped existing W3C standards to this design, asked whether a manifest or something that ties identity and credentials together is the right mechanism, and suggested a joint W3C, MSF and Khronos workshop as a next step ([W3C event](https://www.w3.org/events/meetings/437890c5-8be3-44d2-b5e8-d8cd2a69d847/); [meeting log](https://www.w3.org/2026/10/30-spatial-web-msf-irc)). The proposal isn't specific to games and is still early, but it overlaps with our identity, appearance and travel layers. We're comparing the two before designing further.
 
 ## 5. Open-source worlds: small but alive
 
@@ -71,7 +78,7 @@ Repository activity, read from the GitHub API on 2026-11-15:
 ## 6. Regulators are paying attention
 
 - **Virtual currencies:** in March 2025, EU consumer authorities published key principles for in-game virtual currencies, such as showing prices in real money ([European Commission](https://commission.europa.eu/live-work-travel-eu/consumer-rights-and-complaints/enforcement-consumer-protection/coordinated-actions/social-media-online-games-and-search-engines_en)).
-- **The Digital Fairness Act:** proposed by the European Commission on 11 November 2026, according to law-firm analyses. It includes rules on paid virtual currencies and loot boxes, including protections for minors. It is a proposal, not yet law ([Ashurst](https://www.ashurstperkinscoie.com/en/insights/digital-fairness-act-brussels-takes-on-consumer-enforcement/); [Winston Taylor](https://www.winstontaylor.com/insights/the-eu-draft-digital-fairness-act-consumer-protection-for-the-digital-age)).
+- **The Digital Fairness Act:** proposed by the European Commission on 11 November 2026. For games, it would require prices in paid virtual currencies to be shown in real money, and the odds of paid random rewards such as loot boxes to be disclosed. In games aimed at minors, or known to be used by them, paid virtual currencies would stay switched off unless a parent approves, and minors couldn't be offered paid loot boxes or pay-to-win purchases at all. It's a proposal: the European Parliament and the Council will now negotiate the text ([proposal](https://commission.europa.eu/document/download/0575d59f-554f-4a9e-b54b-e6b717175809_en?filename=Proposal+for+a+Digital+Fairness+Act.pdf), Articles 14 to 16; [Paul Weiss](https://www.paulweiss.com/insights/client-memos/european-commission-proposes-the-digital-fairness-act)). See [legal-and-policy.md](legal-and-policy.md#5-virtual-currencies-loot-boxes-and-consumer-protection).
 - **Game preservation:** the "Stop Destroying Videogames" European Citizens' Initiative was submitted in January 2026 with about 1.29 million verified signatures. In June 2026 the Commission declined to propose a binding law and opted for a voluntary code of conduct instead ([Lewis Silkin](https://www.lewissilkin.com/insights/2026/06/24/european-commission-stops-short-of-imposing-mandatory-requirements-following-citi-102n4yy)).
 - **Digital identity and age checks:** EU member states must offer digital identity wallets by around the end of 2026, and the Commission has urged every member state to offer an age-verification app by 31 December 2026 ([European Commission](https://digital-strategy.ec.europa.eu/en/news/commission-urges-member-states-rollout-eu-age-verification-app); [Inside Privacy](https://www.insideprivacy.com/minors/eu-sets-the-clock-on-age-verification-rollout-urged-by-end%E2%80%912026/)).
 - **Children's privacy (US):** amendments to the COPPA Rule took effect in June 2025, with most compliance due by April 2026 ([Hunton](https://www.hunton.com/privacy-and-cybersecurity-law-blog/ftc-publishes-final-coppa-rule-amendments)).
@@ -86,7 +93,7 @@ More detail is in [legal-and-policy.md](legal-and-policy.md).
 
 ## What this means for the Internet of Games
 
-1. **Don't compete with walled gardens on content.** Build the neutral layer they don't have an incentive to build.
+1. **Don't compete with walled gardens on content.** Build the neutral layer they don't have an incentive to build. Roblox's plan to bring other games onto its platform ([§1](#1-walled-gardens-are-winning)) is the walled-garden version of portability. The open version has to offer what joining a single platform can't: an identity that no one company controls.
 2. **Don't invent new standards where good ones exist.** The work is *composition*: a gaming profile across Verifiable Credentials, DIDs, OpenID and glTF/VRM, plus working code.
 3. **Don't depend on any company's service**, including ours. Ready Player Me showed what happens otherwise.
 4. **Start where interoperability is an advantage, then grow toward every game.** Small and mid-size games, web games and open-source engines come first; the standard has to be ready for the biggest games too ([P-0030](../problems/P-0030-built-for-every-game.md)).

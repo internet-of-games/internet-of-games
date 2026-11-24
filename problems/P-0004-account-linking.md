@@ -7,7 +7,7 @@ status: open
 difficulty: medium
 champion: unassigned
 related: [P-0003, P-0006, P-0021]
-last_reviewed: 2026-11-15
+last_reviewed: 2026-11-24
 ---
 
 # P-0004: Linking existing game accounts without a new account system
@@ -23,6 +23,7 @@ No game will rip out its account system to adopt a standard, and players won't w
 - **OAuth 2.0 and OpenID Connect** are how most online services, games included, handle login ([OpenID Connect Core](https://openid.net/specs/openid-connect-core-1_0.html)).
 - **Epic Online Services** is free, works with any engine and any combination of stores and platforms, and lets players find friends across PC stores ([Epic](https://onlineservices.epicgames.com/); [Epic news](https://onlineservices.epicgames.com/news/epic-online-services-release-free-pc-crossplay-tools)). It shows that cross-store identity works, but within one company's service.
 - **OpenID for Verifiable Presentations 1.0** (Final, July 2025) defines how a holder presents credentials to a verifier ([OpenID4VP](https://openid.net/specs/openid-4-verifiable-presentations-1_0.html)).
+- **The W3C Digital Credentials API** (Working Draft, 23 November 2026) lets a web page ask the browser for credentials held in a wallet. The draft requires browsers to support OpenID4VP and ISO mobile-document presentation ([W3C](https://www.w3.org/TR/digital-credentials/)). Its working group is preparing a first level for Candidate Recommendation, and the chairs say the open privacy issues must be resolved first ([chairs' report](https://lists.w3.org/Archives/Public/public-fedid-wg/2026Nov/0001.html)). It helps web games; games on native engines don't go through a browser.
 - **Self-Issued OpenID Provider v2** (draft) lets the user act as their own identity provider ([SIOPv2](https://openid.net/specs/openid-connect-self-issued-v2-1_0.html)).
 
 ## A sketch of the flow
