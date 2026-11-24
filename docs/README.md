@@ -8,16 +8,17 @@ Suggested order for newcomers:
 4. [Landscape, late 2026](landscape-2026.md): who's doing what right now.
 5. [Prior art](prior-art.md): what's been tried before, and what each attempt teaches us.
 6. [Standards map](standards-map.md): existing standards to build on, layer by layer.
-7. [Layer model](layer-model.md): how the pieces fit together.
-8. [What should travel between games](portability-matrix.md): what carries over, and what deliberately doesn't.
-9. [Design principles](design-principles.md): rules learned from earlier failures.
-10. [Threat model](threat-model.md): what we protect, in priority order, and the threats every proposal must address.
-11. [The business case](business-case.md): why a game would join.
-12. [How interoperability happened elsewhere](interop-history.md): the web, email, phone numbers, banking and cross-play.
-13. [Legal and policy landscape](legal-and-policy.md): rights, ratings, privacy and regulation. This isn't legal advice.
-14. [Sourcing and originality](sourcing-and-originality.md): how we use other people's work, from facts and quotations to credit and licenses.
-15. [Open questions](open-questions.md): cross-cutting questions that don't belong to any one problem.
-16. [Glossary](glossary.md) and [References](references.md).
+7. [Working with upstream groups](upstream.md): how to take part in each group whose standards we build on, and on what terms.
+8. [Layer model](layer-model.md): how the pieces fit together.
+9. [What should travel between games](portability-matrix.md): what carries over, and what deliberately doesn't.
+10. [Design principles](design-principles.md): rules learned from earlier failures.
+11. [Threat model](threat-model.md): what we protect, in priority order, and the threats every proposal must address.
+12. [The business case](business-case.md): why a game would join.
+13. [How interoperability happened elsewhere](interop-history.md): the web, email, phone numbers, banking and cross-play.
+14. [Legal and policy landscape](legal-and-policy.md): rights, ratings, privacy and regulation. This isn't legal advice.
+15. [Sourcing and originality](sourcing-and-originality.md): how we use other people's work, from facts and quotations to credit and licenses.
+16. [Open questions](open-questions.md): cross-cutting questions that don't belong to any one problem.
+17. [Glossary](glossary.md) and [References](references.md).
 
 After that, pick a problem from [problems/README.md](../problems/README.md).
 

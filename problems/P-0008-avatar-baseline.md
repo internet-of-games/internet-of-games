@@ -57,6 +57,13 @@ Our current lean is option 1.
 - **P-0008-Q3:** What's the state of VRM support in Unreal, and who could help?
 - **P-0008-Q4:** What should the baseline say about animation? Should games retarget their own animations, or should avatars carry some?
 
+## Champion brief
+
+- **First deliverable:** A draft "Avatar Baseline v0": the parts of VRM 1.0 we accept, the required metadata and the 2D fallback.
+- **Decisions you'd drive:** VRM 1.0 now or the Khronos extensions later (P-0008-Q1), non-humanoid characters (P-0008-Q2) and animation (P-0008-Q4).
+- **Helpful background:** glTF and VRM, 3D art pipelines, and the importer of at least one engine.
+- **Commitment:** a few hours a week, until a proposal is ready for public review.
+
 ## How to help
 
 - Make CC0 test avatars: original designs only, with no fan art of existing characters.

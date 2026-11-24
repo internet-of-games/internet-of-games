@@ -54,6 +54,13 @@ Interoperability only pays off once many games support it, and every one of them
 - **P-0025-Q3:** How do we keep cryptographic dependencies small and auditable?
 - **P-0025-Q4:** What constraints do mobile platforms add?
 
+## Champion brief
+
+- **First deliverable:** A table of the signature algorithms each target engine can verify out of the box, and a sketch of the smallest "hello passport" integration.
+- **Decisions you'd drive:** native libraries or a shared WebAssembly core (P-0025-Q2), and how to keep dependencies small and auditable (P-0025-Q3).
+- **Helpful background:** game development in Godot or on the web, and SDK design.
+- **Commitment:** a few hours a week, until a proposal is ready for public review.
+
 ## How to help
 
 - Check signature verification support in Godot, Unity and Unreal.

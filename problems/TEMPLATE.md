@@ -58,6 +58,15 @@ How the options hold up across game sizes, genres, platforms, ratings and connec
 - **P-NNNN-Q1:** …
 - **P-NNNN-Q2:** …
 
+## Champion brief
+
+For problems in the current or next phase: what a champion would take on.
+
+- **First deliverable:** …
+- **Decisions you'd drive:** the question IDs a champion would settle
+- **Helpful background:** …
+- **Commitment:** a few hours a week, until a proposal is ready for public review
+
 ## How to help
 
 Concrete tasks a newcomer could pick up.

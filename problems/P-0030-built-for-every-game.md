@@ -55,6 +55,13 @@ An online game signs claims on its servers, where its keys are safe. A fully off
 - **P-0030-Q3:** What does a publisher need in order to use the standard *inside* its own portfolio, for example a shared identity across all its titles?
 - **P-0030-Q4:** What's the smallest useful profile for very small games and game jams?
 
+## Champion brief
+
+- **First deliverable:** A written set of universality requirements with target numbers, each with its basis.
+- **Decisions you'd drive:** performance targets (P-0030-Q1), how offline games sign claims and how much they're trusted (P-0030-Q2), and what publishers need inside their own portfolios (P-0030-Q3).
+- **Helpful background:** experience across several kinds of games, platforms or studio sizes, and performance testing.
+- **Commitment:** a few hours a week, until a proposal is ready for public review.
+
 ## How to help
 
 - Developers from different genres, platforms and studio sizes: describe what would stop *your* game from adopting this.

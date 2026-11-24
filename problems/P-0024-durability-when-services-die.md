@@ -50,6 +50,13 @@ Regulators are paying attention too. The European Commission answered the "Stop 
 - **P-0024-Q3:** Should following an end-of-life procedure be part of conformance ([P-0026](P-0026-conformance-and-interop-testing.md))?
 - **P-0024-Q4:** How do players back up their passports simply and safely?
 
+## Champion brief
+
+- **First deliverable:** The kill-switch test and an end-of-life procedure for issuers.
+- **Decisions you'd drive:** what happens to revocation when an issuer disappears (P-0024-Q1), who archives final keys (P-0024-Q2) and whether end of life is part of conformance (P-0024-Q3).
+- **Helpful background:** digital preservation and distributed systems.
+- **Commitment:** a few hours a week, until a proposal is ready for public review.
+
 ## How to help
 
 - Design the kill-switch test.

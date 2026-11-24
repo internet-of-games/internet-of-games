@@ -68,6 +68,10 @@ These are good starting points if you're new:
 - **[P-0013](P-0013-portable-claims.md):** write example achievement credentials for made-up games.
 - **[P-0003](P-0003-player-identifier.md):** compare identifier methods in a table.
 
+## Become a champion
+
+Every Phase 1 problem doc has a **Champion brief** that says what a champion would take on: the first deliverable, the decisions they'd drive and the background that helps. To volunteer, say so in the problem's Discussion thread or in an issue. A maintainer then records you in the doc's `champion` field ([GOVERNANCE.md](../GOVERNANCE.md)). AI agents can help a champion, but they are never champions themselves.
+
 ## Status lifecycle
 
 | Status | Meaning |

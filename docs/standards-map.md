@@ -78,9 +78,11 @@ The **Fit** column is our current thinking, not a decision. Decisions happen in 
 
 | Effort | Steward | Status | Fit |
 |---|---|---|---|
-| [Web of Worlds](https://webofworlds.github.io/) | Metaverse Standards Forum, Spatial Computing Working Group | A whitepaper (March 2026), a draft API and early implementations ([whitepaper](https://webofworlds.github.io/initial_MSF_Whitepaper/gen/MSF-3DWebInterop_WoWWhitepaper.pdf); [API](https://webofworlds.github.io/WoWAPI)) | Linked 3D worlds with a URI each, portals and "metaverse bookmarks", plus a portable User Manifest (identity, avatar, preferences and assets) built on DIDs, Verifiable Credentials and wallets. It's general-purpose, not specific to games. The closest effort to our whole stack, so we're comparing the two before designing further |
+| [Web of Worlds](https://webofworlds.github.io/) | Metaverse Standards Forum, Spatial Computing Working Group | A whitepaper (March 2026), a draft API and early implementations ([whitepaper](https://webofworlds.github.io/initial_MSF_Whitepaper/gen/MSF-3DWebInterop_WoWWhitepaper.pdf); [API](https://webofworlds.github.io/WoWAPI)) | Linked 3D worlds with a URI each, portals and "metaverse bookmarks", plus a portable User Manifest (identity, avatar, preferences and assets) built on DIDs, Verifiable Credentials and wallets. It's general-purpose, not specific to games. The closest effort to our whole stack ([comparison](spikes/2026-11-24-web-of-worlds-user-manifest.md)) |
 
 ## Who to work with
+
+How to take part in each of these groups, and on what terms, is in [Working with upstream groups](upstream.md).
 
 | Organization | What they do | How we relate |
 |---|---|---|
@@ -96,7 +98,7 @@ The **Fit** column is our current thinking, not a decision. Decisions happen in 
 ## Gaps: what doesn't exist yet
 
 1. **A gaming credential profile.** Achievements, milestones and ranks expressed as Verifiable Credentials or Open Badges with game-appropriate fields and privacy defaults ([P-0013](../problems/P-0013-portable-claims.md)).
-2. **A portable player document** that combines an identifier, an avatar reference, claims and preferences into one small file ([P-0003](../problems/P-0003-player-identifier.md), [P-0008](../problems/P-0008-avatar-baseline.md), [P-0013](../problems/P-0013-portable-claims.md)). The Web of Worlds User Manifest is a general-purpose proposal for this, and a gaming profile might build on it.
+2. **A portable player document** that combines an identifier, an avatar reference, claims and preferences into one small file ([P-0003](../problems/P-0003-player-identifier.md), [P-0008](../problems/P-0008-avatar-baseline.md), [P-0013](../problems/P-0013-portable-claims.md)). The Web of Worlds User Manifest is a general-purpose proposal for this, and a gaming profile might build on it ([comparison](spikes/2026-11-24-web-of-worlds-user-manifest.md)).
 3. **A style-independent appearance description**, so games with different art styles can draw "the same person" ([P-0009](../problems/P-0009-cross-style-translation.md)).
 4. **A shared avatar safety and budget profile** that works across engines ([P-0010](../problems/P-0010-avatar-budgets-and-file-safety.md)).
 5. **Conventions for interpreting foreign claims** ([P-0014](../problems/P-0014-claim-interpretation.md)).

@@ -31,6 +31,7 @@ A problem doc describes one sub-problem of the mission. It explores options; it 
    - **Threats:** which threats in the [threat model](../../docs/threat-model.md) apply, and how each option handles them.
    - **Works for every game?:** how the options hold up across game sizes, genres, platforms, ratings and connectivity ([P-0030](../../problems/P-0030-built-for-every-game.md)).
    - **Open questions:** written as `- **P-NNNN-Q1:** …` and numbered from 1, in order.
+   - **Champion brief** (for problems in the current or next phase): the first deliverable, the decisions a champion would drive, helpful background and the expected commitment.
    - **How to help:** concrete tasks a newcomer could pick up.
    - **References.**
 

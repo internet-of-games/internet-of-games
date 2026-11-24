@@ -55,6 +55,13 @@ last_reviewed: 2026-11-15
 - **P-0011-Q3:** What's the rights status of AI-generated avatars, and how should they be labeled ([OQ-11](../docs/open-questions.md#people-and-safety))?
 - **P-0011-Q4:** What should the policy be on likeness and impersonation?
 
+## Champion brief
+
+- **First deliverable:** A license metadata profile that maps VRM's license fields onto standard license identifiers, and what validators do with missing or unclear licenses.
+- **Decisions you'd drive:** exporting avatars from games' creators (P-0011-Q1), takedowns (P-0011-Q2), AI-generated avatars (P-0011-Q3) and likeness (P-0011-Q4).
+- **Helpful background:** copyright and media licensing; a lawyer's review is especially valuable here.
+- **Commitment:** a few hours a week, until a proposal is ready for public review.
+
 ## How to help
 
 - People with media or IP law experience: review this doc. Public comments are welcome, but nothing here is legal advice.

@@ -48,6 +48,13 @@ Standards that can't be tested drift apart, with every implementation reading th
 - **P-0026-Q3:** How should the malicious-file corpus be shared safely ([P-0010](P-0010-avatar-budgets-and-file-safety.md))?
 - **P-0026-Q4:** Should third-party implementations be able to run the conformance suite automatically?
 
+## Champion brief
+
+- **First deliverable:** The validator's command-line interface and output format, plus the first valid and invalid test files.
+- **Decisions you'd drive:** whether a "compatible" mark exists (P-0026-Q1), who maintains the test files (P-0026-Q2) and how to share the malicious corpus (P-0026-Q3).
+- **Helpful background:** test suites, interoperability events and specification work.
+- **Commitment:** a few hours a week, until a proposal is ready for public review.
+
 ## How to help
 
 - Write test vectors, especially invalid ones.

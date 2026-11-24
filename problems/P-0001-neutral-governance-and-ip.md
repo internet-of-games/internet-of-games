@@ -7,7 +7,7 @@ status: open
 difficulty: medium
 champion: unassigned
 related: [P-0002, P-0026]
-last_reviewed: 2026-11-15
+last_reviewed: 2026-11-24
 ---
 
 # P-0001: Neutral governance and an IP policy for specifications
@@ -26,7 +26,8 @@ last_reviewed: 2026-11-15
 - **OMI** develops glTF extensions as a W3C Community Group, and contributors sign the [W3C Community Contributor License Agreement](https://www.w3.org/community/about/process/cla/) before a proposal enters Stage 1 ([OMI process](https://github.com/omigroup/gltf-extensions)).
 - **The Community Specification License** is a lightweight framework for developing specifications on GitHub with patent commitments built in ([Community Specification](https://github.com/CommunitySpecification/Community_Specification)).
 - **The Open Web Foundation Agreement (OWFa 1.0)** is a patent and copyright commitment used for some open specifications ([Open Web Foundation](https://www.openwebfoundation.org/the-agreements/the-owf-1-0-agreements-granted-claims/owfa-1-0)).
-- **Foundations and standards bodies** that could eventually host the work include the W3C (through Community Groups), DIF, the OpenID Foundation, Khronos and the Linux Foundation. The Metaverse Standards Forum coordinates between these bodies but is not a standards body itself ([Metaverse Standards Forum](https://metaverse-standards.org/)).
+- **A side-by-side comparison** of these agreements, with questions for a lawyer, is in a [spike](../docs/spikes/2026-11-24-specification-ip-policies.md).
+- **Foundations and standards bodies** that could eventually host the work include the W3C (through Community Groups), DIF, the OpenID Foundation, Khronos and the Linux Foundation. The Metaverse Standards Forum coordinates between these bodies but is not a standards body itself ([Metaverse Standards Forum](https://metaverse-standards.org/)). How to take part in each, and what contributors agree to, is in [Working with upstream groups](../docs/upstream.md).
 
 ## Constraints
 

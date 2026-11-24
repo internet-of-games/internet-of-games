@@ -54,6 +54,13 @@ last_reviewed: 2026-11-24
 - **P-0015-Q3:** How fresh does a cached status list need to be?
 - **P-0015-Q4:** What happens to credentials when an issuer's key is compromised, or when the issuer shuts down ([P-0024](P-0024-durability-when-services-die.md))?
 
+## Champion brief
+
+- **First deliverable:** A revocation demo with a status list, and a threat model for achievement mills and boosting.
+- **Decisions you'd drive:** whether there's a public issuer registry (P-0015-Q1), how fresh cached status lists must be (P-0015-Q3), and issuer key loss or shutdown (P-0015-Q4).
+- **Helpful background:** public-key infrastructure, credential status lists and anti-cheat work.
+- **Commitment:** a few hours a week, until a proposal is ready for public review.
+
 ## How to help
 
 - Prototype status-list issuance and checking in the demo stack.
