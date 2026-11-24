@@ -32,7 +32,7 @@ This is what turns many separate games into one connected universe, beyond simpl
 - **Spawn points.** OMI's `OMI_spawn_point` glTF extension marks places where players can arrive in a 3D world, which makes it a building block for "places inside worlds" ([OMI](https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/OMI_spawn_point)).
 - **Portals.** OMA3's draft Inter-World Portaling System describes moving between worlds ([specification](https://github.com/oma3dao/iwps-specification)).
 - **Rooms as worlds.** Third Room used Matrix room addresses as world addresses ([GitHub](https://github.com/matrix-org/thirdroom)).
-- **Web of Worlds.** A Metaverse Standards Forum whitepaper proposes a URI for every world, portals between worlds and "metaverse bookmarks" that save a place and a viewpoint ([whitepaper](https://webofworlds.github.io/initial_MSF_Whitepaper/gen/MSF-3DWebInterop_WoWWhitepaper.pdf)). A W3C breakout at TPAC 2026 discussed spatial, semantic and time-based addressing, and the gap between a world's local coordinates and real-world locations ([meeting log](https://www.w3.org/2026/10/30-spatial-web-msf-irc)).
+- **Web of Worlds.** A Metaverse Standards Forum whitepaper proposes a URI for every world, portals between worlds and "metaverse bookmarks" that save a place and a viewpoint ([whitepaper](https://webofworlds.github.io/initial_MSF_Whitepaper/gen/MSF-3DWebInterop_WoWWhitepaper.pdf)). A W3C breakout at TPAC 2026 discussed spatial, semantic and time-based addressing, and the gap between a world's local coordinates and real-world locations ([meeting log](https://www.w3.org/2026/10/30-spatial-web-msf-irc)). A [comparison](../docs/spikes/2026-11-24-web-of-worlds-user-manifest.md) maps these ideas onto ours.
 
 ## A sketch
 
