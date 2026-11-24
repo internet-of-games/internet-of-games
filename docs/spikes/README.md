@@ -16,5 +16,6 @@ A spike is a time-boxed investigation that answers **one question** with researc
 | 2026-11-24 | [Which IP policy should govern our specification text?](2026-11-24-specification-ip-policies.md) | P-0001 |
 | 2026-11-24 | [Which signature algorithms can each engine verify without extra libraries?](2026-11-24-signature-support-in-engines.md) | P-0003, P-0013, P-0025 |
 | 2026-11-24 | [What budgets and file rules should the v0 avatar baseline use?](2026-11-24-avatar-budgets-and-file-rules.md) | P-0008, P-0010, P-0011 |
+| 2026-11-24 | [How should a game write down what foreign claims mean to it?](2026-11-24-claim-interpretation-rules.md) | P-0014, P-0019 |
 
 More candidates are in the "How to help" sections of the [problem docs](../../problems/README.md).

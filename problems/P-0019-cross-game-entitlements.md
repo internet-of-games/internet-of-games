@@ -30,7 +30,7 @@ Game B publishes a rule:
 
 > Holders of a credential of category *completed-main-story* from issuer *Game A* may claim the cosmetic *"Wanderer's Cloak"* once.
 
-Game B records that the offer was redeemed, under its own identifier for the player, to prevent double-claiming.
+Game B records that the offer was redeemed, under its own identifier for the player, to prevent double-claiming. A [spike](../docs/spikes/2026-11-24-claim-interpretation-rules.md) shows how offers can reuse the rule format from P-0014, and how to keep them free and deterministic.
 
 ## Constraints
 
