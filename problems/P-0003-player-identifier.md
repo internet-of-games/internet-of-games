@@ -58,6 +58,13 @@ Today the only identities that span games are platform accounts (PlayStation, Xb
 - **P-0003-Q3:** Do we want human-readable handles (for example domain-based handles, as on Bluesky), and how do they relate to display names?
 - **P-0003-Q4:** Do we need one global identifier at all, or only per-game identifiers plus proofs that they belong to the same player ([P-0006](P-0006-privacy-unlinkability.md))?
 
+## Champion brief
+
+- **First deliverable:** A comparison of `did:key`, `did:web`, `did:webvh` and `did:plc` against the constraints above, including which ones each target engine can verify, and how they relate to the identifiers in the Web of Worlds proposal ([comparison](../docs/spikes/2026-11-24-web-of-worlds-user-manifest.md)).
+- **Decisions you'd drive:** the Phase 1 default and the path to production (P-0003-Q1), and hosting and switching hosts (P-0003-Q2).
+- **Helpful background:** decentralized identifiers and key management, plus some experience with a game engine.
+- **Commitment:** a few hours a week, until a proposal is ready for public review.
+
 ## How to help
 
 - Build a comparison table of DID methods against the constraints above.

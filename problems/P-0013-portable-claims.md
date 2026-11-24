@@ -61,6 +61,13 @@ This is the core of "meaningful continuity" in the [problem statement](../docs/p
 - **P-0013-Q3:** How should playtime and skill be expressed without enabling profiling?
 - **P-0013-Q4:** Should images be embedded (durable but larger) or linked (smaller but can break)?
 
+## Champion brief
+
+- **First deliverable:** Example achievement credentials for made-up games, written in both candidate formats and compared side by side.
+- **Decisions you'd drive:** Open Badges 3.0 or SD-JWT credentials (P-0013-Q1), a shared category list (P-0013-Q2) and embedded or linked images (P-0013-Q4).
+- **Helpful background:** W3C Verifiable Credentials, JSON-LD or JWT tooling, and game achievement systems.
+- **Commitment:** a few hours a week, until a proposal is ready for public review.
+
 ## How to help
 
 - Map Open Badges 3.0 fields onto typical game achievements.

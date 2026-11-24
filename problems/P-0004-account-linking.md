@@ -61,6 +61,13 @@ No game will rip out its account system to adopt a standard, and players won't w
 - **P-0004-Q3:** What constraints do console platforms place on linking flows?
 - **P-0004-Q4:** How should multiple characters per player work ([OQ-7](../docs/open-questions.md#scope))?
 
+## Champion brief
+
+- **First deliverable:** A threat model for the linking flow, then the two candidate flows prototyped in a web demo.
+- **Decisions you'd drive:** OpenID4VP or a simple challenge for Phase 1 (P-0004-Q1), and whether "account linked" credentials exist (P-0004-Q2).
+- **Helpful background:** OAuth and OpenID Connect, game account systems and security review.
+- **Commitment:** a few hours a week, until a proposal is ready for public review.
+
 ## How to help
 
 - Write a threat model for the linking flow.

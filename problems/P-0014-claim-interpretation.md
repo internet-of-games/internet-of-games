@@ -60,6 +60,13 @@ Optionally, issuers could publish hints such as difficulty or rarity ("3% of pla
 - **P-0014-Q3:** Should players be able to hide a claim *after* presenting it?
 - **P-0014-Q4:** Do we need a shared category vocabulary in Phase 1, or only issuer-specific rules?
 
+## Champion brief
+
+- **First deliverable:** A small JSON rule format, with examples for games in different genres.
+- **Decisions you'd drive:** whether Phase 1 needs a shared category vocabulary (P-0014-Q4) and whether issuers publish rarity (P-0014-Q1).
+- **Helpful background:** game design, especially progression and rewards.
+- **Commitment:** a few hours a week, until a proposal is ready for public review.
+
 ## How to help
 
 - Propose rule-format examples for different genres.

@@ -57,6 +57,13 @@ last_reviewed: 2026-11-24
 - **P-0010-Q4:** Which features (spring bones, expressions) are allowed in the *Light* tier?
 - **P-0010-Q5:** How should validators treat glTF 2.1 files (multi-file scenes and the 64-bit container) before the baseline supports them: reject them, or accept single-file assets only?
 
+## Champion brief
+
+- **First deliverable:** Numeric budget tiers and a list of malicious and edge-case test files.
+- **Decisions you'd drive:** the numbers for each tier (P-0010-Q1), automatic lower-detail versions (P-0010-Q2), sandboxed parsing (P-0010-Q3) and glTF 2.1 files (P-0010-Q5).
+- **Helpful background:** real-time 3D performance, file-parser security and fuzzing.
+- **Commitment:** a few hours a week, until a proposal is ready for public review.
+
 ## How to help
 
 - Contribute files to the malicious test corpus (synthetic only, CC0).

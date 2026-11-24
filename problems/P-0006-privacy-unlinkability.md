@@ -66,6 +66,13 @@ Even with separate identifiers, **an identical avatar file or hash** in two game
 - **P-0006-Q3:** How do we stop avatar files, display names or play patterns from linking a player who chose private mode?
 - **P-0006-Q4:** What analytics is a game allowed to derive from imported claims?
 
+## Champion brief
+
+- **First deliverable:** A privacy design document covering the public-persona and private modes and the threats each one faces.
+- **Decisions you'd drive:** the default mode (P-0006-Q1), how to stop avatars, names and play patterns from linking a player (P-0006-Q3), and what analytics games may derive (P-0006-Q4).
+- **Helpful background:** privacy engineering, selective disclosure, and the basics of data-protection law.
+- **Commitment:** a few hours a week, until a proposal is ready for public review.
+
 ## How to help
 
 - Write the threat model for both modes.
