@@ -19,5 +19,6 @@ A spike is a time-boxed investigation that answers **one question** with researc
 | 2026-11-24 | [How should a game write down what foreign claims mean to it?](2026-11-24-claim-interpretation-rules.md) | P-0014, P-0019 |
 | 2026-11-24 | [What should the malicious and edge-case avatar test files cover?](2026-11-24-avatar-test-corpus.md) | P-0010, P-0026 |
 | 2026-11-24 | [Which identifier method should Phase 1 use?](2026-11-24-identifier-methods.md) | P-0003, P-0005, P-0006, P-0024 |
+| 2026-11-24 | [Which credential format should carry achievement claims in Phase 1?](2026-11-24-credential-formats.md) | P-0006, P-0013, P-0015 |
 
 More candidates are in the "How to help" sections of the [problem docs](../../problems/README.md).
