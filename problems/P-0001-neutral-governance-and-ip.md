@@ -27,7 +27,7 @@ last_reviewed: 2026-11-24
 - **The Community Specification License** is a lightweight framework for developing specifications on GitHub with patent commitments built in ([Community Specification](https://github.com/CommunitySpecification/Community_Specification)).
 - **The Open Web Foundation Agreement (OWFa 1.0)** is a patent and copyright commitment used for some open specifications ([Open Web Foundation](https://www.openwebfoundation.org/the-agreements/the-owf-1-0-agreements-granted-claims/owfa-1-0)).
 - **A side-by-side comparison** of these agreements, with questions for a lawyer, is in a [spike](../docs/spikes/2026-11-24-specification-ip-policies.md).
-- **Foundations and standards bodies** that could eventually host the work include the W3C (through Community Groups), DIF, the OpenID Foundation, Khronos and the Linux Foundation. The Metaverse Standards Forum coordinates between these bodies but is not a standards body itself ([Metaverse Standards Forum](https://metaverse-standards.org/)).
+- **Foundations and standards bodies** that could eventually host the work include the W3C (through Community Groups), DIF, the OpenID Foundation, Khronos and the Linux Foundation. The Metaverse Standards Forum coordinates between these bodies but is not a standards body itself ([Metaverse Standards Forum](https://metaverse-standards.org/)). How to take part in each, and what contributors agree to, is in [Working with upstream groups](../docs/upstream.md).
 
 ## Constraints
 

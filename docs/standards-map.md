@@ -82,6 +82,8 @@ The **Fit** column is our current thinking, not a decision. Decisions happen in 
 
 ## Who to work with
 
+How to take part in each of these groups, and on what terms, is in [Working with upstream groups](upstream.md).
+
 | Organization | What they do | How we relate |
 |---|---|---|
 | [Metaverse Standards Forum](https://metaverse-standards.org/) | Coordinates standards bodies; isn't one itself | Present our use case and reuse its test assets |
