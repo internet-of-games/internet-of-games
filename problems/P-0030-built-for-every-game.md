@@ -43,9 +43,9 @@ An online game signs claims on its servers, where its keys are safe. A fully off
 
 ## What "solved enough" looks like (Phase 1)
 
-- [ ] A written universality requirements document with target numbers, for example: verify a passport in under a set number of milliseconds on a mid-range phone, with zero network calls when keys are cached
+- [ ] A written universality requirements document with target numbers, for example: verify a passport in under a set number of milliseconds on a mid-range phone, with zero network calls when keys are cached (first draft: [universality requirements](../docs/universality-requirements.md))
 - [ ] Every Phase 1 design reviewed against the requirements, with any gaps written down
-- [ ] Trust levels defined for claims from online and offline games
+- [ ] Trust levels defined for claims from online and offline games (first draft in the [universality requirements](../docs/universality-requirements.md#6-honest-about-how-much-a-claim-proves))
 - [ ] A load-test plan for verification at very large scale
 
 ## Open questions
