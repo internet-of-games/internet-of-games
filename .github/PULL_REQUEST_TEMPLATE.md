@@ -1,3 +1,5 @@
+<!-- Start with three short lines: what changes, why, and what you need from reviewers. Agents put a summary card and a diagram first and fold the rest into <details>: see skills/visual-summaries/SKILL.md. -->
+
 ## What this changes
 
 <!-- One or two sentences. Reference problem IDs, e.g. P-0013 or P-0013-Q2. -->
