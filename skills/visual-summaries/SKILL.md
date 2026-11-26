@@ -90,6 +90,6 @@ Shown after the folded details, for example to say an agent helped.
 - **Title:** 80 characters or fewer.
 - **Points:** one sentence each, 140 characters or fewer, not counting link addresses, linking to what they mention. Labels have 12 characters or fewer. Pull requests use What, Why and Ask; issues can use Problem, Why and Help.
 - **Facts:** up to four, of 24 characters or fewer: counts and IDs, such as "6 spikes" or "ADR-0009".
-- **Diagram:** a `flowchart LR` or `flowchart TD` with 12 nodes or fewer, and labels of a few words. Start with `accTitle:` and `accDescr:` lines, so screen readers get a title and a description. Don't set colors: GitHub picks ones that suit each reader's light or dark theme.
+- **Diagram:** 12 nodes or fewer, with labels of a few words. GitHub shrinks a diagram to fit the page's width, so a long left-to-right chain ends up too small to read: use `flowchart TD`, and `flowchart LR` only when no row has more than four boxes. Start with `accTitle:` and `accDescr:` lines, so screen readers get a title and a description. Don't set colors: GitHub picks ones that suit each reader's light or dark theme.
 - **Only our own work:** no logos, screenshots or other people's images on the card or in the diagram ([AGENTS.md](../../AGENTS.md), rule 1). The card is text only, and the PDF fetches nothing from the network.
 - **Keep it true:** the card and the three lines summarize the text below them. They never claim more than it does.
