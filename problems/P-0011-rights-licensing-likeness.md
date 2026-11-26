@@ -39,7 +39,7 @@ last_reviewed: 2026-11-15
 
 - [ ] A license metadata profile (reusing VRM metadata and standard license identifiers such as CC0, CC BY and SPDX)
 - [ ] Validator behavior defined for missing, unclear or restrictive licenses
-- [ ] A plain-language page: "what you may not put in a passport"
+- [ ] A plain-language page: "what you may not put in a Carryfile"
 - [ ] All demo avatars are original and CC0
 
 ## Candidate directions

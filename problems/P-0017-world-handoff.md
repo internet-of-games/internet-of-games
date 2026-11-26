@@ -28,7 +28,7 @@ last_reviewed: 2026-11-15
 
 A ticket contains:
 
-- a reference to the player's passport (possibly a per-game identifier)
+- a reference to the player's Carryfile (possibly a per-game identifier)
 - the credentials the player chose to bring
 - the origin game, and an optional *intent*, such as "arrive at the stadium" or "continue the story"
 - an expiry time and a one-time number to prevent replay

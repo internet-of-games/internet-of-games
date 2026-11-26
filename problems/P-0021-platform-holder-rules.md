@@ -26,7 +26,7 @@ Most players in the biggest games play on consoles or phones. Platform holders h
 ## Approach
 
 1. **Phases 1 and 2 target web, PC and mobile web**, where the rules are open.
-2. **The core (identity, appearance and claims) doesn't need platform permission.** A console game could read a passport through ordinary account linking, a QR code or a companion app.
+2. **The core (identity, appearance and claims) doesn't need platform permission.** A console game could read a Carryfile through ordinary account linking, a QR code or a companion app.
 3. **Purchases and entitlements will need platform cooperation**, so we gather requirements before designing them.
 4. **Engage platform holders later**, using working demos as evidence.
 
@@ -38,20 +38,20 @@ Most players in the biggest games play on consoles or phones. Platform holders h
 ## What "solved enough" looks like (Phase 3)
 
 - [ ] A public summary of the platform policies relevant to identity, linking and entitlements, from public sources only
-- [ ] A console-friendly passport flow (QR code or companion app) prototyped on a platform where that's allowed
+- [ ] A console-friendly Carryfile flow (QR code or companion app) prototyped on a platform where that's allowed
 - [ ] A conversation started with at least one platform holder
 
 ## Open questions
 
 - **P-0021-Q1:** Which public platform policies affect identity linking and cross-game rewards?
-- **P-0021-Q2:** What's the best way to get a passport into a console game: a QR code, a companion app or account linking?
+- **P-0021-Q2:** What's the best way to get a Carryfile into a console game: a QR code, a companion app or account linking?
 - **P-0021-Q3:** Do cross-game reward offers count as purchases in store terms ([P-0019](P-0019-cross-game-entitlements.md))?
 - **P-0021-Q4:** How can we learn from licensed developers without them breaking their agreements?
 
 ## How to help
 
 - Summarize public store policies relevant to digital goods and account linking, citing sources.
-- Prototype a QR-code passport flow.
+- Prototype a QR-code Carryfile flow.
 
 ## References
 

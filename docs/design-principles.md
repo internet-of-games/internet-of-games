@@ -21,7 +21,7 @@ Accepting anything is always optional. Each game maps foreign claims and avatars
 
 ## 4. Link accounts, don't replace them
 
-Games keep their existing account systems. The passport *links* to them, and players never need yet another password.
+Games keep their existing account systems. The Carryfile *links* to them, and players never need yet another password.
 *Learned from:* platform accounts and Epic Online Services, which won because they fit how games already work. → [P-0004](../problems/P-0004-account-linking.md)
 
 ## 5. No single company in the critical path, including us

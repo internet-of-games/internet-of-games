@@ -12,11 +12,11 @@ last_reviewed: 2026-11-24
 
 # P-0004: Linking existing game accounts without a new account system
 
-**In one sentence:** games already have account systems and platform logins, so the passport has to *link* to them, without replacing them and without making players create yet another account.
+**In one sentence:** games already have account systems and platform logins, so the Carryfile has to *link* to them, without replacing them and without making players create yet another account.
 
 ## Why it matters
 
-No game will rip out its account system to adopt a standard, and players won't welcome another password. Linking is how the passport fits into how games already work ([design principle 4](../docs/design-principles.md#4-link-accounts-dont-replace-them)).
+No game will rip out its account system to adopt a standard, and players won't welcome another password. Linking is how the Carryfile fits into how games already work ([design principle 4](../docs/design-principles.md#4-link-accounts-dont-replace-them)).
 
 ## What exists today
 
@@ -29,8 +29,8 @@ No game will rip out its account system to adopt a standard, and players won't w
 ## A sketch of the flow
 
 1. The player logs into Game A as usual.
-2. Game A asks: "Link your passport?" The player approves in their passport app.
-3. The passport app proves control of the player's identifier, for example by signing a challenge from the game.
+2. Game A asks: "Link your Carryfile?" The player approves in their Carryfile app.
+3. The Carryfile app proves control of the player's identifier, for example by signing a challenge from the game.
 4. Game A stores the link between its own account and that identifier. It can also issue the player a signed "account linked" credential.
 5. Either side can remove the link at any time.
 
@@ -52,7 +52,7 @@ No game will rip out its account system to adopt a standard, and players won't w
 
 1. **OpenID4VP presentation of a DID-bound credential.** Standard and future-proof, but heavier.
 2. **A simple signed challenge** ("prove you control this DID"). Light and easy to implement in an engine, but less standard.
-3. **SIOPv2-style login**, where the passport app acts as the player's own identity provider. Elegant, but SIOPv2 is still a draft.
+3. **SIOPv2-style login**, where the Carryfile app acts as the player's own identity provider. Elegant, but SIOPv2 is still a draft.
 
 ## Open questions
 

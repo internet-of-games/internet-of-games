@@ -47,7 +47,7 @@ Ratings vary widely, even within one publisher: NBA 2K26 is rated E (Everyone) a
 ## Open questions
 
 - **P-0007-Q1:** Which age thresholds should the profile include?
-- **P-0007-Q2:** How should guardian-managed child passports work ([OQ-9](../docs/open-questions.md#people-and-safety))?
+- **P-0007-Q2:** How should guardian-managed child Carryfiles work ([OQ-9](../docs/open-questions.md#people-and-safety))?
 - **P-0007-Q3:** Can a game's own age check be reused by another game? What trust and liability does that imply?
 - **P-0007-Q4:** How do we handle regions with conflicting legal requirements?
 

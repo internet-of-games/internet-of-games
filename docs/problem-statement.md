@@ -73,7 +73,7 @@ These are part of the standard's scope. They come later because they carry the m
 
 The first milestone is complete when **all** of these are true and anyone can reproduce them from this repository:
 
-1. Two games, built by different people on different engines (for example Godot and web/three.js), each accept a player document that validates against schema v0.
+1. Two games, built by different people on different engines (for example Godot and web/three.js), each accept a Carryfile that validates against schema v0.
 2. Both games recognize the same player after a consent step, without either game's servers talking to the other.
 3. Both games render the same VRM avatar. A game that can't use a 3D avatar falls back to a 2D portrait and an appearance description.
 4. Game A issues a signed achievement credential. Game B verifies it **offline** (using cached public keys) and grants a local title or cosmetic.

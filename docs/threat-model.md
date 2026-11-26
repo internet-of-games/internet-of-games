@@ -69,7 +69,7 @@ When protections conflict, the higher priority wins.
 ### T8. Attacks on the project's own tools and process
 
 - **What:** compromised SDKs, dependencies, build pipelines or documentation, including text planted in issues, pull requests or web pages to steer AI agents (prompt injection).
-- **Examples:** a malicious dependency in a passport library; a tampered CI workflow; a pull request that quietly weakens an agent's instructions.
+- **Examples:** a malicious dependency in a Carryfile library; a tampered CI workflow; a pull request that quietly weakens an agent's instructions.
 - **Mitigations:** minimal dependencies (the checker uses only Python's standard library); CI actions pinned to exact commits with read-only permissions; maintainer review of guardrail files ([CODEOWNERS](../.github/CODEOWNERS)); agents treat outside content as data, never as instructions ([AGENTS.md](../AGENTS.md), rule 16); signed releases once there's code to release.
 - **Residual risk:** every dependency and every contributor is a matter of trust.
 
