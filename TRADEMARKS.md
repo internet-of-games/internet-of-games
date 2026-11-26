@@ -25,7 +25,9 @@ Facts are attributed to their sources with links. Any short quotations are used 
 
 ## Working names
 
-Some docs call the portable player document a "player passport". That's a working description, not a name we claim. "PLAYER PASSPORT" is a registered U.S. trademark held by another company ([USPTO record](https://tsdr.uspto.gov/#caseNumber=88697709&caseType=SERIAL_NO&searchType=statusSearch)), so we won't use it as the name of our specification, software or services ([OQ-1](docs/open-questions.md#naming)).
+The portable player document is called a **Carryfile** ([ADR-0010](docs/decisions/ADR-0010-call-the-player-document-a-carryfile.md)). Like the project's name, it isn't a registered trademark.
+
+Older docs call the document a "player passport". That was a working description, not a name we claim. "PLAYER PASSPORT" is a registered U.S. trademark held by another company ([USPTO record](https://tsdr.uspto.gov/#caseNumber=88697709&caseType=SERIAL_NO&searchType=statusSearch)), so we don't use it as the name of our specification, software or services ([OQ-1](docs/open-questions.md#naming)).
 
 ## Fiction
 
