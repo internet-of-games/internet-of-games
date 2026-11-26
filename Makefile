@@ -1,3 +1,6 @@
+# Copyright 2026 The Internet of Games contributors
+# SPDX-License-Identifier: Apache-2.0
+#
 # Run `make help` to list targets. Everything uses Python 3 with no extra packages.
 
 .PHONY: help check test next work questions index external overlap
