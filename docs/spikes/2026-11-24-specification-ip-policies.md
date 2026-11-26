@@ -67,7 +67,7 @@ That choice depends on how we relate to the Web of Worlds and other upstream gro
 2. Does a DCO sign-off count as accepting the Community Specification agreements, or do we need a separate record?
 3. How should we handle contributors whose employers may hold relevant patents?
 4. What does a game studio have to do to receive the patent license, and is that realistic for a small team?
-5. Which license should cover schemas, examples and test vectors: the specification license or Apache-2.0?
+5. Which license should cover schemas, examples and test vectors: the specification license or Apache-2.0? For now, [ADR-0009](../decisions/ADR-0009-say-which-license-covers-each-kind-of-file.md) puts schemas and code samples under Apache-2.0 and test vectors under CC0.
 6. If our work later moves to a W3C group or another standards body, what happens to commitments made under our policy?
 
 ## Sources

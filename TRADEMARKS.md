@@ -10,7 +10,7 @@ These docs mention companies, games, products and organizations, such as Take-Tw
 
 ## No third-party game content
 
-This repository contains **no** third-party logos, screenshots, character art, models, textures, music or other game assets, and contributors must not add any ([CONTRIBUTING.md](CONTRIBUTING.md)). Test assets are original and released under CC0.
+This repository contains **no** third-party logos, screenshots, character art, models, textures, music or other game assets, and contributors must not add any ([CONTRIBUTING.md](CONTRIBUTING.md)). Test assets are original and released under [CC0](LICENSE-CC0).
 
 ## Quotes and sources
 

@@ -50,6 +50,8 @@
 
 **Selective disclosure.** Showing only the claims needed, such as "over 13" rather than a birthdate.
 
+**SPDX license identifier.** A short, standard name for a license, such as `Apache-2.0`, `CC-BY-4.0` or `CC0-1.0`, from the [SPDX License List](https://spdx.org/licenses/). Our program source files carry one in a comment ([ADR-0009](decisions/ADR-0009-say-which-license-covers-each-kind-of-file.md)).
+
 **User manifest.** In the Metaverse Standards Forum's Web of Worlds proposal, a portable record of a person's identity, avatar, preferences and assets that travels with them between worlds ([prior art](prior-art.md#web-of-worlds)). It's close in purpose to our player passport (working name).
 
 **Verifier.** A party that checks a credential's signature and status, usually the receiving game.

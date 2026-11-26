@@ -22,7 +22,7 @@ This is a public repository, and everything in it has to be safe to share. **Ple
 - **Confidential information:** anything covered by a non-disclosure agreement, including platform-holder documentation, unreleased product details or internal company material.
 - **Personal data:** real players' names, emails, account IDs, or anything that identifies a real person, including in test files. Use made-up data.
 - **Secrets:** API keys, tokens, passwords or private keys, even "test" ones.
-- **Fan art of existing characters** as test avatars. Test assets must be original and released under CC0.
+- **Fan art of existing characters** as test avatars. Test assets must be original and released under [CC0](LICENSE-CC0).
 
 Mentioning products and companies by name to describe the problem is fine. See [TRADEMARKS.md](TRADEMARKS.md).
 
@@ -66,12 +66,16 @@ This adds a `Signed-off-by: Your Name <your-email>` line. If you want to keep yo
 
 ## Licenses
 
-By contributing, you agree that:
+By contributing, you agree that each file you contribute is licensed under the license for its kind of file ([ADR-0009](docs/decisions/ADR-0009-say-which-license-covers-each-kind-of-file.md)):
 
-- **code** you contribute is licensed under the [Apache License 2.0](LICENSE)
-- **documentation and specification text** you contribute is licensed under [CC BY 4.0](LICENSE-DOCS)
+- **Documents** (Markdown files), including specification text: [CC BY 4.0](LICENSE-DOCS)
+- **Code and every other file**, such as tools, configuration and schemas: the [Apache License 2.0](LICENSE)
+- **Code samples and schemas inside documents:** both, so readers can use them under Apache-2.0
+- **Test files and sample assets:** [CC0 1.0](LICENSE-CC0)
 
-The IP policy for future specification text may add a patent commitment. That's being decided in [P-0001](problems/P-0001-neutral-governance-and-ip.md), and it won't apply retroactively without contributors' agreement.
+Documents don't carry license headers, so this list is the license notice your sign-off refers to. Program source files start with a copyright line and an SPDX license identifier, such as `SPDX-License-Identifier: Apache-2.0`.
+
+The IP policy for future specification text may add a patent commitment. That's being decided in [P-0001](problems/P-0001-neutral-governance-and-ip.md), and it won't apply retroactively without contributors' agreement. Until it's decided, we don't merge normative specification text.
 
 ## Pull requests
 
