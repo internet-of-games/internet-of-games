@@ -49,7 +49,7 @@ Every proposal names the threats it affects ([threat model](docs/threat-model.md
 AI agents are welcome tools here, and the repository is set up for them.
 
 - **Point your agent at [AGENTS.md](AGENTS.md).** It has the rules, a map of the repository and a guide for each kind of task. Claude Code loads it automatically through [CLAUDE.md](CLAUDE.md), and the [skills](skills/README.md) work in both Claude Code and Cursor.
-- **You're responsible for what your agent submits.** Review it, check its sources, and sign off the commits yourself.
+- **You're responsible for what your agent submits.** Review it, check its sources, and sign off the commits yourself. An agent should add a sign-off only when you tell it to, after you've reviewed the change. To credit the agent in a commit, use an `Assisted-by:` trailer ([COMMITS.md](COMMITS.md#rules)).
 - **AI research is a lead, not a source.** Check every fact at the original source and write the text yourself ([sourcing and originality](docs/sourcing-and-originality.md#working-with-ai-tools)).
 - **Say in the pull request description that an agent helped.**
 - **Don't commit an agent's plans, task lists or scratch notes.** Put durable results in a problem doc, an ADR or a spike.
@@ -63,6 +63,8 @@ git commit -s -m "Clarify P-0013 credential fields"
 ```
 
 This adds a `Signed-off-by: Your Name <your-email>` line. If you want to keep your email private, use your [GitHub no-reply address](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address).
+
+**Check your employment terms first.** If you have a job, your employment agreement may give your employer rights in work you do outside it. If it might, get your employer's permission before you sign off, because your sign-off says you have the right to submit the work.
 
 ## Licenses
 

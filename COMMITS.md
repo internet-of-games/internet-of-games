@@ -41,6 +41,7 @@ tools: check that the decision index matches front matter
 
 - Make one logical change per commit.
 - Name the question IDs a commit answers or changes, for example "Answers P-0003-Q1."
-- Sign off under the [Developer Certificate of Origin](https://developercertificate.org/) with `git commit -s`. If an AI agent helped, the human who directed it signs off and is responsible for the change. You can credit the agent with a `Co-authored-by:` trailer.
+- Sign off under the [Developer Certificate of Origin](https://developercertificate.org/) with `git commit -s`. If an AI agent helped, the human who directed it reviews the change, signs it off and is responsible for it. An agent adds a sign-off only when that person tells it to.
+- To credit an agent, add an `Assisted-by:` trailer with its name and model, for example `Assisted-by: Claude:claude-opus-5-5`. Don't use `Co-authored-by:` for an agent, because that presents it as an author. The Linux kernel's rules for AI coding assistants also use `Assisted-by:`, and say that only people can certify the DCO ([kernel guidance](https://docs.kernel.org/process/coding-assistants.html)).
 - Never put secrets or personal data in commit messages. They stay public forever.
 - Pull request titles follow the same format.
