@@ -70,6 +70,7 @@ The EU Digital Markets Act requires designated "gatekeepers" to open certain ser
 
 - **Licenses:** CC BY 4.0 for documents, and Apache-2.0 for code, which includes a patent license from contributors. Code samples and schemas inside documents are also available under Apache-2.0, and test files are released under CC0 ([ADR-0009](decisions/ADR-0009-say-which-license-covers-each-kind-of-file.md)). Neither CC BY 4.0 nor CC0 licenses patents, so the IP policy for specification text is still open ([P-0001](../problems/P-0001-neutral-governance-and-ip.md)).
 - **Developer Certificate of Origin:** contributors certify that they have the right to submit their work ([CONTRIBUTING.md](../CONTRIBUTING.md)).
+- **Names:** the licenses grant no rights to the project's name, and we don't adopt names that others have registered as trademarks ([TRADEMARKS.md](../TRADEMARKS.md)).
 - **No third-party game content:** no game screenshots, logos, characters, ripped assets or copied text beyond short attributed quotes ([TRADEMARKS.md](../TRADEMARKS.md)).
 - **Synthetic data only:** test passports, avatars and credentials are made-up and released under CC0 ([LICENSE-CC0](../LICENSE-CC0)). No real players' data.
 - **No confidential information:** nothing covered by an NDA, including platform documentation.

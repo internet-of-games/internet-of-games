@@ -38,7 +38,7 @@
 
 **Pairwise identifier.** A different identifier for each game, so games can't correlate a player by comparing identifiers. See [P-0006](../problems/P-0006-privacy-unlinkability.md).
 
-**Player passport (working name).** The small portable document at the center of this project. It references the player's identifier, avatar files, credentials and preferences. Its final name is still undecided ([OQ-1](open-questions.md#naming)).
+**Player passport (working name).** The small portable document at the center of this project. It references the player's identifier, avatar files, credentials and preferences. Its final name is still undecided, but it won't be "player passport", because that's another company's registered trademark ([OQ-1](open-questions.md#naming)).
 
 **Problem doc.** A numbered document (`P-0001` and up) in [problems/](../problems/README.md) that describes one sub-problem: why it matters, what exists, constraints, success criteria and open questions.
 
