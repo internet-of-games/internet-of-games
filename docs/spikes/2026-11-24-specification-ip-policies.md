@@ -48,11 +48,20 @@ We read the official text of each realistic option and compared what it grants, 
 
 The Community Specification License keeps everything in this repository with the least ceremony, and it was developed through the Joint Development Foundation with the OWF agreements as one of its inspirations ([README](https://github.com/CommunitySpecification/Community_Specification/blob/main/Readme.md)). The W3C agreements are the natural choice if our specifications are written inside a W3C Community Group, for example together with the Web of Worlds work or a credentials group ([Web of Worlds comparison](2026-11-24-web-of-worlds-user-manifest.md)). The OWFa is a commitment, not a process, so it would need governance written around it.
 
+### 5. Projects that moved to the Community Specification License later
+
+Two specifications adopted the Community Specification License after starting under other licenses. Both kept earlier text under its original license instead of asking every earlier contributor to relicense:
+
+- **SPDX** provides its specification under the Community Specification License 1.0. Portions from copyright holders who haven't contributed since the change stay under CC BY 3.0 ([SPDX specification license](https://github.com/spdx/spdx-spec/blob/development/v3.0.1/LICENSE)).
+- **SLSA** puts content contributed after it adopted the Community Specification governance model under that license. Earlier portions from contributors who haven't contributed since stay under Apache-2.0 ([SLSA README](https://github.com/slsa-framework/slsa#license)).
+
+The same path would be open to us: existing text stays under CC BY 4.0, and new specification text comes in under the new license. As we read the license, its patent commitments would cover only contributions made under it.
+
 ## Limitations
 
 - We compared the agreements' texts, not how courts treat them, and we didn't consult a lawyer.
 - We didn't read the W3C Patent Policy sections that both W3C agreements refer to, or the signing pages for those agreements.
-- We didn't survey which specifications in our space use which agreement.
+- We didn't survey which specifications in our space use which agreement. The two examples in finding 5 come from software supply-chain standards.
 
 ## Recommendation
 
@@ -63,11 +72,11 @@ Decide where our specifications will live first, because that largely decides th
 
 That choice depends on how we relate to the Web of Worlds and other upstream groups, which needs its own decision record. Before adopting either policy, a lawyer should answer these questions:
 
-1. Can specification text move from CC BY 4.0 docs into a Community Specification repository without asking every earlier contributor? Our contributing guide promises the policy won't apply retroactively without their agreement.
+1. Can specification text move from CC BY 4.0 docs into a Community Specification repository without asking every earlier contributor? Our contributing guide promises the policy won't apply retroactively without their agreement. SPDX and SLSA kept earlier text under its original license (finding 5); would that work for us?
 2. Does a DCO sign-off count as accepting the Community Specification agreements, or do we need a separate record?
 3. How should we handle contributors whose employers may hold relevant patents?
 4. What does a game studio have to do to receive the patent license, and is that realistic for a small team?
-5. Which license should cover schemas, examples and test vectors: the specification license or Apache-2.0?
+5. Which license should cover schemas, examples and test vectors: the specification license or Apache-2.0? For now, [ADR-0009](../decisions/ADR-0009-say-which-license-covers-each-kind-of-file.md) puts schemas and code samples under Apache-2.0 and test vectors under CC0.
 6. If our work later moves to a W3C group or another standards body, what happens to commitments made under our policy?
 
 ## Sources
@@ -77,3 +86,4 @@ That choice depends on how we relate to the Web of Worlds and other upstream gro
 - Community Specification, [repository](https://github.com/CommunitySpecification/Community_Specification), read through the GitHub API on 24 November 2026: the license, contributor agreement, governance policy and contribution policy
 - W3C, [Community Contributor License Agreement](https://www.w3.org/community/about/process/cla/) and [Community Final Specification Agreement](https://www.w3.org/community/about/process/final/), read on 24 November 2026
 - Open Web Foundation, [OWFa 1.0](https://www.openwebfoundation.org/the-agreements/the-owf-1-0-agreements-granted-claims/owfa-1-0)
+- SPDX, [specification license](https://github.com/spdx/spdx-spec/blob/development/v3.0.1/LICENSE), and SLSA, [README](https://github.com/slsa-framework/slsa#license), both read on 24 November 2026

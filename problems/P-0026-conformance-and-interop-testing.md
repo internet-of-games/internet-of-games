@@ -60,6 +60,10 @@ Standards that can't be tested drift apart, with every implementation reading th
 - Write test vectors, especially invalid ones.
 - Design the validator's command-line interface and output format.
 
+## Decisions so far
+
+- [ADR-0009](../docs/decisions/ADR-0009-say-which-license-covers-each-kind-of-file.md): test files and sample assets, including test vectors, are released under CC0 1.0 ([LICENSE-CC0](../LICENSE-CC0)).
+
 ## References
 
 - [OMI glTF extensions](https://github.com/omigroup/gltf-extensions) · [Khronos glTF](https://www.khronos.org/gltf/)

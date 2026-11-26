@@ -22,7 +22,7 @@ This is a public repository, and everything in it has to be safe to share. **Ple
 - **Confidential information:** anything covered by a non-disclosure agreement, including platform-holder documentation, unreleased product details or internal company material.
 - **Personal data:** real players' names, emails, account IDs, or anything that identifies a real person, including in test files. Use made-up data.
 - **Secrets:** API keys, tokens, passwords or private keys, even "test" ones.
-- **Fan art of existing characters** as test avatars. Test assets must be original and released under CC0.
+- **Fan art of existing characters** as test avatars. Test assets must be original and released under [CC0](LICENSE-CC0).
 
 Mentioning products and companies by name to describe the problem is fine. See [TRADEMARKS.md](TRADEMARKS.md).
 
@@ -49,7 +49,7 @@ Every proposal names the threats it affects ([threat model](docs/threat-model.md
 AI agents are welcome tools here, and the repository is set up for them.
 
 - **Point your agent at [AGENTS.md](AGENTS.md).** It has the rules, a map of the repository and a guide for each kind of task. Claude Code loads it automatically through [CLAUDE.md](CLAUDE.md), and the [skills](skills/README.md) work in both Claude Code and Cursor.
-- **You're responsible for what your agent submits.** Review it, check its sources, and sign off the commits yourself.
+- **You're responsible for what your agent submits.** Review it, check its sources, and sign off the commits yourself. An agent should add a sign-off only when you tell it to, after you've reviewed the change. To credit the agent in a commit, use an `Assisted-by:` trailer ([COMMITS.md](COMMITS.md#rules)).
 - **AI research is a lead, not a source.** Check every fact at the original source and write the text yourself ([sourcing and originality](docs/sourcing-and-originality.md#working-with-ai-tools)).
 - **Say in the pull request description that an agent helped.**
 - **Don't commit an agent's plans, task lists or scratch notes.** Put durable results in a problem doc, an ADR or a spike.
@@ -64,14 +64,20 @@ git commit -s -m "Clarify P-0013 credential fields"
 
 This adds a `Signed-off-by: Your Name <your-email>` line. If you want to keep your email private, use your [GitHub no-reply address](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address).
 
+**Check your employment terms first.** If you have a job, your employment agreement may give your employer rights in work you do outside it. If it might, get your employer's permission before you sign off, because your sign-off says you have the right to submit the work.
+
 ## Licenses
 
-By contributing, you agree that:
+By contributing, you agree that each file you contribute is licensed under the license for its kind of file ([ADR-0009](docs/decisions/ADR-0009-say-which-license-covers-each-kind-of-file.md)):
 
-- **code** you contribute is licensed under the [Apache License 2.0](LICENSE)
-- **documentation and specification text** you contribute is licensed under [CC BY 4.0](LICENSE-DOCS)
+- **Documents** (Markdown files), including specification text: [CC BY 4.0](LICENSE-DOCS)
+- **Code and every other file**, such as tools, configuration and schemas: the [Apache License 2.0](LICENSE)
+- **Code samples and schemas inside documents:** both, so readers can use them under Apache-2.0
+- **Test files and sample assets:** [CC0 1.0](LICENSE-CC0)
 
-The IP policy for future specification text may add a patent commitment. That's being decided in [P-0001](problems/P-0001-neutral-governance-and-ip.md), and it won't apply retroactively without contributors' agreement.
+Documents don't carry license headers, so this list is the license notice your sign-off refers to. Program source files start with a copyright line and an SPDX license identifier, such as `SPDX-License-Identifier: Apache-2.0`.
+
+The IP policy for future specification text may add a patent commitment. That's being decided in [P-0001](problems/P-0001-neutral-governance-and-ip.md), and it won't apply retroactively without contributors' agreement. Until it's decided, we don't merge normative specification text.
 
 ## Pull requests
 

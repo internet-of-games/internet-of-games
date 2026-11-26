@@ -88,9 +88,17 @@ Every sub-problem has a stable ID (`P-0001` to `P-0030`), and every open questio
 
 ## Licenses
 
-- Code: [Apache License 2.0](LICENSE)
-- Documentation and specifications: [Creative Commons Attribution 4.0](LICENSE-DOCS)
+Each kind of file has its own license ([ADR-0009](docs/decisions/ADR-0009-say-which-license-covers-each-kind-of-file.md)):
+
+| Files | License |
+|---|---|
+| Documents: every Markdown file, including future specification text | [Creative Commons Attribution 4.0](LICENSE-DOCS) |
+| Code and every other file, such as tools, workflows, configuration and schemas | [Apache License 2.0](LICENSE) |
+| Code samples and schemas inside documents | CC BY 4.0 or Apache-2.0, your choice |
+| Test files and sample assets | [CC0 1.0](LICENSE-CC0), no rights reserved |
+
+- Specification text will also get a patent policy, decided before any is merged ([P-0001](problems/P-0001-neutral-governance-and-ip.md)).
 - Contributions are accepted under the [Developer Certificate of Origin](https://developercertificate.org/). Sign off your commits with `git commit -s`; see [CONTRIBUTING.md](CONTRIBUTING.md).
-- Third-party names: [TRADEMARKS.md](TRADEMARKS.md)
+- The licenses don't cover the project's name or anyone else's: [TRADEMARKS.md](TRADEMARKS.md)
 
 Founded by [@acterra12](https://github.com/acterra12). Built by everyone who shows up.

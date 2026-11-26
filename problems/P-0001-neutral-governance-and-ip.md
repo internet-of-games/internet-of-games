@@ -63,6 +63,7 @@ last_reviewed: 2026-11-24
 ## Decisions so far
 
 - [ADR-0002](../docs/decisions/ADR-0002-license-code-apache-docs-cc-by.md): code is licensed under Apache-2.0 and documents under CC BY 4.0, with contributions under the DCO. The patent policy for specification text (P-0001-Q1) is still open.
+- [ADR-0009](../docs/decisions/ADR-0009-say-which-license-covers-each-kind-of-file.md): each kind of file has its own license. Code samples and schemas in documents are also available under Apache-2.0, and test files are released under CC0.
 
 ## References
 

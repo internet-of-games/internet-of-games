@@ -28,6 +28,8 @@ This decision aims to set licenses that let anyone adopt the work, while keeping
 
 We will license code under Apache-2.0 and documentation and specifications under CC BY 4.0, and accept contributions under the Developer Certificate of Origin, with no contributor license agreement.
 
+*Annotation, 2026-11-26: [ADR-0009](ADR-0009-say-which-license-covers-each-kind-of-file.md) says which files count as code and which as documents, and sets the licenses for code samples inside documents and for test files.*
+
 ## Consequences
 
 - Any game, studio or platform can implement and ship the work, commercially or otherwise.

@@ -82,7 +82,7 @@ Sony's social world for PS3 closed on 31 March 2015 after phased content shutdow
 
 Ready Player Me offered hosted, cross-app avatars and APIs to a large developer community. Netflix acquired the company in December 2025, and its public services, including the PlayerZero product and the developer APIs, ended on 31 January 2026. Avatars that had already been exported as `.glb` files kept working, but integrations that relied on the hosted APIs stopped ([PocketGamer.biz](https://www.pocketgamer.biz/netflix-acquires-avatar-creation-platform-ready-player-me); [GamesBeat](https://gamesbeat.com/netflix-acquires-ready-player-me-avatar-maker/); [AvatarSDK migration guide](https://avatarsdk.com/blog/2026/07/07/ready-player-me-migration-guide/)).
 
-**Lesson:** this is the most important cautionary tale for our project. **A portable identity hosted by one company is portable only until that company exits.** Files in open formats survived; the service didn't. See [P-0024](../problems/P-0024-durability-when-services-die.md).
+**Lesson:** this is the most important cautionary tale for our project. **When one company hosts the identity, the identity lasts only as long as that company's service.** Files in open formats survived; the service didn't. See [P-0024](../problems/P-0024-durability-when-services-die.md).
 
 ## VRoid Hub
 

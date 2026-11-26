@@ -1,3 +1,6 @@
+# Copyright 2026 The Internet of Games contributors
+# SPDX-License-Identifier: Apache-2.0
+#
 # Run `make help` to list targets. Everything uses Python 3 with no extra packages.
 
 .PHONY: help check test next work questions index external overlap
@@ -27,4 +30,4 @@ external: ## Check external links (needs network; not run in CI)
 	python3 tools/docs.py external
 
 overlap: ## Find text shared word for word with a saved source page: make overlap SOURCE=page.html [FILES="docs/x.md"]
-	python3 tools/docs.py overlap $(SOURCE) $(if $(FILES),--in $(FILES),)
+	python3 tools/docs.py overlap "$(SOURCE)" $(if $(FILES),--in $(FILES),)

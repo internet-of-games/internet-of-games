@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Copyright 2026 The Internet of Games contributors
+# SPDX-License-Identifier: Apache-2.0
 """Checks and helpers for the Internet of Games documentation.
 
 Standard library only. Run from anywhere inside the repository:
