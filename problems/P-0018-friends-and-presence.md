@@ -42,7 +42,7 @@ A **portable block list** is low-risk and high-value. The player carries their o
 
 ## Candidate directions
 
-1. **Use an existing federated protocol** (Matrix, ActivityPub or the AT Protocol) for friends and invites, keyed to passport identifiers.
+1. **Use an existing federated protocol** (Matrix, ActivityPub or the AT Protocol) for friends and invites, keyed to Carryfile identifiers.
 2. **Player-held connection credentials**, where a friendship is a pair of signed statements held by the two players.
 3. **Leave friends to platforms** and only do portable blocks.
 

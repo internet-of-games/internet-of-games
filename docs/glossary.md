@@ -8,6 +8,8 @@
 
 **Budget (avatar).** Limits on file size, polygons, materials, bones and similar, so that an imported avatar can't overwhelm a game. See [P-0010](../problems/P-0010-avatar-budgets-and-file-safety.md).
 
+**Carryfile.** The small portable document at the center of this project. It references the player's identifier, avatar files, credentials and preferences, and the player carries it from game to game. Software that keeps it for the player is a "Carryfile app" ([ADR-0010](decisions/ADR-0010-call-the-player-document-a-carryfile.md)).
+
 **Champion.** A contributor who takes responsibility for moving a problem doc forward: gathering evidence, proposing directions and running discussions.
 
 **Claim.** A statement about a player, such as "cleared the final boss in Game A". It's *self-asserted* when the player states it and *issuer-attested* when a game signs it.
@@ -26,7 +28,7 @@
 
 **glTF.** A royalty-free 3D asset format from Khronos, sometimes called "the JPEG of 3D". Also standardized as ISO/IEC 12113:2022.
 
-**Holder.** The party holding credentials; in this project, the player or their passport app.
+**Holder.** The party holding credentials; in this project, the player or their Carryfile app.
 
 **Interop event (plugfest).** A session where several independent implementations test against each other.
 
@@ -38,7 +40,7 @@
 
 **Pairwise identifier.** A different identifier for each game, so games can't correlate a player by comparing identifiers. See [P-0006](../problems/P-0006-privacy-unlinkability.md).
 
-**Player passport (working name).** The small portable document at the center of this project. It references the player's identifier, avatar files, credentials and preferences. Its final name is still undecided, but it won't be "player passport", because that's another company's registered trademark ([OQ-1](open-questions.md#naming)).
+**Player passport.** The working name for the Carryfile until [ADR-0010](decisions/ADR-0010-call-the-player-document-a-carryfile.md). It isn't our name, because "PLAYER PASSPORT" is another company's registered trademark ([OQ-1](open-questions.md#naming)).
 
 **Problem doc.** A numbered document (`P-0001` and up) in [problems/](../problems/README.md) that describes one sub-problem: why it matters, what exists, constraints, success criteria and open questions.
 
@@ -52,7 +54,7 @@
 
 **SPDX license identifier.** A short, standard name for a license, such as `Apache-2.0`, `CC-BY-4.0` or `CC0-1.0`, from the [SPDX License List](https://spdx.org/licenses/). Our program source files carry one in a comment ([ADR-0009](decisions/ADR-0009-say-which-license-covers-each-kind-of-file.md)).
 
-**User manifest.** In the Metaverse Standards Forum's Web of Worlds proposal, a portable record of a person's identity, avatar, preferences and assets that travels with them between worlds ([prior art](prior-art.md#web-of-worlds)). It's close in purpose to our player passport (working name).
+**User manifest.** In the Metaverse Standards Forum's Web of Worlds proposal, a portable record of a person's identity, avatar, preferences and assets that travels with them between worlds ([prior art](prior-art.md#web-of-worlds)). It's close in purpose to our Carryfile.
 
 **Verifier.** A party that checks a credential's signature and status, usually the receiving game.
 

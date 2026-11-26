@@ -8,7 +8,7 @@ The destination is a **universal standard that every game builds on** ([the miss
 
 - [x] Problem docs: vision, problem statement, landscape, prior art, standards map, layer model and numbered sub-problems
 - [x] Decision records, a threat model, an agent guide and automated checks for the docs
-- [ ] Settle the working name for the portable player document (see [open questions](docs/open-questions.md#naming))
+- [x] Settle the name for the portable player document: it's a Carryfile ([ADR-0010](docs/decisions/ADR-0010-call-the-player-document-a-carryfile.md))
 - [ ] Contact adjacent communities and record where each piece of our work should live upstream. These include OMI, the VRM Consortium and Khronos avatar work, the Metaverse Standards Forum and its Web of Worlds initiative, the W3C Credentials Community Group, DIF and the OpenID Foundation ([how to take part](docs/upstream.md)).
 - [ ] Hold the first open community call and publish the notes in Discussions
 - [ ] Recruit champions for the Phase 1 problems
@@ -20,13 +20,13 @@ The destination is a **universal standard that every game builds on** ([the miss
 
 **Goal:** the first end-to-end proof that the foundation works. We'll build two small games, independently, on different engines (for example one in Godot and one on the web with three.js). Together they must:
 
-1. accept the same **player document** (schema v0)
+1. accept the same **Carryfile** (schema v0)
 2. recognize the same player, with the player's consent, using an identifier no single company controls
 3. show the same **avatar** (VRM), with a fallback for a game with a very different art style
 4. let Game A **issue a signed claim** ("cleared the final boss"), and let Game B **verify it offline** and **honor it** as a local title or cosmetic
 5. keep working if every server this project runs goes away
 
-**Deliverables:** player document schema v0, achievement credential profile v0, avatar baseline profile v0, a validator CLI, test vectors (sample passports, avatars and credentials, including deliberately broken ones), two demo games and a written threat model.
+**Deliverables:** Carryfile schema v0, achievement credential profile v0, avatar baseline profile v0, a validator CLI, test vectors (sample Carryfiles, avatars and credentials, including deliberately broken ones), two demo games and a written threat model.
 
 **Problems that must reach "solved enough":** [P-0003](problems/P-0003-player-identifier.md), [P-0004](problems/P-0004-account-linking.md), [P-0006](problems/P-0006-privacy-unlinkability.md), [P-0008](problems/P-0008-avatar-baseline.md), [P-0010](problems/P-0010-avatar-budgets-and-file-safety.md), [P-0011](problems/P-0011-rights-licensing-likeness.md), [P-0013](problems/P-0013-portable-claims.md), [P-0014](problems/P-0014-claim-interpretation.md), [P-0015](problems/P-0015-issuer-trust-revocation.md), [P-0024](problems/P-0024-durability-when-services-die.md), [P-0025](problems/P-0025-developer-adoption-cost.md), [P-0026](problems/P-0026-conformance-and-interop-testing.md) and [P-0030](problems/P-0030-built-for-every-game.md), whose written universality requirements keep Phase 1 from ruling out any kind of game.
 

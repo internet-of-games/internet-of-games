@@ -30,7 +30,7 @@ Regulators are paying attention too. The European Commission answered the "Stop 
 
 ## Design commitments
 
-1. **Player-held files.** The passport, avatar and credentials are files the player can back up.
+1. **Player-held files.** The Carryfile, avatar and credentials are files the player can back up.
 2. **Content-addressed references.** Files are referenced by hash, so they can be mirrored anywhere.
 3. **Embedded resources.** Avatars and badge images carry what they need inside the file.
 4. **Offline verification** with cached issuer keys.
@@ -48,7 +48,7 @@ Regulators are paying attention too. The European Commission answered the "Stop 
 - **P-0024-Q1:** What happens to revocation when an issuer disappears? Is the list frozen, or are credentials treated as valid forever?
 - **P-0024-Q2:** Who archives issuers' final keys and status lists? Do we need an archive service, and who would run it?
 - **P-0024-Q3:** Should following an end-of-life procedure be part of conformance ([P-0026](P-0026-conformance-and-interop-testing.md))?
-- **P-0024-Q4:** How do players back up their passports simply and safely?
+- **P-0024-Q4:** How do players back up their Carryfiles simply and safely?
 
 ## Champion brief
 

@@ -24,3 +24,4 @@ An architecture decision record (ADR) captures one decision: its context, the op
 | [ADR-0007](ADR-0007-one-repository-until-there-is-code.md) | Keep everything in one repository until there is code | Accepted | 2026-11-15 |
 | [ADR-0008](ADR-0008-continuity-as-signed-claims-not-state.md) | Carry continuity as signed claims, not transferred game state | Accepted | 2026-11-15 |
 | [ADR-0009](ADR-0009-say-which-license-covers-each-kind-of-file.md) | Say which license covers each kind of file | Accepted | 2026-11-26 |
+| [ADR-0010](ADR-0010-call-the-player-document-a-carryfile.md) | Call the portable player document a Carryfile | Accepted | 2026-11-26 |

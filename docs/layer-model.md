@@ -59,7 +59,7 @@ We borrow the roles from the [Verifiable Credentials model](https://www.w3.org/T
 
 | Role | In the Internet of Games |
 |---|---|
-| **Holder** | The player, or software acting on the player's behalf (a "passport app"). Holds the player document, the avatar files and the credentials. |
+| **Holder** | The player, or software acting on the player's behalf (a "Carryfile app"). Holds the Carryfile, the avatar files and the credentials. |
 | **Issuer** | A game, or another trusted party, that signs a claim about the player, for example "cleared the final boss" or "is over 13". |
 | **Verifier** | A game that checks a claim before using it. |
 | **Interpreter** | The same receiving game, deciding what a verified claim *means* locally. This step is ours; it's not part of the VC model. |
@@ -69,14 +69,14 @@ We borrow the roles from the [Verifiable Credentials model](https://www.w3.org/T
 ```mermaid
 sequenceDiagram
     autonumber
-    participant P as Player (passport + files)
+    participant P as Player (Carryfile + files)
     participant A as Game A
     participant B as Game B
-    P->>A: Link passport to my Game A account (consent screen)
+    P->>A: Link Carryfile to my Game A account (consent screen)
     A-->>P: Account linked
     P->>A: Play
     A-->>P: Issue signed credential "cleared the final boss"
-    P->>B: Present passport, avatar and the chosen credential
+    P->>B: Present Carryfile, avatar and the chosen credential
     B->>B: Validate avatar file against budgets
     B->>B: Verify signature with Game A's public key (cached) and check revocation status
     B-->>P: Welcome! Avatar loaded and a local title granted

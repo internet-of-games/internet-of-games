@@ -6,7 +6,7 @@ These are questions that cut across several problems. Questions that belong to a
 
 ## Naming
 
-**OQ-1: What should the portable player document be called?**
+**OQ-1: ~~What should the portable player document be called?~~** Decided in [ADR-0010](decisions/ADR-0010-call-the-player-document-a-carryfile.md): it's a **Carryfile**.
 "Player passport" is only a working name, and it can't become the final one. "PLAYER PASSPORT" is a registered U.S. trademark of Silicon Valley Exercise Analytics for athlete-management software (Reg. No. 6,598,438, registered in December 2021; [USPTO record](https://tsdr.uspto.gov/#caseNumber=88697709&caseType=SERIAL_NO&searchType=statusSearch)). "Passport" is also used for a web3 gaming identity product ([Immutable Passport](https://gamesbeat.com/immutable-passport-hits-200k-unique-web3-gamers/)), and trademark filings exist for similar terms such as "Universal Gamer Tag" ([Justia](https://trademark.justia.com/owners/random-games-company-inc-5004361)). Until we choose, use "player passport" only to describe the document, never as the name of a specification, schema, package, app or domain. We need a name that's distinctive, descriptive and not already claimed in the games or identity space, chosen before Phase 1 drafts its first profile. That rules out any product's trademark and any name from a fictional universe.
 
 **OQ-2: Do we need a mark for "compatible" games?**
@@ -29,7 +29,7 @@ Their participation would help, but the standard must not be shaped around a sin
 These include creatures, vehicles, abstract shapes and characters that are a team rather than one person. VRM assumes a humanoid. Is "humanoid only" acceptable for Phase 1?
 
 **OQ-7: One player, many characters?**
-Should a passport hold several characters (personas), each with its own name, look and history? How does that interact with privacy ([P-0006](../problems/P-0006-privacy-unlinkability.md))?
+Should a Carryfile hold several characters (personas), each with its own name, look and history? How does that interact with privacy ([P-0006](../problems/P-0006-privacy-unlinkability.md))?
 
 **OQ-8: What should the first demo games be?**
 They need to be small, different enough to prove the point, and fun enough to show people. Candidates include:
@@ -38,14 +38,14 @@ They need to be small, different enough to prove the point, and fun enough to sh
 
 ## People and safety
 
-**OQ-9: Can children have passports, and who controls them?**
+**OQ-9: Can children have Carryfiles, and who controls them?**
 How should guardian controls, age signals and consent work for minors ([P-0005](../problems/P-0005-key-recovery.md), [P-0007](../problems/P-0007-age-and-eligibility.md))?
 
 **OQ-10: How do names work across languages and scripts?**
 How should we handle display names in any script, games that only render some scripts, and names that look identical but use different characters?
 
 **OQ-11: How should AI-generated avatars and content be labeled?**
-Should passports or avatars carry provenance information, for example via [C2PA content credentials](https://c2pa.org/), so games and players know what was AI-generated? What are the rights implications ([P-0011](../problems/P-0011-rights-licensing-likeness.md))?
+Should Carryfiles or avatars carry provenance information, for example via [C2PA content credentials](https://c2pa.org/), so games and players know what was AI-generated? What are the rights implications ([P-0011](../problems/P-0011-rights-licensing-likeness.md))?
 
 ## Process
 

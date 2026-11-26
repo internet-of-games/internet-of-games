@@ -46,7 +46,7 @@ The breakthrough would be **AI-driven worlds with meaningful freedom and persist
 
 | Building block | What it means |
 |---|---|
-| **Player passport** *(working name)* | A persistent player identity that many games recognize, with a shared character profile and history. |
+| **Carryfile** | A persistent player identity that many games recognize, with a shared character profile and history. |
 | **Portable character and assets** | Moving the compatible parts of a character between games: appearance, cosmetics, and possibly some possessions. |
 | **Connected economies** | Some way for value or purchases to work across games. This is the hardest and riskiest piece, so it comes last (see [P-0020](problems/P-0020-connected-economies.md)). |
 | **Interoperability standards** | Common interfaces, so different developers can build for the same ecosystem **without** using the same engine. |

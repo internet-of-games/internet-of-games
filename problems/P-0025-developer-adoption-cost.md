@@ -12,7 +12,7 @@ last_reviewed: 2026-11-15
 
 # P-0025: Developer adoption cost
 
-**In one sentence:** if integrating takes more than a few days, nobody will do it, so adopting the passport has to be cheaper than building your own character creator.
+**In one sentence:** if integrating takes more than a few days, nobody will do it, so adopting the Carryfile has to be cheaper than building your own character creator.
 
 ## Why it matters
 
@@ -32,7 +32,7 @@ Interoperability only pays off once many games support it, and every one of them
 | Unity (C#) | 3 |
 | Unreal (C++) | 3 |
 
-- **"Hello passport" in fewer than about 50 lines** of game code.
+- **"Hello Carryfile" in fewer than about 50 lines** of game code.
 - **No server required** for the basic flow (recognize a player, load an avatar, verify a credential).
 - **Clear errors** and **safe defaults** (budgets on, privacy on).
 
@@ -45,7 +45,7 @@ Interoperability only pays off once many games support it, and every one of them
 
 1. **Native libraries per engine.** Most idiomatic, but the most work to maintain.
 2. **A shared core compiled to WebAssembly**, wrapped for each engine. One implementation of the hard parts, at the cost of build complexity.
-3. **A small native "passport app"** that games talk to locally. Simple for games, but it adds an extra install for players.
+3. **A small native "Carryfile app"** that games talk to locally. Simple for games, but it adds an extra install for players.
 
 ## Open questions
 
@@ -56,7 +56,7 @@ Interoperability only pays off once many games support it, and every one of them
 
 ## Champion brief
 
-- **First deliverable:** A table of the signature algorithms each target engine can verify out of the box, and a sketch of the smallest "hello passport" integration.
+- **First deliverable:** A table of the signature algorithms each target engine can verify out of the box, and a sketch of the smallest "hello Carryfile" integration.
 - **Decisions you'd drive:** native libraries or a shared WebAssembly core (P-0025-Q2), and how to keep dependencies small and auditable (P-0025-Q3).
 - **Helpful background:** game development in Godot or on the web, and SDK design.
 - **Commitment:** a few hours a week, until a proposal is ready for public review.

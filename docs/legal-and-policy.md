@@ -72,5 +72,5 @@ The EU Digital Markets Act requires designated "gatekeepers" to open certain ser
 - **Developer Certificate of Origin:** contributors certify that they have the right to submit their work, so they check their employment terms first ([CONTRIBUTING.md](../CONTRIBUTING.md#developer-certificate-of-origin-dco)).
 - **Names:** the licenses grant no rights to the project's name, and we don't adopt names that others have registered as trademarks ([TRADEMARKS.md](../TRADEMARKS.md)).
 - **No third-party game content:** no game screenshots, logos, characters, ripped assets or copied text beyond short attributed quotes ([TRADEMARKS.md](../TRADEMARKS.md)).
-- **Synthetic data only:** test passports, avatars and credentials are made-up and released under CC0 ([LICENSE-CC0](../LICENSE-CC0)). No real players' data.
+- **Synthetic data only:** test Carryfiles, avatars and credentials are made-up and released under CC0 ([LICENSE-CC0](../LICENSE-CC0)). No real players' data.
 - **No confidential information:** nothing covered by an NDA, including platform documentation.

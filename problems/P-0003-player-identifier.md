@@ -46,7 +46,7 @@ Today the only identities that span games are platform accounts (PlayStation, Xb
 
 ## Candidate directions
 
-1. **`did:webvh` by default.** Any "passport provider" can host it, players can self-host or switch providers, and the history makes rotations auditable.
+1. **`did:webvh` by default.** Any "Carryfile provider" can host it, players can self-host or switch providers, and the history makes rotations auditable.
 2. **`did:plc` by default.** It's proven at consumer scale, but depends on one directory, even if that directory is independently run.
 3. **`did:key` for Phase 1 only**, with a documented migration to (1) or (2). This is the fastest way to a working demo.
 4. **Several methods behind one resolver library**, with games accepting any method on an allow-list.

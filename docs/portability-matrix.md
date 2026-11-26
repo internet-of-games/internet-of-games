@@ -20,7 +20,7 @@ The goal is for **everything that makes up a player** to be able to travel: thei
 
 | What | When | How | Who decides locally | Why | Problem |
 |---|---|---|---|---|---|
-| Display name | ✅ | Self-asserted, in the player document | The receiving game can enforce its own naming rules (profanity, impersonation, uniqueness) | Players created it, but games still need to moderate it | [P-0012](../problems/P-0012-moderating-imported-identity.md) |
+| Display name | ✅ | Self-asserted, in the Carryfile | The receiving game can enforce its own naming rules (profanity, impersonation, uniqueness) | Players created it, but games still need to moderate it | [P-0012](../problems/P-0012-moderating-imported-identity.md) |
 | Identifier | ✅ | A DID, or a different identifier per game | The player chooses whether games can correlate them | Recognition without tracking | [P-0003](../problems/P-0003-player-identifier.md), [P-0006](../problems/P-0006-privacy-unlinkability.md) |
 | 3D avatar | ✅ | A VRM/glTF file with a hash, budgets and license metadata | The receiving game can reject it, scale it down or substitute it | A player-owned look is the heart of "same character" | [P-0008](../problems/P-0008-avatar-baseline.md), [P-0010](../problems/P-0010-avatar-budgets-and-file-safety.md) |
 | 2D portrait | ✅ | An image file with a hash | The receiving game can moderate it | A fallback that works in any game | [P-0008](../problems/P-0008-avatar-baseline.md) |
