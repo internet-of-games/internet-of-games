@@ -30,4 +30,4 @@ external: ## Check external links (needs network; not run in CI)
 	python3 tools/docs.py external
 
 overlap: ## Find text shared word for word with a saved source page: make overlap SOURCE=page.html [FILES="docs/x.md"]
-	python3 tools/docs.py overlap $(SOURCE) $(if $(FILES),--in $(FILES),)
+	python3 tools/docs.py overlap "$(SOURCE)" $(if $(FILES),--in $(FILES),)
