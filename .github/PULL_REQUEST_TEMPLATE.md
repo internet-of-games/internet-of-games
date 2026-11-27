@@ -1,3 +1,5 @@
+<!-- Start with three short lines: what changes, why, and what you need from reviewers. Keep it plain text. If the description runs past about 300 words, add a diagram whose boxes link to what they mention: see skills/writing-descriptions/SKILL.md. -->
+
 ## What this changes
 
 <!-- One or two sentences. Reference problem IDs, e.g. P-0013 or P-0013-Q2. -->
