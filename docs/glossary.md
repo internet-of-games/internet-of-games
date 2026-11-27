@@ -54,8 +54,6 @@
 
 **Verifier.** A party that checks a credential's signature and status, usually the receiving game.
 
-**Visual summary.** The top of a pull request description, an issue or a long comment: a summary card image, three short lines with links and a diagram, with the full text folded away and a PDF digest attached. See [skills/visual-summaries](../skills/visual-summaries/SKILL.md).
-
 **VRM.** A glTF-based format for humanoid avatars, stewarded by the VRM Consortium. It adds a standard rig, expressions, physics for hair and cloth (spring bones), and license metadata.
 
 **World address.** A stable, shareable address for a game world or a place inside it, similar to a web page's URL. See [P-0029](../problems/P-0029-world-addressing-and-links.md).

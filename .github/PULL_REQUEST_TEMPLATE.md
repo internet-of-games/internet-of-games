@@ -1,4 +1,4 @@
-<!-- Start with three short lines: what changes, why, and what you need from reviewers. Agents put a summary card and a diagram first and fold the rest into <details>: see skills/visual-summaries/SKILL.md. -->
+<!-- Start with three short lines: what changes, why, and what you need from reviewers. Keep it plain text. If the description runs past about 300 words, add a diagram whose boxes link to what they mention: see skills/writing-descriptions/SKILL.md. -->
 
 ## What this changes
 

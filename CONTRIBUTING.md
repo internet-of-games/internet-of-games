@@ -79,7 +79,7 @@ The IP policy for future specification text may add a patent commitment. That's 
 2. Run `make check`, and `make test` if you changed `tools/`, then fix any errors. CI runs the same checks.
 3. Write commit messages and the pull request title following [COMMITS.md](COMMITS.md).
 4. Fill in the pull request template checklist.
-5. Start the description with three short lines: what changes, why, and what you need from reviewers. A summary card and a diagram help too, and `make visuals` builds them ([visual summaries](skills/visual-summaries/SKILL.md)). Agents always add them.
+5. Start the description with three short lines: what changes, why, and what you need from reviewers. Keep it plain text, and if it runs past about 300 words, add a diagram whose boxes link to what they mention ([writing descriptions](skills/writing-descriptions/SKILL.md)).
 6. A maintainer reviews it. Doc changes need one maintainer's approval. Changes to a problem's *status*, and new decision records, follow [GOVERNANCE.md](GOVERNANCE.md).
 7. Be patient and kind. Reviews happen in people's spare time.
 

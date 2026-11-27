@@ -23,10 +23,6 @@ questions: ## List every open question with its ID
 index: ## Print a JSON map of problems and decisions (handy for agents)
 	python3 tools/docs.py index
 
-.PHONY: visuals
-visuals: ## Make the visual summary for a pull request or issue: make visuals BRIEF=brief.md [ARGS="--offline"] (needs Chrome or Chromium)
-	python3 tools/visuals.py "$(BRIEF)" $(ARGS)
-
 external: ## Check external links (needs network; not run in CI)
 	python3 tools/docs.py external
 
