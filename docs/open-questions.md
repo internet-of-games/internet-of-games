@@ -50,4 +50,4 @@ Should passports or avatars carry provenance information, for example via [C2PA 
 ## Process
 
 **OQ-12: How do we decide when a problem is "solved enough"?**
-The current rule is that the problem's champion proposes it, there's a public review period, and a maintainer confirms. Is that enough once outside implementers depend on our decisions? See [GOVERNANCE.md](../GOVERNANCE.md).
+The current rule is that the problem's champion proposes it and a maintainer confirms. Is that enough once outside implementers depend on our decisions? See [GOVERNANCE.md](../GOVERNANCE.md).

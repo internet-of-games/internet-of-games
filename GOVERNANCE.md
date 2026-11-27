@@ -22,11 +22,11 @@
 
 ## How decisions are made
 
-1. **Lazy consensus.** Propose a change in a pull request or Discussion. If there are no unresolved objections after **7 days**, a maintainer may merge it.
+1. **Lazy consensus.** Propose a change in a pull request or Discussion. A maintainer may merge it after reviewing it, if there are no unresolved objections. There's no minimum review time: if someone objects after a merge, a new pull request can change or revert it.
 2. **Objections must be specific** and, where possible, come with an alternative.
 3. **If consensus fails**, the maintainers decide by majority vote. During Phase 0 the founder breaks ties. Every decision is recorded with its reasoning.
-4. **Moving a problem to `solved-enough`** requires the champion's proposal, a public review period of at least 14 days, and approval from a maintainer who isn't the champion.
-5. **Lasting decisions are recorded as ADRs** in [docs/decisions](docs/decisions/README.md) ([ADR-0001](docs/decisions/ADR-0001-record-decisions-as-adrs.md)). A new ADR follows the same lazy-consensus rule, with at least 7 days of public review, and is accepted when its pull request merges.
+4. **Moving a problem to `solved-enough`** requires the champion's proposal and approval from a maintainer who isn't the champion.
+5. **Lasting decisions are recorded as ADRs** in [docs/decisions](docs/decisions/README.md) ([ADR-0001](docs/decisions/ADR-0001-record-decisions-as-adrs.md)). A new ADR follows the same lazy-consensus rule and is accepted when its pull request merges.
 
 ## Conflicts of interest
 
@@ -42,4 +42,4 @@ Maintainers enforce the [Code of Conduct](CODE_OF_CONDUCT.md). A maintainer who 
 
 ## Changing this document
 
-Changes to governance follow the lazy-consensus process, with a minimum review period of **14 days**.
+Changes to governance follow the lazy-consensus process.
